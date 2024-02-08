@@ -1,0 +1,579 @@
+---
+title: "Introduction to Advanced Modelling: Feature Engineering"
+subtitle: "Or how to prepare an informative input from raw data"
+author: "Advanced Modelling, Master in Computational Social Science"
+date: 'UC3M, 2024'
+output:
+  html_document: 
+    css: my-theme.css
+    theme: cerulean
+    highlight: tango
+    number_sections: no
+    toc: yes
+    toc_depth: 1
+  pdf_document:
+    css: my-theme.css
+    theme: cerulean
+    highlight: tango
+    number_sections: yes
+    toc: yes
+    toc_depth: 1
+editor_options:
+  chunk_output_type: console
+---
+
+```{r global_options, include=T, echo = F}
+knitr::opts_chunk$set(echo = T, warning=FALSE, message=FALSE)
+```
+
+```{r, echo=FALSE}
+htmltools::img(src = knitr::image_uri(file.path("uc3m.jpg")), 
+               alt = 'logo', 
+               style = 'position:absolute; top:0; right:0; padding:10px;',
+               width="600",
+               height="80")
+```
+
+## Introduction
+
+Data processing, and in particular, feature engineering is the process of generating features (variables) useful as input for machine-learning tools. The better the input, the better the prediction.
+
+<br>
+
+> Coming up with features is difficult, time-consuming, requires expert knowledge. 'Applied machine learning' is basically feature engineering --- Prof. Andrew Ng.
+
+------------------------------------------------------------------------
+
+**Machine-learning steps:**
+
+1.  Prepare the input: collect, clean, transform, filter, aggregate, merge, verify, etc.
+2.  Prepare a model: build, estimate, validate, predict, etc.
+3.  Prepare the output: communicate the results, interpret, publish, etc.
+
+<br>
+
+Feature engineering focuses on the first step, with emphasis in getting information: collect, clean, transform, filter, aggregate, merge, verify, etc.
+
+<br>
+
+Half of the success of a machine-learning project is the features used. The other 50% is the model.
+
+<br>
+
+> Feature engineering is the process of transforming raw data into features that better represent the underlying problem to the predictive models, resulting in improved model accuracy on unseen data. --- Dr. Jason Brownlee
+
+## What's a feature?
+
+A feature is a specific representation on top of raw data: a measurable attribure or variable, typically a column in a dataset.
+
+Basically two types:
+
+1.  Raw features: obtained directly from the dataset with no extra data manipulation or engineering.
+2.  Derived features: usually obtained from feature extraction (from other data attributes).
+
+## Data cleaning
+
+-   Remove duplicate or irrelevant observations
+
+-   Fix or remove typos or errors
+
+-   Outliers
+
+-   Missing values
+
+## Feature extraction
+
+-   Get features from many data sources.
+
+-   Smooth (filter) some variables: for instance, getting monthly information from hourly data. Or getting municipality information from census data.
+
+-   Discretization of variables: for instance, creating two groups (Young and Old) from age data to reduce nose. Or encoding the month of the year.
+
+-   Normalization: unify the units of our variables (scale or standardization).
+
+-   Combination of variables: for instance, density of population (from inhabitants and area). Or PCA for more complex datasets
+
+-   Variable selection: how to select the most *promising* variables from the available dozens or hundreds ones.
+
+-   Most advanced tool nowadays: **deep learning** can build features through the hidden layers (deep), specially useful for images, text, video, etc.
+
+## Today's session
+
+**Objective:** practice with feature extraction and data cleaning to learn about some socio-economic variables in Spain. In particular, we are going to learn about the causes of election participation.
+
+Organization:
+
+1.  Get variables from many sources
+2.  Obtain information through feature engineering
+3.  Make cool graphs
+
+------------------------------------------------------------------------
+
+<br>
+
+We will use R, hence start by loading some packages:
+
+```{r}
+library(tidyverse)
+library(leaflet)
+library(mapboxapi)
+library(sf)
+library(readxl)
+library(stringr)
+```
+
+## First data source
+
+From Ministerio del Interior (Spain), we have data at very low level (poll station) about elections.
+
+------------------------------------------------------------------------
+
+Download first data from [Ministerio del Interior](https://infoelectoral.interior.gob.es/opencms/es/elecciones-celebradas/area-de-descargas) (last available elections: July 2023)
+
+```{r}
+url = "https://infoelectoral.interior.gob.es/estaticos/docxl/apliextr/02202307_MESA.zip"
+
+temp <- tempfile()
+download.file(url,dest="data/MESA.zip")
+unzip("data/MESA.zip", exdir = "data/")   
+```
+
+We will use the file "09022307.DAT" that contains information about participation by poll station. See "Ficheros.doc" for more details.
+
+Note the name of the file (09022307.DAT) is informative: poll level (09) + national elections (02) + year (23) + month (07)
+
+Read now data file and assign names
+
+```{r}
+participacion <- read.fwf("data/09022307.DAT",	
+                          widths=c(2,4,2,1,	
+                                   2,2,3,2,4,1,	
+                                   7,7,7,7,7,7,7,7,7,7,7,	
+                                   1),	
+                          colClasses=c(rep("numeric",4),	
+                                       rep("character",6),	
+                                       rep("numeric",11),	
+                                       "character"))
+
+colnames(participacion) <- c("tipo","year","month","vuelta","ccaa","provincia","municipio","distrito","seccion","mesa","censo","censo_escrutinio","censo_cere","total_cere","votantes_primer","votantes_segundo","blanco","nulos","votos","afirmativos","negativos","datos_oficiales")
+```
+
+Take a look
+
+```{r}
+head(participacion)
+```
+
+This is high granularity data: information up to *mesa electoral* (poll station)
+
+Remember, a country is usually divided into administrative areas: states/CCAA, then regions/provinces, then towns/municipalities, then census sections, then poll stations, etc.
+
+------------------------------------------------------------------------
+
+<br>
+
+Now we are ready to start with our **feature engineering**:
+
+<br>
+
+Focus on national elections:
+
+```{r}
+participacion = participacion %>% 
+  select(ccaa, provincia, municipio, distrito, seccion, censo, votos) %>% 
+  filter(ccaa<99, provincia<99, municipio<999) 
+```
+
+**Feature extraction**
+
+Obtain the CUSEC identification for census sections. This will be the common identifier to merge other datasets.
+
+```{r}
+participacion = participacion %>% 
+  mutate(CUSEC = str_trim(paste0(participacion$provincia,participacion$municipio,participacion$distrito,participacion$seccion))) 
+```
+
+Take a look:
+
+```{r}
+str(participacion)
+head(participacion)
+```
+
+There are close to 60,000 poll stations, 36,000 census sections, more than 8,000 municipalities, 52 provinces, and 17+2 CCAA.
+
+### Encoding
+
+Most statistical and machine-learning models require the predictors to be in some sort of numeric encoding to be used. For example, linear regression required numbers so that it can assign slopes to each of the predictors.
+
+The most common encoding is to make simple dummy variables: if we have a predictor with $c$ levels, then $c-1$ dummies are needed. In this way, the $X$ matrix is full rank.
+
+Convert char variables into factor ones: this conversion will be used in R models as encoding (creation of dummies)
+
+```{r}
+participacion$ccaa = as.factor(participacion$ccaa)
+participacion$provincia = as.factor(participacion$provincia)
+```
+
+That means R will use 19 dummies for CCAA in the analytical models, instead of just 1 categorical variable with 19 categories. The same for the 52 provinces.
+
+Take a look at the census by poll station and CCAA:
+
+```{r}
+participacion %>% ggplot(aes(x=ccaa,y=censo)) + geom_boxplot(fill="lightblue") 
+```
+
+Some stations with censo\<=10, or censo\>=1000: high variability
+
+### Aggregation:
+
+From poll stations to census sections
+
+Then, build participation level (from votes and census).
+
+```{r}
+part.aggr = participacion %>% 	
+  group_by(provincia,municipio,distrito,seccion,CUSEC) %>% 	
+  summarize(total_votos=sum(votos),total_censo=sum(censo)) %>%	
+  mutate(total_part = total_votos/total_censo)
+
+head(part.aggr)
+```
+
+There are more than 36,000 census sections
+
+### Maps
+
+Obtain census limits from INE: <https://www.ine.es/ss/Satellite?L=es_ES&c=Page&cid=1259952026632&p=1259952026632&pagename=ProductosYServicios%2FPYSLayout>
+
+```{r}
+limits <- read_sf("data/LimitesCensoINE/SECC_CE_20200101.shp") %>% 
+  # just in case we want to filter by CCAA
+  # filter(NCA == "Comunidad de Madrid") %>%
+  sf::st_transform('+proj=longlat +datum=WGS84')
+
+```
+
+Then, merge geographic information with participation level data. Note we need a common identifier.
+
+```{r}
+datos.mapa <- merge(limits,part.aggr,by="CUSEC")	
+```
+
+Then, plot in a map the participation levels by census section: (take care: this is a very expensive map)
+
+```{r, eval = FALSE}
+pal <- colorQuantile("Blues", part.aggr$total_part, na.color="white")
+
+labels = paste(datos.mapa$NMUN, "<br>", "Sección censal: ", datos.mapa$CUSEC, "<br>", "Participación: ", round(datos.mapa$total_part*100,2), "%") %>%
+  lapply(htmltools::HTML)
+
+
+leaflet(datos.mapa) %>%
+  #addMapboxTiles(style_id = "streets-v11",
+  #               username = "mapbox") %>%
+  addProviderTiles(providers$CartoDB.Positron) %>% 
+  setView(lng = -3.69,
+          lat = 40.42,
+          zoom = 7) %>% 
+  addPolygons(fillColor = ~ pal(total_part),fillOpacity = 0.6,color = "white",weight = .5, 
+              opacity = 1, smoothFactor = 0.2,stroke=T,
+              label = ~ labels,
+              highlightOptions = highlightOptions(color = "black", 
+                                                  weight = 2,
+                                                  bringToFront = F))
+
+```
+
+### Merge more information
+
+Is the income a driver of participation?
+
+Let's download the average net-income per capita from INE: <https://www.ine.es/jaxiT3/Tabla.htm?t=31097>
+
+To preserve confidentiality, INE only provides incomes between percentiles 0.1% and 99.5%
+
+Let's focus our analysis on just Madrid (all census sections, more than 4,400): <https://www.ine.es/jaxiT3/Tabla.htm?t=31097&L=0>
+
+```{r}
+renta = read_excel('data/RentaMadrid31097_2021.xlsx', skip=8, col_names = F, trim_ws=T,col_types=c("text", "numeric")) 
+renta$CUSEC = substr(renta$...1, 1, 10)
+renta$rentaMedia = renta$...2
+renta = renta %>% select(CUSEC, rentaMedia)
+head(renta)
+```
+
+Merge income with participation data:
+
+```{r}
+datos.madrid = filter(datos.mapa, provincia == 28) # just Madrid
+datos.madrid <- merge(datos.madrid, renta, by="CUSEC")	
+```
+
+Is the income a driver of participation?
+
+```{r}
+datos.madrid %>% 
+  ggplot(aes(x = rentaMedia, y = total_part, label=NMUN, size=total_censo, color=rentaMedia, fill=rentaMedia))  + 
+  scale_x_continuous(n.breaks = 8) + 
+  scale_y_continuous(n.breaks = 8,labels = scales::percent) +
+  geom_point(alpha=0.5) + scale_size(range = c(0, 3)) +
+  scale_colour_gradientn(colours = c("red","lightgreen")) +
+  labs(title = "Participación elecciones vs renta media", subtitle="Elecciones 2023, Renta 2021", x = "Renta media neta anual per capita", y = "Porcentaje participación", caption="Fuente: INE") +
+  theme_minimal() +
+  theme(plot.background = element_rect(fill='#212121'), text=element_text(size=14,color='#FFFFFF'),
+        axis.text = element_text(color='#FFFFFF'), panel.grid.major.y = element_line(color = '#55565B', linetype = "dotted"),panel.grid.major.x = element_blank(),
+        panel.grid.minor.y = element_blank(),panel.grid.minor.x = element_line(color = '#55565B', linetype = "dotted"),
+        plot.title=element_text(size=20), legend.position="none")
+
+```
+
+There is a clear increasing but non-linear relation
+
+Of course other variables are affecting the participation level
+
+Note this relationship can change between provinces (the shape of the curvature)
+
+### Analytical tools
+
+Let's make some regression models to understand better the relation
+
+Filter very low and very high incomes to reduce variability
+
+```{r}
+datos.madrid = datos.madrid %>% drop_na(rentaMedia) %>%
+  filter(rentaMedia>6000, rentaMedia<31000, total_censo>100)
+```
+
+Train and test splitting:
+
+```{r}
+n = dim(datos.madrid)[1]
+n.train = round(0.7*n)
+ind.train = sample(1:n, n.train, replace = F)
+train = datos.madrid[ind.train,]
+test = datos.madrid[-ind.train,]
+```
+
+Try a simple regression:
+
+```{r}
+simple.lm = lm(total_part ~ rentaMedia, train) 
+simple.lm %>% summary()
+```
+
+Does it capture well the participation variability?
+
+```{r}
+pred = predict(simple.lm, newdata = test)
+cor(datos.madrid$total_part[-ind.train], pred)^2
+
+qplot(datos.madrid$rentaMedia[-ind.train], pred, main="Prediction model")
+```
+
+No overfitting, reliable model. But accurate?
+
+```{r}
+qplot(pred, datos.madrid$total_part[-ind.train]) + labs(title="Observed VS Predicted", x="Predicted", y="Observed") + geom_abline(intercept = 0, slope = 1, colour = "blue") + theme_bw()
+```
+
+It is not capturing well the non-linearity (not enough accurate)
+
+Can we capture a non-linearity with a linear model?
+
+```{r}
+simple.lm = lm(total_part ~ I(1/rentaMedia), train) 
+simple.lm %>% summary()
+
+pred = predict(simple.lm, newdata = test)
+cor(datos.madrid$total_part[-ind.train], pred)^2
+
+qplot(datos.madrid$rentaMedia[-ind.train], pred, main="Prediction model")
+```
+
+Better, and again no overfitting, reliable, and it seems to capture non-linearity
+
+```{r}
+qplot(pred, datos.madrid$total_part[-ind.train]) + labs(title="Observed VS Predicted", x="Predicted", y="Observed") + geom_abline(intercept = 0, slope = 1, colour = "blue") + theme_bw()
+```
+
+That's ok, but if we want to improve the accuracy, we need more variables
+
+### Merge more information
+
+Here we can get more variables for Madrid: <https://www.ine.es/jaxiT3/Datos.htm?t=31105>
+
+In particular, the mean age, population, and percentage of Spanish people for each census section in Madrid.
+
+```{r}
+demog = read_excel('data/DemograficoMadrid31105.xlsx', skip=8, col_names = F, trim_ws=T,col_types=c("text", "numeric", "numeric", "numeric")) 
+
+demog$CUSEC = substr(demog$...1, 1, 10)
+demog$EdadMedia = demog$...2
+demog$Poblacion = demog$...3
+demog$PoblacionEsp = demog$...4
+demog = demog %>% select(CUSEC, EdadMedia, Poblacion, PoblacionEsp)
+
+datos.madrid <- merge(datos.madrid, demog, by="CUSEC")
+
+```
+
+How the other variables are affecting participation?
+
+```{r}
+datos.madrid %>% 
+  ggplot(aes(x = rentaMedia, y = total_part, label=NMUN, size=total_censo, color=EdadMedia, fill=PoblacionEsp))  + 
+  scale_x_continuous(n.breaks = 8) + 
+  scale_y_continuous(n.breaks = 8,labels = scales::percent) +
+  geom_point(alpha=0.5) +  scale_size(range = c(0, 3)) +
+  scale_colour_gradientn(colours = c("lightgreen", "red")) +
+  labs(title = "Participación elecciones vs renta media", subtitle="Elecciones 2023, Renta 2021", x = "Renta media neta anual per capita", y = "Porcentaje participación") +
+  theme_minimal() +
+  theme(plot.background = element_rect(fill='#212121'), text=element_text(size=14,color='#FFFFFF'),
+        axis.text = element_text(color='#FFFFFF'), panel.grid.major.y = element_line(color = '#55565B', linetype = "dotted"),panel.grid.major.x = element_blank(),
+        panel.grid.minor.y = element_blank(),panel.grid.minor.x = element_line(color = '#55565B', linetype = "dotted"),
+        plot.title=element_text(size=20), legend.position="none")
+
+
+```
+
+Not very clear, we need analytical tools
+
+Let's make some regression models to understand better the relations:
+
+```{r}
+datos.madrid = datos.madrid %>% drop_na(EdadMedia) 
+
+train = datos.madrid[ind.train,]
+test = datos.madrid[-ind.train,]
+```
+
+Advanced multiple-regression model:
+
+```{r}
+multiple.lm = lm(total_part ~ I(1/rentaMedia) + poly(EdadMedia,2) + poly(PoblacionEsp,2), train) 
+multiple.lm %>% summary()
+
+pred = predict(simple.lm, newdata = test)
+
+cor(datos.madrid$total_part[-ind.train], pred)^2
+
+qplot(datos.madrid$rentaMedia[-ind.train], pred, main="Prediction model")
+
+qplot(datos.madrid$EdadMedia[-ind.train], pred, main="Prediction model")
+
+qplot(datos.madrid$PoblacionEsp[-ind.train], pred, main="Prediction model")
+```
+
+Some overfitting: train error clearly lower than test error
+
+But good model in any case
+
+```{r}
+qplot(pred, datos.madrid$total_part[-ind.train]) + labs(title="Observed VS Predicted", x="Predicted", y="Observed") + geom_abline(intercept = 0, slope = 1, colour = "blue") + theme_bw()
+```
+
+Can we improve it?
+
+Two ways: adding more information or using better models
+
+### Machine Learning
+
+We will use it in an automatic way
+
+Because it is a non-linear tool, we can add more variables related with participation in a non-linear way, like the location of each census section:
+
+```{r}
+# centroids for each section
+datos.madrid$geom2 = st_centroid(st_geometry(datos.madrid))
+
+# extract long and lat for each centroid
+datos.madrid <- datos.madrid %>%
+    mutate(long = unlist(map(datos.madrid$geom2,1)),
+           lat = unlist(map(datos.madrid$geom2,2)))
+
+# incorporate long and lat into the train and test sets
+train = datos.madrid[ind.train,]
+test = datos.madrid[-ind.train,]
+```
+
+Let's try one of the most used ML tools: random forest
+
+```{r}
+#install.packages("randomForest")
+library(randomForest)
+
+rf.train <- randomForest(total_part ~ rentaMedia + EdadMedia + PoblacionEsp + long + lat, data=train, importance=T)
+```
+
+Note we do not need to incorporate the non-linearities in the formula, the non-linearities will be captured by the tool
+
+The prediction is the same:
+
+```{r}
+pred <- predict(rf.train, newdata=test)
+
+cor(datos.madrid$total_part[-ind.train], pred)^2
+
+qplot(datos.madrid$rentaMedia[-ind.train], pred, main="Prediction model")
+```
+
+Very high accuracy ($R^2$), but the prediction model is completely non linear!
+
+Hence, interpretation is more difficult (all the variables are interacting in a non-linear way)
+
+But note the error is between -10% and 10% (in most of the cases), hence a great model with so few variables!
+
+```{r}
+res = datos.madrid$total_part[-ind.train] - pred
+qplot(datos.madrid$rentaMedia[-ind.train], res)
+```
+
+## Interpretability
+
+Even if ML tools are difficult to interpret, there are some helpful tools
+
+```{r}
+# Dotchart of variable importance as measured by a Random Forest
+varImpPlot(rf.train, type=1, pch=19)
+
+# Partial dependence plots: marginal effect of a predictor on output (participation)
+partialPlot(rf.train, data.frame(train), rentaMedia, lwd=5)
+
+partialPlot(rf.train, data.frame(train), PoblacionEsp, lwd=5)
+
+partialPlot(rf.train, data.frame(train), EdadMedia, lwd=5)
+
+```
+
+Insights?
+
+## Conclusions
+
+-   Remember: feature engineering is the process of generating features (variables) useful as input for machine-learning tools. The better the input, the better the prediction
+
+-   Feature extraction creates new *informative features* from original raw variables
+
+-   You need to deal always with outliers and missing values
+
+## Exercise
+
+Extend the previous analysis to get more insights. Some ideas:
+
+-   Try other province or CCAA
+
+-   Aggregate the dataset by municipalities and check whether the insights are the same after the aggregation
+
+-   Besides wealth and age of voters, consider other drivers for participation:
+
+Population by gender: <https://www.ine.es/dynt3/inebase/es/index.htm?padre=525>
+
+Gini index (income inequality): <https://www.ine.es/jaxiT3/Tabla.htm?t=37727&L=0>
+
+Education
+
+Family status
+
+Etc.
+
+-   Extend the analysis to other countries
