@@ -21,7 +21,6 @@ editor_options:
   chunk_output_type: console
 ---
 
-
 ```{r global_options, include=T, echo = F}
 knitr::opts_chunk$set(echo = T, warning=FALSE, message=FALSE)
 ```
@@ -44,10 +43,9 @@ But what if we are interested in health? And in much more variables?
 
 In this case study, we will analyze countries using socio-economic and health indicators that determine the overall development of the world, and try to answer these questions
 
-- How can we know who are the most developed countries?
+-   How can we know who are the most developed countries?
 
-- Is the socio-economic information related with the location one?
-
+-   Is the socio-economic information related with the location one?
 
 ```{r}
 # delete everything
@@ -55,6 +53,7 @@ rm(list=ls())
 
 library(tidyverse)
 library(GGally) # ggplot2-based visualization of correlations
+install.packages("factoextra")
 library(factoextra) # ggplot2-based visualization of pca
 library(countrycode)
 library(rworldmap)
@@ -62,46 +61,42 @@ library(mice)
 library(plotly)
 ```
 
-## The dataset 
+## The dataset
 
 The dataset is obtained through the notebook "WHO_preprocessing.Rmd", which creates a file named "WorldData2024.txt". There you can find explanation for the following World Health Organization (WHO) variables:
 
-  - Life expectancy at birth (years)
-  - Infant mortality rate (probability of dying between birth and age 1 per 1000 live births)
-  - Population (in thousands) total
-  - Ambient air pollution (Annual PM2.5 [ug/m3])
-  - Estimates of rates of homicides per 100 000 population
-  - Health expenditure as percentage of GDP (%)
-  - Medical doctors (per 10 000 population)
-  - Hospital beds (per 10 000 population)
-  - Percentage of individuals using the Internet
-  - Literacy rate (% of people ages 15 and above)
-  - Expected Years Of School
-  - Unemployment, total (% of total labor force)
-  - GDP per capita (constant 2015 US$)
-  
+-   Life expectancy at birth (years)
+-   Infant mortality rate (probability of dying between birth and age 1 per 1000 live births)
+-   Population (in thousands) total
+-   Ambient air pollution (Annual PM2.5 [ug/m3])
+-   Estimates of rates of homicides per 100 000 population
+-   Health expenditure as percentage of GDP (%)
+-   Medical doctors (per 10 000 population)
+-   Hospital beds (per 10 000 population)
+-   Percentage of individuals using the Internet
+-   Literacy rate (% of people ages 15 and above)
+-   Expected Years Of School
+-   Unemployment, total (% of total labor force)
+-   GDP per capita (constant 2015 US\$)
 
 ```{r}
-WHO = read.table("WorldData2024.txt", sep=",")  
+WHO = read.table("~/Desktop/jieun/UC3M/Advanced Modeling/Advanced Modeling/case study 2/WorldData2024.txt", sep=",") 
 ```
 
 ## Descriptive analysis
 
 Some preliminar analysis
 
-  
 ```{r}
 # Enter your code here
-
+summary(WHO)
 ```
 
-Out of the 200 countries in the world, we have almost complete information (more than 10 variables) for around 130 countries: 
+Out of the 200 countries in the world, we have almost complete information (more than 10 variables) for around 130 countries:
 
-  - Diverse variables (socio-economic and health)
+-   Diverse variables (socio-economic and health)
 
-  - Missing values
-  
-
+-   Missing values
 
 The output of the tools depends directly on the selected variables for the input. This selection is subjective and depends on the application's objective
 
@@ -113,22 +108,25 @@ What to do with missings?
 #Percentage of Na's?
 sapply(WHO, function(x) sum(is.na(x))*100/nrow(WHO))
 
-# Remove first countries with no population 
+# Remove first countries with no population (very small countries)
 WHO = WHO %>% drop_na(Population)
 ```
 
 Automatic imputation of NAs:
 
 ```{r}
-m = 4 # number of multiple imputations
-mice_mod <- mice(WHO, m=m, method='rf')
-WHO <- complete(mice_mod, action=m)
+m = 4 # number of multiple imputations, we are going to make 4 iterations, we're going to predict missing values 4 times.
+mice_mod <- mice(WHO, m=m, method='rf') # machine learning tool, rf = random forest
+WHO <- complete(mice_mod, action=m) # replace missiong value with the mice_mod
+View(WHO)
 ```
 
 Data frame:
 
 ```{r}
-X = WHO %>% dplyr::select(-Continent,-Region,-Country, -COUNTRY,-Population,-capital) 
+X = WHO %>% dplyr::select(-Continent,-Region,-Country, -COUNTRY,-Population, -capital) # we are not using any categorical variables and removie it
+
+table(is.na(X))
 
 # We need to apply the log to the GDP because it is highly assymetric
 X$GDP = log(X$GDP)
@@ -136,11 +134,9 @@ X$GDP = log(X$GDP)
 # We just save the names and continents for the graphs
 names=WHO$Country
 continent = WHO$Continent
-```  
-  
+```
 
 ## Basic Data Analysis
-
 
 ```{r}
 # Add here your ideas for descriptive analysis
@@ -150,18 +146,18 @@ continent = WHO$Continent
 Which is the country with the lowest young population?
 
 And the country with the highest senior population? Are they the same?
-  
+
 ## Intelligent graphs with ggplot
 
 For instance, this is 4D using a scatterplot (2D)
 
 ```{r}
+#Using 5 variables (MdicalDoctors, lifeExpectancy, Continent, Population, and GDP(5 dimentions in 2 dimentional graph))
 ggplot(WHO, aes(x=MedicalDoctors, y=LifeExpectancy, group=Continent, size=Population, color=GDP)) + geom_point(alpha=0.9) + #geom_smooth(se=F, size=0.3) +
   facet_wrap(~ Continent) +
   scale_color_gradient(low="red", high="green") +
   theme_minimal()+ theme(legend.position="none") + 
-  labs(title = "World countries: life expectancy vs MedicalDoctors", subtitle="(color denotes GDP, size denotes population)",caption="Source: World Health Organization",
-       x = "MedicalDoctors", y = "Life expectancy at birth (in years)")
+  labs(title = "World countries: life expectancy vs MedicalDoctors", subtitle="(color denotes GDP, size denotes population)",caption="Source: World Health Organization", x = "MedicalDoctors", y = "Life expectancy at birth (in years)")
 ```
 
 The same but adding interactive visualization with plotly:
@@ -171,8 +167,7 @@ p=ggplot(WHO, aes(x=MedicalDoctors, y=LifeExpectancy, group=Continent, size=Popu
   facet_wrap(~ Continent) +
   scale_color_gradient(low="red", high="green") +
   theme_minimal()+ theme(legend.position="none") + 
-  labs(title = "World countries: life expectancy vs MedicalDoctors", subtitle="(color denotes GDP, size denotes population)",caption="Source: World Health Organization",
-       x = "MedicalDoctors", y = "Life expectancy at birth (in years)")
+  labs(title = "World countries: life expectancy vs MedicalDoctors", subtitle="(color denotes GDP, size denotes population)", caption="Source: World Health Organization", x = "MedicalDoctors", y = "Life expectancy at birth (in years)")
 
 ggplotly(p, tooltip=c("names"))
 ```
@@ -187,8 +182,6 @@ q = WHO %>% ggplot(aes(x=GDP, y=LifeExpectancy, group=Continent, size=Population
        x = "GDP", y = "Life Expectancy")
 ggplotly(q, tooltip=c("names"))
 ```
-
-
 
 ## Motivation to PCA
 
@@ -206,8 +199,13 @@ How to call PCA?
 
 ```{r}
 # Enter your code here
-pca =
-  
+# standardize the dataset (prcomp package)
+install.packages("prcomp")
+library(prcomp)
+pca = prcomp(X, scale = TRUE)
+summary(pca)
+
+?prcomp()
 ```
 
 With 2 components we explain 63% of variability
@@ -222,10 +220,10 @@ fviz_screeplot(pca, addlabels = TRUE)
 
 Analyze first component
 
-
 ```{r}
 # Enter your code here
 
+barplot(pca$rotation[,1], las=2, col="darkblue")
 ```
 
 It is a measure of global development (positive loads on good indicators and negative ones on the bad variables)
@@ -240,7 +238,7 @@ They are called contribution of variables to components
 fviz_contrib(pca, choice = "var", axes = 1)
 ```
 
-The red dashed line on the graph above indicates the expected average contribution 
+The red dashed line on the graph above indicates the expected average contribution
 
 If the contribution of the variables were uniform, the expected value would be 1/length(variables) = 1/12 = 8%
 
@@ -307,6 +305,3 @@ mapCountryData(matched,nameColumnToPlot="value",missingCountryCol = "white",
 
 
 ```
-
-
-
