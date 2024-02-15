@@ -1,0 +1,302 @@
+---
+title: "Clustering: organize countries by socio-economic-health information"
+author: "Advanced Modelling, Master in Computational Social Science"
+date: 'UC3M, 2024'
+output:
+  html_document: 
+    css: my-theme.css
+    theme: cerulean
+    highlight: tango
+    number_sections: no
+    toc: no
+    toc_depth: 1
+  pdf_document:
+    css: my-theme.css
+    theme: cerulean
+    highlight: tango
+    number_sections: yes
+    toc: yes
+    toc_depth: 1
+editor_options:
+  chunk_output_type: console
+---
+
+
+```{r global_options, include=T, echo = F}
+knitr::opts_chunk$set(echo = T, warning=FALSE, message=FALSE)
+```
+
+```{r, echo=FALSE}
+htmltools::img(src = knitr::image_uri(file.path("uc3m.jpg")), 
+               alt = 'logo', 
+               style = 'position:absolute; top:0; right:0; padding:10px;',
+               width="600",
+               height="80")
+```
+
+# Motivation
+
+
+Can we organize the countries of the world by variables we are interested in?
+
+For instance, the World Bank organizes countries in 4 income groups using just the Gross National Income (GNI) per capita
+
+But what if we are interested in health? And in much more variables?
+
+In this case study, we will categorise countries using socio-economic and health indicators that determine the overall development of the world
+
+
+
+```{r}
+# delete everything
+rm(list=ls()) 
+
+library(tidyverse)
+library(GGally) # ggplot2-based visualization of correlations
+library(factoextra) # ggplot2-based visualization of pca
+library(countrycode)
+library(rworldmap)
+library(mice)
+library(plotly)
+```
+
+## The dataset 
+
+The dataset is obtained through the notebook "WHO_preprocessing.Rmd", which creates a file named "WorldData2024.txt". There you can find explanation for the following World Health Organization (WHO) variables:
+
+  - Life expectancy at birth (years)
+  - Infant mortality rate (probability of dying between birth and age 1 per 1000 live births)
+  - Population (in thousands) total
+  - Ambient air pollution (Annual PM2.5 [ug/m3])
+  - Estimates of rates of homicides per 100 000 population
+  - Health expenditure as percentage of GDP (%)
+  - Medical doctors (per 10 000 population)
+  - Hospital beds (per 10 000 population)
+  - Percentage of individuals using the Internet
+  - Literacy rate (% of people ages 15 and above)
+  - Expected Years Of School
+  - Unemployment, total (% of total labor force)
+  - GDP per capita (constant 2015 US$)
+  
+
+```{r}
+WHO = read.table("WorldData2024.txt", sep=",")  
+```
+
+## Descriptive analysis
+
+Some preliminar analysis
+
+  
+```{r}
+# Enter your code here
+
+```
+
+Out of the 200 countries in the world, we have almost complete information (more than 10 variables) for around 130 countries: 
+
+  - Diverse variables (socio-economic and health)
+
+  - Missing values
+  
+
+
+The output of the tools depends directly on the selected variables for the input. This selection is subjective and depends on the application's objective
+
+## Some pre-processing
+
+What to do with missings?
+
+```{r}
+#Percentage of Na's?
+sapply(WHO, function(x) sum(is.na(x))*100/nrow(WHO))
+
+# Remove first countries with no population 
+WHO = WHO %>% drop_na(Population)
+```
+
+Automatic imputation of NAs:
+
+```{r}
+m = 4 # number of multiple imputations
+mice_mod <- mice(WHO, m=m, method='rf')
+WHO <- complete(mice_mod, action=m)
+```
+
+Data frame:
+
+```{r}
+load("WHO.RData")
+
+X = WHO %>% dplyr::select(-Continent,-Region,-Country, -COUNTRY,-Population,-capital) 
+
+# We need to apply the log to the GDP because it is highly assymetric
+X$GDP = log(X$GDP)
+
+# We just save the names and continents for the graphs
+names=WHO$Country
+continent = WHO$Continent
+```  
+  
+
+# Clustering
+
+Load important clustering libraries
+
+```{r}
+library(cluster)
+library(mclust)
+```  
+  
+Initial guess for the number of clusters: 5 (as the number of continents)  
+  
+```{r}
+# Enter your code here
+
+```
+
+Somehow an unbalanced classification
+
+## Interpretation of centers:
+
+```{r}
+centers=fit$centers
+
+barplot(centers[1,], las=2, col="darkblue")
+barplot(centers[2,], las=2, col="darkblue")
+barplot(centers[3,], las=2, col="darkblue")
+barplot(centers[4,], las=2, col="darkblue")
+barplot(centers[5,], las=2, col="darkblue")
+```
+
+One small group contains most dangerous countries
+
+One big group seems to contain healthy countries
+
+More insights?
+
+## Clusplot 
+
+Plot the countries in a 2D PCA graph, adding colors for the groups
+
+```{r}
+# clusplot
+fviz_cluster(fit, data = X, geom = c("point"),ellipse.type = 'norm', pointsize=1)+
+  theme_minimal()+geom_text(label=names,hjust=0, vjust=0,size=2,check_overlap = F)+scale_fill_brewer(palette="Paired")
+```
+
+Remember the meaning of the first PCA: measure of global development (positive loads on good indicators and negative ones on the bad variables)
+
+
+## Number of groups? 
+
+We can get some hints using different methods: within cluster sums of squares, average silhouette and gap statistics.
+
+```{r}
+fviz_nbclust(scale(X), kmeans, method = 'wss', k.max = 20, nstart = 1000)
+fviz_nbclust(scale(X), kmeans, method = 'silhouette', k.max = 20, nstart = 1000)
+fviz_nbclust(scale(X), kmeans, method = 'gap_stat', k.max = 10, nstart = 100, nboot = 500)
+```
+
+Any insight about the number of groups?
+
+```{r}
+# Enter your code here for your favourite number of groups
+
+fit.km = 
+```
+
+## Map the clustering in a map:
+  
+```{r}
+# Select here your favorite clustering tool
+map = data.frame(country=names, value=fit.km$cluster)
+#map = data.frame(country=names, value=fit.kmeans$cluster)
+
+#Convert the country code into iso3c using the function countrycode()
+map$country = countrycode(map$country, 'country.name', 'iso3c')
+#Create data object supporting the map
+matched <- joinCountryData2Map(map, joinCode = "ISO3",
+                               nameJoinColumn = "country")
+#Draw the map
+mapCountryData(matched,nameColumnToPlot="value",missingCountryCol = "white",
+               borderCol = "#C7D9FF",
+               catMethod = "pretty", colourPalette = "rainbow",
+               mapTitle = c("Clusters"), lwd=1)
+```
+
+Insignts?
+
+# Hierarchical clustering
+
+Important to decide distance between observations and linkage to join groups
+
+We need to decide first the distance and linkage
+
+```{r}
+# Enter your code here 
+
+```
+
+## Visualization
+
+Classical dendrogram:
+
+```{r}
+hc$labels <- names
+
+fviz_dend(x = hc, 
+          k=8,
+          palette = "jco", 
+          rect = TRUE, rect_fill = TRUE, cex=0.5,
+          rect_border = "jco"          
+)
+```
+
+Difficult to visualize the countries
+
+Let's use a phylogenic tree:
+
+```{r}
+fviz_dend(x = hc,
+          k = 8,
+          color_labels_by_k = TRUE,
+          cex = 0.8,
+          type = "phylogenic",
+          repel = TRUE)+  labs(title="Socio-economic-health tree clustering of the world") + theme(axis.text.x=element_blank(),axis.text.y=element_blank())
+```
+
+Insights?
+
+Now in a geographical map
+
+```{r}
+groups.hc = cutree(hc, k = 8)
+
+# Map our PCA index in a map:
+map = data.frame(country=names, value=groups.hc)
+#Convert the country code into iso3c using the function countrycode()
+map$country = countrycode(map$country, 'country.name', 'iso3c')
+#Create data object supporting the map
+matched <- joinCountryData2Map(map, joinCode = "ISO3",
+                               nameJoinColumn = "country")
+#Draw the map
+mapCountryData(matched,nameColumnToPlot="value",missingCountryCol = "white",
+               borderCol = "#C7D9FF",
+               catMethod = "pretty", colourPalette = "rainbow",
+               mapTitle = c("Clusters"), lwd=1)
+
+```
+
+
+# Heatmaps
+
+A heat map is a false color image (based on data frame X) with a dendrogram added to the left side and to the top
+
+```{r}
+heatmap(scale(X), scale = "none", labRow = names,
+        distfun = function(x){dist(x, method = "euclidean")},
+        hclustfun = function(x){hclust(x, method = "ward.D2")},
+        cexRow = 0.7)
+```
+
