@@ -80,7 +80,8 @@ The dataset is obtained through the notebook "WHO_preprocessing.Rmd", which crea
   
 
 ```{r}
-WHO = read.table("WorldData2024.txt", sep=",")  
+WHO = read.table("./WorldData2024.txt", sep=",")  
+head(WHO)
 ```
 
 ## Descriptive analysis
@@ -126,8 +127,9 @@ WHO <- complete(mice_mod, action=m)
 Data frame:
 
 ```{r}
-load("WHO.RData")
+  load("./WHO.RData")
 
+# Selecting only numerical variables from WHO since k-means only analyze the numberical variables.
 X = WHO %>% dplyr::select(-Continent,-Region,-Country, -COUNTRY,-Population,-capital) 
 
 # We need to apply the log to the GDP because it is highly assymetric
@@ -145,6 +147,7 @@ Load important clustering libraries
 
 ```{r}
 library(cluster)
+install.packages("mclust")
 library(mclust)
 ```  
   
@@ -152,6 +155,21 @@ Initial guess for the number of clusters: 5 (as the number of continents)
   
 ```{r}
 # Enter your code here
+# centers : how many groups (5)
+# nstart : how many times you want to repeat it (non random output than k = 5, 5 times repeat)
+# fit : model name (it can be anything)
+# in the output of the fit : 
+# k-means clustering with 5 clusters of sizes --(67), --(24), --(50), --(52), --(23) (this is the continents that is clustered)
+# Cluster means: LifeExpectancy 1 is the lifeexpectancy mean of continent of 67 (1st one) and so on.
+fit = kmeans(X, centers = 5, nstart = 1000)
+
+# Since with 5 clusters, overlapping happens a lot so we are gonna clustering 4 groups
+fit = kmeans(X, centers = 4, nstart = 1000)
+
+fit = kmeans(X, centers = 3, nstart = 1000)
+
+View(WHO)
+View(X)
 
 ```
 
@@ -181,8 +199,9 @@ Plot the countries in a 2D PCA graph, adding colors for the groups
 
 ```{r}
 # clusplot
-fviz_cluster(fit, data = X, geom = c("point"),ellipse.type = 'norm', pointsize=1)+
-  theme_minimal()+geom_text(label=names,hjust=0, vjust=0,size=2,check_overlap = F)+scale_fill_brewer(palette="Paired")
+# put the countries according to their socio-economic characteristics
+fviz_cluster(fit, data = X, geom = c("point"), ellipse.type = 'norm', pointsize = 1)+
+  theme_minimal() + geom_text(label = names, hjust = 0, vjust = 0,size = 2, check_overlap = F) + scale_fill_brewer(palette = "Paired")
 ```
 
 Remember the meaning of the first PCA: measure of global development (positive loads on good indicators and negative ones on the bad variables)
@@ -193,20 +212,26 @@ Remember the meaning of the first PCA: measure of global development (positive l
 We can get some hints using different methods: within cluster sums of squares, average silhouette and gap statistics.
 
 ```{r}
+# y axis is the sum of the distance of components inside of the groups
+# if there is the sudden change with spike or peaks then it gives the hint the optimal number of the clusters
 fviz_nbclust(scale(X), kmeans, method = 'wss', k.max = 20, nstart = 1000)
+# In this formual, the higher is the better
 fviz_nbclust(scale(X), kmeans, method = 'silhouette', k.max = 20, nstart = 1000)
-fviz_nbclust(scale(X), kmeans, method = 'gap_stat', k.max = 10, nstart = 100, nboot = 500)
+# nboot : number of Bootsrapping
+# if the line is on specific number then it means it is the maximum number of clusters
+fviz_nbclust(scale(X), kmeans, method = 'gap_stat', k.max = 10, nstart = 100, nboot = 100)
 ```
 
 Any insight about the number of groups?
 
 ```{r}
 # Enter your code here for your favourite number of groups
-
-fit.km = 
+# In assignment, we can choose whatever number of groups but we need to demonstrate why we choose that number (clustering is very subjective)
+fit.km = kmeans(X, centers = 3, nstart = 1000)
 ```
 
 ## Map the clustering in a map:
+In this map we are gonna plot first putting the countries according to their geographical information, then we will cluster them
   
 ```{r}
 # Select here your favorite clustering tool
@@ -227,6 +252,10 @@ mapCountryData(matched,nameColumnToPlot="value",missingCountryCol = "white",
 
 Insignts?
 
+This is the result of the k-means which is the more or less best tool to see the clustering.
+So the maps can show the socio-economic characteristics depending on the geographical location and
+clustering plot shows the clustering depending on the socio-economic characteristics.
+
 # Hierarchical clustering
 
 Important to decide distance between observations and linkage to join groups
@@ -234,7 +263,12 @@ Important to decide distance between observations and linkage to join groups
 We need to decide first the distance and linkage
 
 ```{r}
-# Enter your code here 
+# basic hierarchical clustering
+d = dist(scale(X), method = "euclidean")
+hc = hclust(d, method = "ward.D2")
+
+# enhanced version
+hc = eclust(X, "hclust", stand = T, hc_metric = "euclidean", hc_method = "ward.D2", graph = F)
 
 ```
 
@@ -246,7 +280,7 @@ Classical dendrogram:
 hc$labels <- names
 
 fviz_dend(x = hc, 
-          k=8,
+          k=3,
           palette = "jco", 
           rect = TRUE, rect_fill = TRUE, cex=0.5,
           rect_border = "jco"          
@@ -259,7 +293,7 @@ Let's use a phylogenic tree:
 
 ```{r}
 fviz_dend(x = hc,
-          k = 8,
+          k = 3,
           color_labels_by_k = TRUE,
           cex = 0.8,
           type = "phylogenic",
