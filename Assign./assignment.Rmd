@@ -1,0 +1,419 @@
+---
+title: "assignment"
+author: "Jieun Park"
+date: "`r Sys.Date()`"
+output: html_document
+---
+## Library
+
+```{r}
+library(tidyverse)
+library(GGally) # ggplot2-based visualization of correlations
+library(factoextra) # ggplot2-based visualization of pca
+library(countrycode)
+library(rworldmap)
+library(mice)
+library(plotly)
+library(readr)
+
+library(cluster)
+library(mclust)
+```
+
+
+## Data 
+
+```{r}
+rm(list = ls())
+lifeexpec = read.csv("./data/lifeexpec.csv")
+obesity = read.csv("./data/obesity.csv")
+tobacco = read.csv("./data/tobacco.csv")
+doctor_density = read.csv("./data/doctor_density.csv")
+gob_expenditure = read.csv("./data/gov_expenditure.csv")
+road_death = read.csv("./data/road_death.csv")
+birth_by_skilled = read.csv("./data/birth_by_skilled.csv")
+maternal_death = read.csv("./data/maternal_death.csv")
+
+lifeexpec = lifeexpec |> select(GEO_NAME_SHORT, DIM_TIME, VALUE_NUMERIC)
+lifeexpec |> distinct(DIM_TIME)
+lifeexpec = lifeexpec |> filter(DIM_TIME == "2015")
+colnames(lifeexpec) = c("country", "year", "life_value")
+lifeexpec <- lifeexpec |> distinct(country, .keep_all = TRUE)
+
+obesity = obesity |> select(GEO_NAME_SHORT, DIM_TIME, VALUE_NUMERIC)
+obesity |> distinct(DIM_TIME)
+obesity = obesity |> filter(DIM_TIME == "2015")
+obesity = obesity |> select(-DIM_TIME)
+colnames(obesity) = c("country", "obesity_value")
+obesity <- obesity |> distinct(country, .keep_all = TRUE)
+
+tobacco = tobacco |> select(GEO_NAME_SHORT, DIM_TIME, VALUE_NUMERIC)
+tobacco |> distinct(DIM_TIME)
+tobacco = tobacco |> filter(DIM_TIME == "2015")
+tobacco = tobacco |> select(-DIM_TIME)
+colnames(tobacco) = c("country", "tobacco_value")
+tobacco <- tobacco |> distinct(country, .keep_all = TRUE)
+
+doctor_density = doctor_density |> select(GEO_NAME_SHORT, DIM_TIME, VALUE_NUMERIC)
+doctor_density |> distinct(DIM_TIME)
+doctor_density = doctor_density |> filter(DIM_TIME == "2015")
+doctor_density = doctor_density |> select(-DIM_TIME)
+colnames(doctor_density) = c("country", "doc_den_value")
+doctor_density <- doctor_density |> distinct(country, .keep_all = TRUE)
+
+gob_expenditure = gob_expenditure |> select(GEO_NAME_SHORT, DIM_TIME, VALUE_NUMERIC)
+gob_expenditure |> distinct(DIM_TIME)
+gob_expenditure = gob_expenditure |> filter(DIM_TIME == "2015")
+gob_expenditure = gob_expenditure |> select(-DIM_TIME)
+colnames(gob_expenditure) = c("country", "gob_expenditure")
+gob_expenditure <- gob_expenditure |> distinct(country, .keep_all = TRUE)
+
+road_death = road_death |> select(GEO_NAME_SHORT, DIM_TIME, VALUE_NUMERIC)
+road_death |> distinct(DIM_TIME)
+road_death = road_death |> filter(DIM_TIME == "2015")
+road_death = road_death |> select(-DIM_TIME)
+colnames(road_death) = c("country", "road_death")
+road_death <- road_death |> distinct(country, .keep_all = TRUE)
+
+birth_by_skilled = birth_by_skilled |> select(GEO_NAME_SHORT, DIM_TIME, VALUE_NUMERIC)
+birth_by_skilled |> distinct(DIM_TIME)
+birth_by_skilled = birth_by_skilled |> filter(DIM_TIME == "2015")
+birth_by_skilled = birth_by_skilled |> select(-DIM_TIME)
+colnames(birth_by_skilled) = c("country", "birth_by_skilled")
+birth_by_skilled <- birth_by_skilled |> distinct(country, .keep_all = TRUE)
+
+maternal_death = maternal_death |> select(GEO_NAME_SHORT, DIM_TIME, VALUE_NUMERIC)
+maternal_death |> distinct(DIM_TIME)
+maternal_death = maternal_death |> filter(DIM_TIME == "2015")
+maternal_death = maternal_death |> select(-DIM_TIME)
+colnames(maternal_death) = c("country", "maternal_death")
+maternal_death <- maternal_death |> distinct(country, .keep_all = TRUE)
+
+# input continent for grouping
+country = lifeexpec |> select(country)
+continent = read.csv("./data/Countries-Continents.csv")
+continent$Country[continent$Country == "Korea, South"] <- "Republic of Korea"
+
+name = left_join(country, continent, by = join_by("country" == "Country"))
+name = na.omit(name)
+
+
+rm(df)
+df = left_join(lifeexpec, obesity, by = join_by(country))
+df = left_join(df, tobacco, by = join_by(country))
+df = left_join(df, doctor_density, by = join_by(country))
+df = left_join(df, gob_expenditure, by = join_by(country))
+df = left_join(df, road_death, by = join_by(country))
+df = left_join(df, birth_by_skilled, by = join_by(country))
+df = left_join(df, maternal_death, by = join_by(country))
+df = left_join(df, name, by = join_by(country))
+df = df |> relocate(Continent, .after = country)
+df = df |>  drop_na(Continent)
+
+df = df |> rename("continent" = "Continent")
+
+table(is.na(df))
+```
+
+## Imputation NAs
+
+```{r}
+sapply(df, function(x) sum(is.na(x))*100/nrow(df))
+
+m = 4 # number of multiple imputations, we are going to make 4 iterations, we're going to predict missing values 4 times.
+mice_mod = mice(df, m = m, method='rf') # machine learning tool, rf = random forest
+df_imput <- complete(mice_mod, action=m) # replace missiong value with the mice_mod
+View(df_imput)
+```
+
+## Data frame
+
+```{r}
+df_imput_n = df_imput[,4:ncol(df_imput)]
+
+table(is.na(df_imput_n))
+
+df_imput$maternal_death = log(df_imput$maternal_death)
+
+name = df_imput$country
+continent = df_imput$continent
+```
+
+## Graph 1
+
+```{r}
+ggplot(df_imput, aes(x=obesity_value, y=life_value, group=continent)) + 
+  geom_point(alpha=0.9) + #geom_smooth(se=F, size=0.3) +
+  facet_wrap(~ continent) +
+  scale_color_discrete() +
+  theme_minimal()+ theme(legend.position="none") + 
+  labs(title = "World countries: life expectancy vs obesity", 
+       caption="Source: World Health Organization", 
+       x = "obesity_value", y = "Life expectancy at birth (in years)")
+```
+
+## Graph 2
+
+```{r}
+ggplot(df_imput, aes(x=tobacco_value, y=life_value, group=continent)) + 
+  geom_point(alpha=0.9) + #geom_smooth(se=F, size=0.3) +
+  facet_wrap(~ continent) +
+  scale_color_discrete() +
+  theme_minimal()+ theme(legend.position="none") + 
+  labs(title = "World countries: life expectancy vs tobacco usage", 
+       caption="Source: World Health Organization", 
+       x = "tobacco_value", y = "Life expectancy at birth (in years)")
+```
+
+## Graph 3
+
+```{r}
+ggplot(df_imput, aes(x=doc_den_value, y=life_value, group=continent)) + 
+  geom_point(alpha=0.9) + #geom_smooth(se=F, size=0.3) +
+  facet_wrap(~ continent) +
+  scale_color_discrete() +
+  theme_minimal()+ theme(legend.position="none") + 
+  labs(title = "World countries: life expectancy vs doctor density", 
+       caption="Source: World Health Organization", 
+       x = "doctor density", y = "Life expectancy at birth (in years)")
+```
+## Graph 4
+
+```{r}
+ggplot(df_imput, aes(x=gob_expenditure, y=life_value, group=continent)) + 
+  geom_point(alpha=0.9) + #geom_smooth(se=F, size=0.3) +
+  facet_wrap(~ continent) +
+  scale_color_discrete() +
+  theme_minimal()+ theme(legend.position="none") + 
+  labs(title = "World countries: life expectancy vs goverment health expenditure ", 
+       caption="Source: World Health Organization", 
+       x = "goverment health expenditure", y = "Life expectancy at birth (in years)")
+```
+
+## Graph 5
+
+```{r}
+ggplot(df_imput, aes(x=road_death, y=life_value, group=continent)) + 
+  geom_point(alpha=0.9) + #geom_smooth(se=F, size=0.3) +
+  facet_wrap(~ continent) +
+  scale_color_discrete() +
+  theme_minimal()+ theme(legend.position="none") + 
+  labs(title = "World countries: life expectancy vs road death", 
+       caption="Source: World Health Organization", 
+       x = "road death", y = "Life expectancy at birth (in years)")
+```
+
+## Graph 6
+
+```{r}
+ggplot(df_imput, aes(x=birth_by_skilled, y=life_value, group=continent)) + 
+  geom_point(alpha=0.9) + #geom_smooth(se=F, size=0.3) +
+  facet_wrap(~ continent) +
+  scale_color_discrete() +
+  theme_minimal()+ theme(legend.position="none") + 
+  labs(title = "World countries: life expectancy vs Births attended by skilled health personnel", 
+       caption="Source: World Health Organization", 
+       x = "Births attended by skilled health personnel", y = "Life expectancy at birth (in years)")
+```
+
+## Graph 7
+
+```{r}
+ggplot(df_imput, aes(x=maternal_death, y=life_value, group=continent)) + 
+  geom_point(alpha=0.9) + #geom_smooth(se=F, size=0.3) +
+  facet_wrap(~ continent) +
+  scale_color_discrete() +
+  theme_minimal()+ theme(legend.position="none") + 
+  labs(title = "World countries: life expectancy vs maternal mortality ratio", 
+       caption="Source: World Health Organization", 
+       x = "maternal mortality ratio", y = "Life expectancy at birth (in years)")
+```
+
+## PCA
+
+```{r}
+install.packages("prcomp")
+library(prcomp)
+table(is.na(df_imput))
+pca = prcomp(df_imput_n, scale = TRUE)
+summary(pca)
+
+library(factoextra)
+fviz_screeplot(pca, addlabels = TRUE)
+```
+
+## First Component
+
+```{r}
+barplot(pca$rotation[,1], las=2, col="darkblue")
+
+fviz_contrib(pca, choice = "var", axes = 1)
+
+name[order(pca$x[,1])][1:10]
+name[order(pca$x[,1], decreasing=T)][1:10]
+```
+
+## Second Component
+
+```{r}
+barplot(pca$rotation[,2], las=2, col="darkblue")
+
+name[order(pca$x[,2])][1:5]
+name[order(pca$x[,2], decreasing=T)][1:5]
+
+fviz_contrib(pca, choice = "var", axes = 2)
+```
+## plot first two scores
+
+```{r}
+data.frame(z1=pca$x[,1],z2=pca$x[,2]) %>% 
+  ggplot(aes(z1,z2,label=name,color=continent)) + geom_point(size=0) +
+  labs(title="First two principal components (scores)", x="PC1", y="PC2") + #guides(color=guide_legend(title="HDI"))+
+  theme_bw() +theme(legend.position="bottom") + geom_text(size=3, hjust=0.6, vjust=0, check_overlap = TRUE) 
+# The two first PCs seem independent
+
+data.frame(z1=-pca$x[,1],Region=df_imput$country) %>% group_by(Region) %>% summarise(mean=mean(z1), n=n()) %>% arrange(desc(mean))
+```
+
+## Conclusion
+
+```{r}
+# Map our PCA index in a map:
+map = data.frame(country=name, value=-pca$x[,1])
+#Convert the country code into iso3c using the function countrycode()
+map$country = countrycode(map$country, 'country.name', 'iso3c')
+#Create data object supporting the map
+matched <- joinCountryData2Map(map, joinCode = "ISO3",
+                               nameJoinColumn = "country")
+
+#Draw the map
+mapCountryData(matched,nameColumnToPlot="value",missingCountryCol = "white",
+               addLegend = FALSE, borderCol = "#C7D9FF",
+               catMethod = "pretty", colourPalette = "terrain",
+               mapTitle = c("PCA1 by Country"), lwd=1)
+```
+## Clustering
+
+```{r}
+fit_5 = kmeans(df_imput_n, centers = 5, nstart = 1000)
+fit_4 = kmeans(df_imput_n, centers = 4, nstart = 1000)
+fit_3 = kmeans(df_imput_n, centers = 3, nstart = 1000)
+```
+
+## Interpretation of centers:
+
+```{r}
+centers=fit_5$centers
+
+barplot(centers[1,], las=2, col="darkblue")
+barplot(centers[2,], las=2, col="darkblue")
+barplot(centers[3,], las=2, col="darkblue")
+barplot(centers[4,], las=2, col="darkblue")
+barplot(centers[5,], las=2, col="darkblue")
+
+centers=fit_4$centers
+
+barplot(centers[1,], las=2, col="darkblue")
+barplot(centers[2,], las=2, col="darkblue")
+barplot(centers[3,], las=2, col="darkblue")
+barplot(centers[4,], las=2, col="darkblue")
+
+centers=fit_3$centers
+
+barplot(centers[1,], las=2, col="darkblue")
+barplot(centers[2,], las=2, col="darkblue")
+barplot(centers[3,], las=2, col="darkblue")
+```
+
+### Visualization
+
+```{r}
+fviz_cluster(fit_5, data = df_imput_n, geom = c("point"), ellipse.type = 'norm', pointsize = 1)+
+  theme_minimal() + geom_text(label = name, hjust = 0, vjust = 0,size = 2, check_overlap = F) + scale_fill_brewer(palette = "Paired")
+
+fviz_cluster(fit_4, data = df_imput_n, geom = c("point"), ellipse.type = 'norm', pointsize = 1)+
+  theme_minimal() + geom_text(label = name, hjust = 0, vjust = 0,size = 2, check_overlap = F) + scale_fill_brewer(palette = "Paired")
+
+fviz_cluster(fit_3, data = df_imput_n, geom = c("point"), ellipse.type = 'norm', pointsize = 1)+
+  theme_minimal() + geom_text(label = name, hjust = 0, vjust = 0,size = 2, check_overlap = F) + scale_fill_brewer(palette = "Paired")
+```
+### Numbers of group
+
+```{r}
+fviz_nbclust(scale(df_imput_n), kmeans, method = 'wss', k.max = 20, nstart = 1000)
+# In this formual, the higher is the better
+fviz_nbclust(scale(df_imput_n), kmeans, method = 'silhouette', k.max = 20, nstart = 1000)
+# nboot : number of Bootsrapping
+# if the line is on specific number then it means it is the maximum number of clusters
+fviz_nbclust(scale(df_imput_n), kmeans, method = 'gap_stat', k.max = 10, nstart = 100, nboot = 100)
+```
+
+Insight
+
+```{r}
+fit.km = kmeans(df_imput_n, centers = 3, nstart = 1000)
+```
+
+### MAP
+
+```{r}
+# Select here your favorite clustering tool
+map = data.frame(country=name, value=fit.km$cluster)
+#map = data.frame(country=names, value=fit.kmeans$cluster)
+
+#Convert the country code into iso3c using the function countrycode()
+map$country = countrycode(map$country, 'country.name', 'iso3c')
+#Create data object supporting the map
+matched <- joinCountryData2Map(map, joinCode = "ISO3",
+                               nameJoinColumn = "country")
+#Draw the map
+mapCountryData(matched,nameColumnToPlot="value",missingCountryCol = "white",
+               borderCol = "#C7D9FF",
+               catMethod = "pretty", colourPalette = "rainbow",
+               mapTitle = c("Clusters"), lwd=1)
+```
+```{r}
+d = dist(scale(df_imput_n), method = "euclidean")
+hc = hclust(d, method = "ward.D2")
+
+hc$labels <- name
+
+fviz_dend(x = hc, 
+          k=3,
+          palette = "jco", 
+          rect = TRUE, rect_fill = TRUE, cex=0.5,
+          rect_border = "jco"          
+)
+
+fviz_dend(x = hc,
+          k = 3,
+          color_labels_by_k = TRUE,
+          cex = 0.8,
+          type = "phylogenic",
+          repel = TRUE)+  labs(title="Socio-economic-health tree clustering of the world") + theme(axis.text.x=element_blank(),axis.text.y=element_blank())
+```
+```{r}
+groups.hc = cutree(hc, k = 8)
+
+# Map our PCA index in a map:
+map = data.frame(country=name, value=groups.hc)
+#Convert the country code into iso3c using the function countrycode()
+map$country = countrycode(map$country, 'country.name', 'iso3c')
+#Create data object supporting the map
+matched <- joinCountryData2Map(map, joinCode = "ISO3",
+                               nameJoinColumn = "country")
+#Draw the map
+mapCountryData(matched,nameColumnToPlot="value",missingCountryCol = "white",
+               borderCol = "#C7D9FF",
+               catMethod = "pretty", colourPalette = "rainbow",
+               mapTitle = c("Clusters"), lwd=1)
+```
+### heatmap
+
+```{r}
+heatmap(scale(df_imput_n), scale = "none", labRow = name,
+        distfun = function(x){dist(x, method = "euclidean")},
+        hclustfun = function(x){hclust(x, method = "ward.D2")},
+        cexRow = 0.7)
+```
+
