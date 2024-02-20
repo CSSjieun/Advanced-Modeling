@@ -323,6 +323,7 @@ centers=fit_3$centers
 barplot(centers[1,], las=2, col="darkblue")
 barplot(centers[2,], las=2, col="darkblue")
 barplot(centers[3,], las=2, col="darkblue")
+
 ```
 
 ### Visualization
