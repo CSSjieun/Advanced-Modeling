@@ -760,8 +760,10 @@ noise = error[1:100]
 Prediction intervals: let's fix a 90% confidence
 
 ```{r}
-lwr = yhat[101:length(yhat)] + quantile(noise,0.05, na.rm=T)
-upr = yhat[101:length(yhat)] + quantile(noise,0.95, na.rm=T)
+lwr = yhat[101:length(yhat)] + quantile(noise,0.05, na.rm=T) # lower bound
+upr = yhat[101:length(yhat)] + quantile(noise,0.95, na.rm=T) # upper bound
+
+# 0.95-0.05 --> 0.90 (90%) confidence interval
 ```
 
 Performance using the last prices in yhat
