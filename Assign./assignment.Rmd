@@ -113,7 +113,13 @@ df = df |>  drop_na(Continent)
 df = df |> rename("continent" = "Continent")
 
 table(is.na(df))
+
+summary(df)
+dim(df)
 ```
+
+I obtained dataset from the World Health Organization.
+
 
 ## Imputation NAs
 
@@ -123,7 +129,6 @@ sapply(df, function(x) sum(is.na(x))*100/nrow(df))
 m = 4 # number of multiple imputations, we are going to make 4 iterations, we're going to predict missing values 4 times.
 mice_mod = mice(df, m = m, method='rf') # machine learning tool, rf = random forest
 df_imput <- complete(mice_mod, action=m) # replace missiong value with the mice_mod
-View(df_imput)
 ```
 
 ## Data frame
@@ -133,10 +138,36 @@ df_imput_n = df_imput[,4:ncol(df_imput)]
 
 table(is.na(df_imput_n))
 
-df_imput$maternal_death = log(df_imput$maternal_death)
-
 name = df_imput$country
 continent = df_imput$continent
+
+library(corrplot)
+corrplot(cor(df_imput_n), method = "number")
+
+```
+
+## Boxplot for checking the distribution of variables
+
+```{R}
+library(ggplot2)
+library(tidyr)
+df_long <- df_imput_n |> gather(variable, value)
+
+# Create boxplot
+ggplot(df_long, aes(x = variable, y = value)) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme_minimal()
+
+# log transformation for the variable of maternal_death
+df_imput$maternal_death = log(df_imput$maternal_death)
+
+df_long <- df_imput[,4:ncol(df_imput)] |> gather(variable, value)
+
+ggplot(df_long, aes(x = variable, y = value)) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme_minimal()
 ```
 
 ## Graph 1
@@ -188,6 +219,67 @@ ggplot(df_imput, aes(x=gob_expenditure, y=life_value, group=continent)) +
   labs(title = "World countries: life expectancy vs goverment health expenditure ", 
        caption="Source: World Health Organization", 
        x = "goverment health expenditure", y = "Life expectancy at birth (in years)")
+
+ggplot(df_imput, aes(x=gob_expenditure, y=life_value, group=continent)) + 
+  geom_point(alpha=0.9) + #geom_smooth(se=F, size=0.3) +
+  facet_wrap(~ continent) +
+  scale_color_discrete() +
+  theme_minimal()+ theme(legend.position="none") + 
+  labs(title = "World countries: life expectancy vs goverment health expenditure ", 
+       caption="Source: World Health Organization", 
+       x = "goverment health expenditure", y = "Life expectancy at birth (in years)") 
+
+df_imput |> 
+  group_by(continent) |> 
+  do(tidy(lm(life_value ~ gob_expenditure, data = .)))|> 
+  select(continent, term, estimate) |> 
+  spread(term, estimate) 
+
+g_Africa = df_imput |> select(country, continent, gob_expenditure, life_value) |> 
+  filter(continent == "Africa") |> 
+  ggplot(aes(x=gob_expenditure, y = life_value)) + 
+  geom_point(alpha = 0.9) +
+  geom_abline(slope = 0.4058175, intercept = 60.74990, color = "red")
+
+g_Asia = df_imput |> select(country, continent, gob_expenditure, life_value) |> 
+  filter(continent == "Asia") |> 
+  ggplot(aes(x=gob_expenditure, y = life_value)) + 
+  geom_point(alpha = 0.9) +
+  geom_abline(slope = 0.8045696, intercept = 66.34065, color = "red")
+
+g_Europe = df_imput |> select(country, continent, gob_expenditure, life_value) |> 
+  filter(continent == "Europe") |> 
+  ggplot(aes(x=gob_expenditure, y = life_value)) + 
+  geom_point(alpha = 0.9) +
+  geom_abline(slope = 0.7120162, intercept = 70.04078, color = "red")
+
+
+g_North_America = df_imput |> select(country, continent, gob_expenditure, life_value) |> 
+  filter(continent == "North America") |> 
+  ggplot(aes(x=gob_expenditure, y = life_value)) + 
+  geom_point(alpha = 0.9) +
+  geom_abline(slope = 0.5301466, intercept = 67.31540, color = "red")
+
+g_Oceania = df_imput |> select(country, continent, gob_expenditure, life_value) |> 
+  filter(continent == "Oceania") |> 
+  ggplot(aes(x=gob_expenditure, y = life_value)) + 
+  geom_point(alpha = 0.9) +
+  geom_abline(slope = 1.1299704, intercept = 58.16559, color = "red")
+
+g_South_America = df_imput |> select(country, continent, gob_expenditure, life_value) |> 
+  filter(continent == "South America") |> 
+  ggplot(aes(x=gob_expenditure, y = life_value)) + 
+  geom_point(alpha = 0.9) +
+  geom_abline(slope = 0.7915068, intercept = 64.96808, color = "red")
+
+library(patchwork)
+g_Africa + g_Asia + g_Europe + g_North_America + g_Oceania + g_South_America +
+   plot_annotation(
+    title = "Merged Plot",
+    tag_levels = "a",
+    tag_suffix = ")"
+  ) 
+
 ```
 
 ## Graph 5
@@ -201,6 +293,56 @@ ggplot(df_imput, aes(x=road_death, y=life_value, group=continent)) +
   labs(title = "World countries: life expectancy vs road death", 
        caption="Source: World Health Organization", 
        x = "road death", y = "Life expectancy at birth (in years)")
+
+df_imput |> 
+  group_by(continent) |> 
+  do(tidy(lm(life_value ~ road_death, data = .)))|> 
+  select(continent, term, estimate) |> 
+  spread(term, estimate) 
+
+g_Africa2 = df_imput |> select(country, continent, road_death, life_value) |> 
+  filter(continent == "Africa") |> 
+  ggplot(aes(x=road_death, y = life_value)) + 
+  geom_point(alpha = 0.9) +
+  geom_abline(slope = -0.25900186, intercept = 70.11643, color = "red")
+
+g_Asia2 = df_imput |> select(country, continent, road_death, life_value) |> 
+  filter(continent == "Asia") |> 
+  ggplot(aes(x=road_death, y = life_value)) + 
+  geom_point(alpha = 0.9) +
+  geom_abline(slope = -0.07312883, intercept = 74.50443, color = "red")
+
+g_Europe2 = df_imput |> select(country, continent, road_death, life_value) |> 
+  filter(continent == "Europe") |> 
+  ggplot(aes(x=road_death, y = life_value)) + 
+  geom_point(alpha = 0.9) +
+  geom_abline(slope = -0.29809254, intercept = 80.68437, color = "red")
+
+g_North_America2 = df_imput |> select(country, continent, road_death, life_value) |> 
+  filter(continent == "North America") |> 
+  ggplot(aes(x=road_death, y = life_value)) + 
+  geom_point(alpha = 0.9) +
+  geom_abline(slope = -0.14201323, intercept = 76.20349, color = "red")
+
+g_Oceania2 = df_imput |> select(country, continent, road_death, life_value) |> 
+  filter(continent == "Oceania") |> 
+  ggplot(aes(x=road_death, y = life_value)) + 
+  geom_point(alpha = 0.9) +
+  geom_abline(slope = -0.34742866, intercept = 73.30715, color = "red")
+
+g_South_America2 = df_imput |> select(country, continent, road_death, life_value) |> 
+  filter(continent == "South America") |> 
+  ggplot(aes(x=road_death, y = life_value)) + 
+  geom_point(alpha = 0.9) +
+  geom_abline(slope = -0.72257724, intercept = 88.29099, color = "red")
+
+library(patchwork)
+g_Africa2 + g_Asia2 + g_Europe2 + g_North_America2 + g_Oceania2 + g_South_America2 +
+   plot_annotation(
+    title = "Merged Plot",
+    tag_levels = "a",
+    tag_suffix = ")"
+  ) 
 ```
 
 ## Graph 6
@@ -214,6 +356,32 @@ ggplot(df_imput, aes(x=birth_by_skilled, y=life_value, group=continent)) +
   labs(title = "World countries: life expectancy vs Births attended by skilled health personnel", 
        caption="Source: World Health Organization", 
        x = "Births attended by skilled health personnel", y = "Life expectancy at birth (in years)")
+
+df_imput |> 
+  group_by(continent) |> 
+  do(tidy(lm(life_value ~ birth_by_skilled, data = .)))|> 
+  select(continent, term, estimate) |> 
+  spread(term, estimate) 
+
+g_Asia3 = df_imput |> select(country, continent, birth_by_skilled, life_value) |> 
+  filter(continent == "Asia") |> 
+  ggplot(aes(x=birth_by_skilled, y = life_value)) + 
+  geom_point(alpha = 0.9) +
+  geom_abline(slope = 0.15721923, intercept = 58.71548, color = "red")
+
+g_North_America3 = df_imput |> select(country, continent, birth_by_skilled, life_value) |> 
+  filter(continent == "North America") |> 
+  ggplot(aes(x=birth_by_skilled, y = life_value)) + 
+  geom_point(alpha = 0.9) +
+  geom_abline(slope = 0.19524893, intercept = 56.22726, color = "red")
+
+library(patchwork)
+g_Asia3 + g_North_America3 +
+   plot_annotation(
+    title = "Merged Plot",
+    tag_levels = "a",
+    tag_suffix = ")"
+  ) 
 ```
 
 ## Graph 7
@@ -232,8 +400,8 @@ ggplot(df_imput, aes(x=maternal_death, y=life_value, group=continent)) +
 ## PCA
 
 ```{r}
-install.packages("prcomp")
-library(prcomp)
+#install.packages("prcomp")
+#library(prcomp)
 table(is.na(df_imput))
 pca = prcomp(df_imput_n, scale = TRUE)
 summary(pca)
@@ -273,6 +441,7 @@ data.frame(z1=pca$x[,1],z2=pca$x[,2]) %>%
 # The two first PCs seem independent
 
 data.frame(z1=-pca$x[,1],Region=df_imput$country) %>% group_by(Region) %>% summarise(mean=mean(z1), n=n()) %>% arrange(desc(mean))
+
 ```
 
 ## Conclusion
@@ -288,7 +457,7 @@ matched <- joinCountryData2Map(map, joinCode = "ISO3",
 
 #Draw the map
 mapCountryData(matched,nameColumnToPlot="value",missingCountryCol = "white",
-               addLegend = FALSE, borderCol = "#C7D9FF",
+               addLegend = TRUE, borderCol = "#C7D9FF",
                catMethod = "pretty", colourPalette = "terrain",
                mapTitle = c("PCA1 by Country"), lwd=1)
 ```
@@ -296,7 +465,13 @@ mapCountryData(matched,nameColumnToPlot="value",missingCountryCol = "white",
 
 ```{r}
 fit_5 = kmeans(df_imput_n, centers = 5, nstart = 1000)
+```
+
+```{R}
 fit_4 = kmeans(df_imput_n, centers = 4, nstart = 1000)
+```
+
+```{R}
 fit_3 = kmeans(df_imput_n, centers = 3, nstart = 1000)
 ```
 
@@ -311,6 +486,9 @@ barplot(centers[3,], las=2, col="darkblue")
 barplot(centers[4,], las=2, col="darkblue")
 barplot(centers[5,], las=2, col="darkblue")
 
+```
+
+```{R}
 centers=fit_4$centers
 
 barplot(centers[1,], las=2, col="darkblue")
@@ -318,6 +496,9 @@ barplot(centers[2,], las=2, col="darkblue")
 barplot(centers[3,], las=2, col="darkblue")
 barplot(centers[4,], las=2, col="darkblue")
 
+```
+
+```{R}
 centers=fit_3$centers
 
 barplot(centers[1,], las=2, col="darkblue")
@@ -331,19 +512,30 @@ barplot(centers[3,], las=2, col="darkblue")
 ```{r}
 fviz_cluster(fit_5, data = df_imput_n, geom = c("point"), ellipse.type = 'norm', pointsize = 1)+
   theme_minimal() + geom_text(label = name, hjust = 0, vjust = 0,size = 2, check_overlap = F) + scale_fill_brewer(palette = "Paired")
+```
 
+```{R}
 fviz_cluster(fit_4, data = df_imput_n, geom = c("point"), ellipse.type = 'norm', pointsize = 1)+
   theme_minimal() + geom_text(label = name, hjust = 0, vjust = 0,size = 2, check_overlap = F) + scale_fill_brewer(palette = "Paired")
+```
 
+```{R}
 fviz_cluster(fit_3, data = df_imput_n, geom = c("point"), ellipse.type = 'norm', pointsize = 1)+
   theme_minimal() + geom_text(label = name, hjust = 0, vjust = 0,size = 2, check_overlap = F) + scale_fill_brewer(palette = "Paired")
 ```
+
 ### Numbers of group
 
 ```{r}
 fviz_nbclust(scale(df_imput_n), kmeans, method = 'wss', k.max = 20, nstart = 1000)
-# In this formual, the higher is the better
+# In this formula, the higher is the better
+```
+
+```{R}
 fviz_nbclust(scale(df_imput_n), kmeans, method = 'silhouette', k.max = 20, nstart = 1000)
+```
+
+```{R}
 # nboot : number of Bootsrapping
 # if the line is on specific number then it means it is the maximum number of clusters
 fviz_nbclust(scale(df_imput_n), kmeans, method = 'gap_stat', k.max = 10, nstart = 100, nboot = 100)
@@ -373,6 +565,7 @@ mapCountryData(matched,nameColumnToPlot="value",missingCountryCol = "white",
                catMethod = "pretty", colourPalette = "rainbow",
                mapTitle = c("Clusters"), lwd=1)
 ```
+
 ```{r}
 d = dist(scale(df_imput_n), method = "euclidean")
 hc = hclust(d, method = "ward.D2")
@@ -391,8 +584,9 @@ fviz_dend(x = hc,
           color_labels_by_k = TRUE,
           cex = 0.8,
           type = "phylogenic",
-          repel = TRUE)+  labs(title="Socio-economic-health tree clustering of the world") + theme(axis.text.x=element_blank(),axis.text.y=element_blank())
+          repel = TRUE)+  labs(title="Death reasons tree clustering of the world") + theme(axis.text.x=element_blank(),axis.text.y=element_blank())
 ```
+
 ```{r}
 groups.hc = cutree(hc, k = 8)
 
@@ -409,6 +603,7 @@ mapCountryData(matched,nameColumnToPlot="value",missingCountryCol = "white",
                catMethod = "pretty", colourPalette = "rainbow",
                mapTitle = c("Clusters"), lwd=1)
 ```
+
 ### heatmap
 
 ```{r}
