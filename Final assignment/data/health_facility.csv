@@ -1,0 +1,38 @@
+IND_UUID,IND_NAME,IND_CODE,DIM_GEO_CODE_M49,GEO_NAME_SHORT,DIM_TIME,DIM_TIME_TYPE,DIM_VALUE_TYPE,VALUE_NUMERIC,VALUE_COMMENTS,DIM_PUBLISH_STATE_CODE
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,422,Lebanon,2004,YEAR,RATE_PER_100,50,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,729,Sudan,2012,YEAR,RATE_PER_100,34.48276,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,360,Indonesia,2004,YEAR,RATE_PER_100,36.90476,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,834,United Republic of Tanzania,2012,YEAR,RATE_PER_100,18.96552,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,288,Ghana,2016,YEAR,RATE_PER_100,12.5,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,894,Zambia,2016,YEAR,RATE_PER_100,16.66667,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,417,Kyrgyzstan,2010,YEAR,RATE_PER_100,0,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,422,Lebanon,2013,YEAR,RATE_PER_100,52.45901,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,108,Burundi,2016,YEAR,RATE_PER_100,0,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,417,Kyrgyzstan,2016,YEAR,RATE_PER_100,0,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,496,Mongolia,2004,YEAR,RATE_PER_100,9.09091,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,418,Lao People's Democratic Republic,2013,YEAR,RATE_PER_100,25.27473,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,762,Tajikistan,2013,YEAR,RATE_PER_100,15,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,218,Ecuador,2016,YEAR,RATE_PER_100,50,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,466,Mali,2016,YEAR,RATE_PER_100,0,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,686,Senegal,2016,YEAR,RATE_PER_100,7.69231,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,360,Indonesia,2010,YEAR,RATE_PER_100,14.64968,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,496,Mongolia,2012,YEAR,RATE_PER_100,26.74419,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,729,Sudan,2013,YEAR,RATE_PER_100,41,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,498,Republic of Moldova,2019,YEAR,RATE_PER_100,21.67,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,762,Tajikistan,2004,YEAR,RATE_PER_100,0,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,332,Haiti,2011,YEAR,RATE_PER_100,0,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,68,Bolivia (Plurinational State of),2016,YEAR,RATE_PER_100,23.07692,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,170,Colombia,2016,YEAR,RATE_PER_100,8.33333,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,854,Burkina Faso,2016,YEAR,RATE_PER_100,0,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,324,Guinea,2016,YEAR,RATE_PER_100,12.5,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,152,Chile,2016,YEAR,RATE_PER_100,36.36364,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,604,Peru,2016,YEAR,RATE_PER_100,69.23077,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,417,Kyrgyzstan,2015,YEAR,RATE_PER_100,0,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,834,United Republic of Tanzania,2016,YEAR,RATE_PER_100,0,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,780,Trinidad and Tobago,2016,YEAR,RATE_PER_100,0,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,417,Kyrgyzstan,2005,YEAR,RATE_PER_100,0,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,170,Colombia,2008,YEAR,RATE_PER_100,88.76405,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,480,Mauritius,2008,YEAR,RATE_PER_100,26.22951,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,108,Burundi,2013,YEAR,RATE_PER_100,0,,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,178,Congo,2016,YEAR,RATE_PER_100,0,* data from only capital city,PUBLISHED
+D2A45A5,Access to essential medicines at health facilites,SDGHEALTHFACILITIESESSENTIALMEDS,834,United Republic of Tanzania,2004,YEAR,RATE_PER_100,27.92793,,PUBLISHED

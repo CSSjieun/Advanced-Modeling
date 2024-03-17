@@ -1,0 +1,448 @@
+---
+title: "Assign final"
+author: "Jieun Park"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Data collection
+
+```{r}
+library(dplyr)
+library(tidyr)
+# consumer_price_inflation (target variable)
+# consumer_price_inflation: the change in the prices of a basket of goods and services that are typically purchased by specific groups of households. 
+consumer_price_inflation <- read.csv("./datafinal/API_FP.CPI.TOTL.ZG_DS2_en_csv_v2_84.csv", skip=4, header=TRUE) |>
+  select("Country.Name",X2022) |> na.omit()
+
+consumer_price_inflation <- rename(consumer_price_inflation, "consumer_price_inflation" = "X2022")
+consumer_price_inflation <- rename(consumer_price_inflation, "country_name" = "Country.Name")
+
+# GDP (target variable)
+# By GDP, we measure the impact of macro level factors on the consumer price inflation
+GDP <- read.csv("./datafinal/API_NY.GDP.PCAP.CD_DS2_en_csv_v2_184.csv", skip=4, header=TRUE) |>
+  select("Country.Name",X2022) |> na.omit()
+
+GDP <- rename(GDP, "GDP" = "X2022")
+GDP <- rename(GDP, "country_name" = "Country.Name")
+
+# unemployment rate
+# unemployment rate which decide people's purchasing habits may have impact on the consumer price inflation
+unemployment_rate <- read.csv("./datafinal/API_SL.UEM.TOTL.ZS_DS2_en_csv_v2_80.csv", skip=4, header=TRUE) |>
+  select("Country.Name",X2022) |> na.omit()
+
+unemployment_rate <- rename(unemployment_rate, "unemployment_rate" = "X2022")
+unemployment_rate <- rename(unemployment_rate, "country_name" = "Country.Name")
+
+# population in 15-64
+# population in their 15-64 who is a main buyer and seeler may have impact on the consumer price inflation
+population <- read.csv("./datafinal/API_SP.POP.1564.TO.ZS_DS2_en_csv_v2_276.csv", skip=4, header=TRUE) |>
+  select("Country.Name",X2022) |> na.omit()
+
+population <- rename(population, "population" = "X2022")
+population <- rename(population, "country_name" = "Country.Name")
+
+# Incidence of tuberculosis (per 100,000 people)
+# Incidence of specific disease may have impact on the consumer price inflation
+tuberculosis <- read.csv("./datafinal/API_SH.TBS.INCD_DS2_en_csv_v2_3511.csv", skip=4, header=TRUE) |>
+  select("Country.Name",X2022) |> na.omit()
+
+tuberculosis <- rename(tuberculosis, "tuberculosis" = "X2022")
+tuberculosis <- rename(tuberculosis, "country_name" = "Country.Name")
+
+# Imports of goods and services (% of GDP)
+# Imports amount may have impact on the consumer price inflation
+imports <- read.csv("./datafinal/API_NE.IMP.GNFS.ZS_DS2_en_csv_v2_129.csv", skip=4, header=TRUE) |>
+  select("Country.Name",X2022) |> na.omit()
+
+imports <- rename(imports, "imports" = "X2022")
+imports <- rename(imports, "country_name" = "Country.Name")
+
+# Labor force, female (% of total labor force)
+# labor force rate of female who earn money may have impact on the consumer price inflation
+labor_force_female <- read.csv("./datafinal/API_SL.TLF.TOTL.FE.ZS_DS2_en_csv_v2_423.csv", skip=4, header=TRUE) |>
+  select("Country.Name",X2022) |> na.omit()
+
+labor_force_female <- rename(labor_force_female, "labor_force_female" = "X2022")
+labor_force_female <- rename(labor_force_female, "country_name" = "Country.Name")
+
+# Age dependency ratio (% of working-age population)
+# age of dependency who can purchase on their own willness may have impact on the consumer price inflation
+age_dependency_ratio <- read.csv("./datafinal/API_SP.POP.DPND_DS2_en_csv_v2_2019.csv", skip=4, header=TRUE) |>
+  select("Country.Name",X2022) |> na.omit()
+
+age_dependency_ratio <- rename(age_dependency_ratio, "age_dependency_ratio" = "X2022")
+age_dependency_ratio <- rename(age_dependency_ratio, "country_name" = "Country.Name")
+
+# Proportion of seats held by women in national parliaments (%)
+# women who can affect on making policy may have impact on the consumer price inflation
+women_in_parliament <- read.csv("./datafinal/API_SG.GEN.PARL.ZS_DS2_en_csv_v2_173.csv", skip=4, header=TRUE) |>
+  select("Country.Name",X2022) |> na.omit()
+
+women_in_parliament <- rename(women_in_parliament, "women_in_parliament" = "X2022")
+women_in_parliament <- rename(women_in_parliament, "country_name" = "Country.Name")
+
+# Urban population (% of total population)
+# urban population who occupies largely for the purchase ratio may have impact on the consumer price inflation
+urban_population <- read.csv("./datafinal/API_SP.URB.TOTL.IN.ZS_DS2_en_csv_v2_702.csv", skip=4, header=TRUE) |>
+  select("Country.Name",X2022) |> na.omit()
+
+urban_population <- rename(urban_population, "urban_population" = "X2022")
+urban_population <- rename(urban_population, "country_name" = "Country.Name")
+```
+
+# Merging the data
+
+```{r}
+# 1 - 10
+library(dplyr)
+df <- consumer_price_inflation %>%
+  full_join(GDP, by = "country_name") %>%
+  full_join(unemployment_rate, by = "country_name") %>%
+  full_join(population, by = "country_name") %>%
+  full_join(tuberculosis, by = "country_name") %>%
+  full_join(imports, by = "country_name") %>%
+  full_join(labor_force_female, by = "country_name") %>%
+  full_join(age_dependency_ratio, by = "country_name") %>%
+  full_join(women_in_parliament, by = "country_name") %>%
+  full_join(urban_population, by = "country_name")
+
+print(df)
+```
+
+# Imputation
+
+```{r}
+library(mice)
+sapply(df, function(x) sum(is.na(x))*100/nrow(df))
+
+m = 4 # number of multiple imputations, we are going to make 4 iterations, we're going to predict missing values 4 times.
+mice_mod = mice(df, m = m, method='rf') # machine learning tool, rf = random forest
+df_imput <- complete(mice_mod, action=m) # replace missiong value with the mice_mod
+table(is.na(df_imput))
+```
+
+# Data Frame
+
+```{r}
+df_imput_n = df_imput[,2:ncol(df_imput)]
+
+table(is.na(df_imput_n))
+
+name = df_imput$country
+
+library(corrplot)
+corrplot(cor(df_imput_n), method = "number")
+
+df_imput <- df_imput |> 
+  filter(country_name != "South Sudan"& country_name !="Eswatini" & country_name != "San Marino" &
+           country_name != "Turks and Caicos Islands" & country_name != "Yemen, Rep." &
+           country_name != "Puerto Rico" & country_name != "Barbados" & country_name != "Sudan" &
+           country_name != "West Bank and Gaza" & country_name != "United Arab Emirates") # it has minus value which is big outlier
+```
+
+# Boxplot for checking the distribution of variables
+
+```{r}
+library(ggplot2)
+# log transformation for the variable of GDP and tuberculosis
+df_imput$GDP = log(df_imput$GDP)
+df_imput$tuberculosis = log(df_imput$tuberculosis)
+df_imput$consumer_price_inflation = log(df_imput$consumer_price_inflation)
+
+df_long <- df_imput[,2:ncol(df_imput)] |> gather(variable, value)
+
+ggplot(df_long, aes(x = variable, y = value)) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme_minimal()
+```
+
+# Target Variable: consumer_price_inflation, GDP
+
+```{r}
+summary(df_imput$consumer_price_inflation)
+
+# Make categorical variable
+df_imput$big_inflation = factor(df_imput$consumer_price_inflation>2.10088) 
+df_imput$consumer_price_inflation = NULL
+
+prop.table(table(df_imput$big_inflation))
+
+df_imput$big_inflation <- ifelse(df_imput$big_inflation==TRUE, "Yes", "No")
+```
+
+# Data splitting
+
+```{r}
+library(caret)
+set.seed(567)
+
+in_train <- createDataPartition(df_imput$big_inflation, p = 0.8, list = FALSE)  # 70% for training
+training <- df_imput[in_train,]
+testing <- df_imput[-in_train,]
+nrow(training)
+nrow(testing)
+length(df_imput$big_inflation)
+```
+
+# Classification (interpretation) - pdp graph
+
+```{r}
+ctrl <- trainControl(method = "repeatedcv",
+                     number = 10,
+                     classProbs = T,
+                     summaryFunction=twoClassSummary,
+                     verboseIter = T)
+
+levels(training$big_inflation)=c("No","Yes")
+levels(testing$big_inflation)=c("No","Yes")
+```
+
+
+```{r}
+library(caret)
+# Define a grid for the hyper-parameters
+param_grid = expand.grid(gamma = seq(0, 1, 2), lambda = seq(0.1, 0.9, 0.1))
+
+# Train to maximize AUC: metric="ROC"
+ldaFit <- train(big_inflation ~ ., 
+                method ="rda", 
+                data = training,
+                tuneGrid = param_grid,
+                preProcess = c("center", "scale"),
+                metric="ROC",
+                trControl = ctrl)
+print(ldaFit)
+
+# Predict and validate
+ldaPred = predict(ldaFit, testing)
+confusionMatrix(ldaPred, testing$Fail)
+```
+
+
+```{r}
+library(pROC)
+
+bench.model = glm(big_inflation ~ 1, family=binomial(link='logit'), data=training)
+prob.bench = predict(bench.model, newdata=testing, type="response")
+
+roc.lda=roc(testing$big_inflation ~ ldaProb[,2])
+roc.bench=roc(testing$big_inflation ~ prob.bench)
+
+plot(roc.lda, col="red",print.thres=TRUE)
+plot(roc.bench, add=TRUE, col='green',print.thres=TRUE)
+legend("bottomright", legend=c("lda", "bench"), col=c("red",  "green"), lwd=2)
+
+roc.lda$auc
+roc.bench$auc
+```
+
+# Classification (prediction) - confusionmatrix
+
+## KNN
+
+```{r}
+knnFit <- train(big_inflation ~ ., 
+                  data = training,
+                  method = "kknn",   
+                  preProc=c('scale','center'),
+                  tuneLength = 10,
+                  metric="ROC",
+                  trControl = ctrl)
+plot(knnFit)
+
+knnProb = predict(knnFit, testing, type="prob")
+prediction <- as.factor(ifelse(knnProb[,2] > 0.1, "Yes", "No"))
+
+confusionMatrix(prediction, testing$big_inflation)$table
+confusionMatrix(prediction, testing$big_inflation)$overall[1:2]
+```
+
+## Decision trees
+
+### interpretation
+
+```{r}
+library(rpart)
+
+# Hyper-parameters
+control = rpart.control(minsplit = 30, maxdepth = 10, cp=0.01)
+```
+
+```{r}
+model = big_inflation ~.
+dtFit <- rpart(model, data=training, method = "class", control = control)
+summary(dtFit)
+```
+
+```{r}
+library(rpart.plot)
+rpart.plot(dtFit, digits=3)
+```
+
+```{r}
+control = rpart.control(minsplit = 8, maxdepth = 12, cp=0.001)
+dtFit <- rpart(model, data=training, method = "class", control = control)
+
+rpart.plot(dtFit, digits = 3)
+```
+
+### prediction
+
+```{r}
+dtPred <- predict(dtFit, testing, type = "class")
+
+dtProb <- predict(dtFit, testing, type = "prob")
+
+prediction <- as.factor(ifelse(dtProb[,2] > 0.1, "Yes", "No"))
+
+confusionMatrix(prediction, testing$big_inflation)$table
+confusionMatrix(prediction, testing$big_inflation)$overall[1:2]
+```
+
+## Caret
+### Interpretation
+
+```{r}
+caret.fit <- train(model, 
+                   data = training, 
+                   method = "rpart",
+                   control=rpart.control(minsplit = 8, maxdepth = 12),
+                   trControl = ctrl,
+                   tuneLength=10)
+caret.fit
+```
+
+```{r}
+rpart.plot(caret.fit$finalModel)
+```
+
+### prediction
+
+```{r}
+dtProb <- predict(caret.fit, testing, type = "prob")
+
+prediction <- as.factor(ifelse(dtProb[,2] > 0.1, "Yes", "No"))
+
+confusionMatrix(prediction, testing$big_inflation)$table
+confusionMatrix(prediction, testing$big_inflation)$overall[1:2]
+```
+
+## Random Forest
+### Interpreation
+
+```{r}
+rfFit <- train(big_inflation ~ ., 
+                  data = training,
+                  method = "rf",   
+                  preProc=c('scale','center'),
+                  tuneLength = 10,
+                  metric="ROC",
+                  trControl = ctrl)
+plot(rfFit)
+
+rfProb = predict(rfFit, testing, type="prob")
+prediction <- as.factor(ifelse(rfProb[,2] > 0.2, "Yes", "No"))
+
+confusionMatrix(prediction, testing$big_inflation)$table
+confusionMatrix(prediction, testing$big_inflation)$overall[1:2]
+```
+
+```{r}
+lda_imp <- varImp(ldaFit, scale = F)
+plot(lda_imp, scales = list(y = list(cex = .95)))
+```
+
+```{r}
+rf_imp <- varImp(rfFit, scale = F)
+plot(rf_imp, scales = list(y = list(cex = .95)))
+```
+
+```{r}
+install.packages("pdp")
+library(pdp)
+
+partial(ldaFit, pred.var = "absences", plot = TRUE, rug = TRUE) # it shows how absences affect the fail
+# yhat = beta * x
+# Absences is affecting the fail in a non-linear way
+# In the machine learning we can "see" the plot, but we cannot know the formula(we cannot interpret it)
+# In the statistics, we can have the formula and can make the plot but it is more focousing on the formula.
+partial(ldaFit, pred.var = "failures", plot = TRUE, rug = TRUE)
+```
+
+```{r}
+partial(rfFit, pred.var = "absences", plot = TRUE, rug = TRUE)
+partial(rfFit, pred.var = "failures", plot = TRUE, rug = TRUE)
+```
+
+## Gradient Boosting
+
+```{r}
+ctrl$verboseIter=F
+
+gbmFit <- train(big_inflation ~ ., 
+                  data = training,
+                  method = "xgbTree",   
+                  preProc=c('scale','center'),
+                  tuneLength = 20,
+                  metric="ROC",
+                  trControl = ctrl)
+plot(gbmFit)
+
+gbmProb = predict(gbmFit, testing, type="prob")
+prediction <- as.factor(ifelse(gbmProb[,2] > 0.2, "Yes", "No"))
+
+confusionMatrix(prediction, testing$big_inflation)$table
+confusionMatrix(prediction, testing$big_inflation)$overall[1:2]
+```
+
+### Interpretation
+
+```{r}
+gbm_imp <- varImp(rfFit, scale = F)
+plot(gbm_imp, scales = list(y = list(cex = .95)))
+
+partial(gbmFit, pred.var = "absences", plot = TRUE, rug = TRUE)
+partial(gbmFit, pred.var = "failures", plot = TRUE, rug = TRUE)
+```
+
+
+# Advanced Regression (interpretation)
+
+```{r}
+
+```
+
+# Advanced Regression (prediction)
+
+```{r}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

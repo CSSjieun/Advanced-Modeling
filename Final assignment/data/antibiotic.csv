@@ -1,0 +1,1101 @@
+IND_UUID,IND_NAME,IND_CODE,DIM_GEO_CODE_M49,GEO_NAME_SHORT,DIM_TIME,DIM_TIME_TYPE,DIM_AMR_GLASS_AWARE,DIM_VALUE_TYPE,VALUE_NUMERIC,VALUE_COMMENTS,DIM_PUBLISH_STATE_CODE
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2016,YEAR,RESERVE,RATE_PER_100,0.0855,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2017,YEAR,RESERVE,RATE_PER_100,0.1216,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2018,YEAR,RESERVE,RATE_PER_100,0.0731,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2019,YEAR,RESERVE,RATE_PER_100,0.1187,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2020,YEAR,RESERVE,RATE_PER_100,0.1242,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2021,YEAR,RESERVE,RATE_PER_100,0.1465,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2016,YEAR,RESERVE,RATE_PER_100,0.1717,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2017,YEAR,RESERVE,RATE_PER_100,0.1828,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2018,YEAR,RESERVE,RATE_PER_100,0.189,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2019,YEAR,RESERVE,RATE_PER_100,0.8537,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2020,YEAR,RESERVE,RATE_PER_100,1.1924,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2021,YEAR,RESERVE,RATE_PER_100,1.3032,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2016,YEAR,RESERVE,RATE_PER_100,0.1104,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2017,YEAR,RESERVE,RATE_PER_100,0.1179,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2018,YEAR,RESERVE,RATE_PER_100,0.1239,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2019,YEAR,RESERVE,RATE_PER_100,0.1238,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2020,YEAR,RESERVE,RATE_PER_100,0.1518,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2021,YEAR,RESERVE,RATE_PER_100,0.142,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2016,YEAR,RESERVE,RATE_PER_100,0,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2017,YEAR,RESERVE,RATE_PER_100,0,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2018,YEAR,RESERVE,RATE_PER_100,0,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2019,YEAR,RESERVE,RATE_PER_100,0,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2020,YEAR,RESERVE,RATE_PER_100,0.0002,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2021,YEAR,RESERVE,RATE_PER_100,0,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,854,Burkina Faso,2017,YEAR,RESERVE,RATE_PER_100,0,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,854,Burkina Faso,2018,YEAR,RESERVE,RATE_PER_100,0,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2016,YEAR,RESERVE,RATE_PER_100,0.0199,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2017,YEAR,RESERVE,RATE_PER_100,0.0466,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2018,YEAR,RESERVE,RATE_PER_100,0.0717,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2019,YEAR,RESERVE,RATE_PER_100,0.2184,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2020,YEAR,RESERVE,RATE_PER_100,0.2291,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2016,YEAR,RESERVE,RATE_PER_100,0.1584,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2017,YEAR,RESERVE,RATE_PER_100,0.3343,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2018,YEAR,RESERVE,RATE_PER_100,0.6488,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2019,YEAR,RESERVE,RATE_PER_100,0.3247,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2020,YEAR,RESERVE,RATE_PER_100,0.3753,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2021,YEAR,RESERVE,RATE_PER_100,0.458,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,096,Brunei Darussalam,2019,YEAR,RESERVE,RATE_PER_100,0.1015,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,096,Brunei Darussalam,2020,YEAR,RESERVE,RATE_PER_100,0.2869,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,096,Brunei Darussalam,2021,YEAR,RESERVE,RATE_PER_100,0.0392,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,064,Bhutan,2019,YEAR,RESERVE,RATE_PER_100,0.0062,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,064,Bhutan,2020,YEAR,RESERVE,RATE_PER_100,0.0049,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,064,Bhutan,2021,YEAR,RESERVE,RATE_PER_100,0.0018,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2016,YEAR,RESERVE,RATE_PER_100,0.3538,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2017,YEAR,RESERVE,RATE_PER_100,0.3805,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2018,YEAR,RESERVE,RATE_PER_100,0.4006,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2019,YEAR,RESERVE,RATE_PER_100,0.3728,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2020,YEAR,RESERVE,RATE_PER_100,0.402,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2021,YEAR,RESERVE,RATE_PER_100,0.4189,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2018,YEAR,RESERVE,RATE_PER_100,0,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2019,YEAR,RESERVE,RATE_PER_100,0,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2020,YEAR,RESERVE,RATE_PER_100,0,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2021,YEAR,RESERVE,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2018,YEAR,RESERVE,RATE_PER_100,0.1024,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2019,YEAR,RESERVE,RATE_PER_100,0.1466,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2020,YEAR,RESERVE,RATE_PER_100,0.1326,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2021,YEAR,RESERVE,RATE_PER_100,0.1529,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2016,YEAR,RESERVE,RATE_PER_100,0.0434,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2017,YEAR,RESERVE,RATE_PER_100,0.0633,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2018,YEAR,RESERVE,RATE_PER_100,0.0898,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2019,YEAR,RESERVE,RATE_PER_100,0.1184,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2020,YEAR,RESERVE,RATE_PER_100,0.136,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2021,YEAR,RESERVE,RATE_PER_100,0.339,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,203,Czechia,2019,YEAR,RESERVE,RATE_PER_100,0.1664,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,203,Czechia,2020,YEAR,RESERVE,RATE_PER_100,0.2331,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,203,Czechia,2021,YEAR,RESERVE,RATE_PER_100,0.4328,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2016,YEAR,RESERVE,RATE_PER_100,0.1427,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2017,YEAR,RESERVE,RATE_PER_100,0.1471,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2018,YEAR,RESERVE,RATE_PER_100,0.1528,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2019,YEAR,RESERVE,RATE_PER_100,0.1569,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2020,YEAR,RESERVE,RATE_PER_100,0.2023,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2021,YEAR,RESERVE,RATE_PER_100,0.1967,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2016,YEAR,RESERVE,RATE_PER_100,0.2302,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2017,YEAR,RESERVE,RATE_PER_100,0.2354,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2018,YEAR,RESERVE,RATE_PER_100,0.2798,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2019,YEAR,RESERVE,RATE_PER_100,0.2658,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2020,YEAR,RESERVE,RATE_PER_100,0.3012,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2021,YEAR,RESERVE,RATE_PER_100,0.2772,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,818,Egypt,2020,YEAR,RESERVE,RATE_PER_100,1.2931,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,818,Egypt,2021,YEAR,RESERVE,RATE_PER_100,1.2086,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2016,YEAR,RESERVE,RATE_PER_100,0.4419,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2017,YEAR,RESERVE,RATE_PER_100,0.471,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2018,YEAR,RESERVE,RATE_PER_100,0.502,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2019,YEAR,RESERVE,RATE_PER_100,0.5932,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2020,YEAR,RESERVE,RATE_PER_100,0.8106,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2021,YEAR,RESERVE,RATE_PER_100,0.8229,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2016,YEAR,RESERVE,RATE_PER_100,0.0824,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2017,YEAR,RESERVE,RATE_PER_100,0.1253,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2018,YEAR,RESERVE,RATE_PER_100,0.1397,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2019,YEAR,RESERVE,RATE_PER_100,0.1757,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2020,YEAR,RESERVE,RATE_PER_100,0.187,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2021,YEAR,RESERVE,RATE_PER_100,0.2165,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,231,Ethiopia,2017,YEAR,RESERVE,RATE_PER_100,0,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,231,Ethiopia,2018,YEAR,RESERVE,RATE_PER_100,0.0412,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,231,Ethiopia,2019,YEAR,RESERVE,RATE_PER_100,0,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2016,YEAR,RESERVE,RATE_PER_100,0.0926,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2017,YEAR,RESERVE,RATE_PER_100,0.095,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2018,YEAR,RESERVE,RATE_PER_100,0.1168,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2019,YEAR,RESERVE,RATE_PER_100,0.1173,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2020,YEAR,RESERVE,RATE_PER_100,0.1421,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2021,YEAR,RESERVE,RATE_PER_100,0.1453,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2016,YEAR,RESERVE,RATE_PER_100,0.171,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2017,YEAR,RESERVE,RATE_PER_100,0.1659,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2018,YEAR,RESERVE,RATE_PER_100,0.2334,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2019,YEAR,RESERVE,RATE_PER_100,0.2829,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2020,YEAR,RESERVE,RATE_PER_100,0.3939,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2021,YEAR,RESERVE,RATE_PER_100,0.3865,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,266,Gabon,2020,YEAR,RESERVE,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,266,Gabon,2021,YEAR,RESERVE,RATE_PER_100,0.4597,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2016,YEAR,RESERVE,RATE_PER_100,0.3368,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2017,YEAR,RESERVE,RATE_PER_100,0.3726,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2018,YEAR,RESERVE,RATE_PER_100,0.4015,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2019,YEAR,RESERVE,RATE_PER_100,0.4168,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2020,YEAR,RESERVE,RATE_PER_100,0.4474,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2021,YEAR,RESERVE,RATE_PER_100,0.4384,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2016,YEAR,RESERVE,RATE_PER_100,5.0128,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2017,YEAR,RESERVE,RATE_PER_100,0.1802,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2018,YEAR,RESERVE,RATE_PER_100,0.0288,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2019,YEAR,RESERVE,RATE_PER_100,0.0485,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2020,YEAR,RESERVE,RATE_PER_100,0.2196,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2016,YEAR,RESERVE,RATE_PER_100,0.0856,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2017,YEAR,RESERVE,RATE_PER_100,0.1272,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2018,YEAR,RESERVE,RATE_PER_100,0.1375,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2019,YEAR,RESERVE,RATE_PER_100,0.1749,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2020,YEAR,RESERVE,RATE_PER_100,0.2474,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2021,YEAR,RESERVE,RATE_PER_100,0.3642,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2016,YEAR,RESERVE,RATE_PER_100,0.0566,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2017,YEAR,RESERVE,RATE_PER_100,0.0604,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2018,YEAR,RESERVE,RATE_PER_100,0.0619,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2019,YEAR,RESERVE,RATE_PER_100,0.0666,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2020,YEAR,RESERVE,RATE_PER_100,0.1053,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2021,YEAR,RESERVE,RATE_PER_100,0.1299,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2016,YEAR,RESERVE,RATE_PER_100,0.2944,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2017,YEAR,RESERVE,RATE_PER_100,0.31,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2018,YEAR,RESERVE,RATE_PER_100,0.3358,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2019,YEAR,RESERVE,RATE_PER_100,0.4138,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2020,YEAR,RESERVE,RATE_PER_100,0.5202,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2021,YEAR,RESERVE,RATE_PER_100,0.5188,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,364,Iran (Islamic Republic of),2020,YEAR,RESERVE,RATE_PER_100,0.0723,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,364,Iran (Islamic Republic of),2021,YEAR,RESERVE,RATE_PER_100,0.0512,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2016,YEAR,RESERVE,RATE_PER_100,0.0268,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2017,YEAR,RESERVE,RATE_PER_100,0.1032,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2018,YEAR,RESERVE,RATE_PER_100,0.0801,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2019,YEAR,RESERVE,RATE_PER_100,0.0555,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2020,YEAR,RESERVE,RATE_PER_100,0.0824,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2021,YEAR,RESERVE,RATE_PER_100,0.0721,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2016,YEAR,RESERVE,RATE_PER_100,0.2121,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2017,YEAR,RESERVE,RATE_PER_100,0.3059,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2018,YEAR,RESERVE,RATE_PER_100,0.3094,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2019,YEAR,RESERVE,RATE_PER_100,0.3335,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2020,YEAR,RESERVE,RATE_PER_100,0.4289,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2021,YEAR,RESERVE,RATE_PER_100,0.4683,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2017,YEAR,RESERVE,RATE_PER_100,0.0166,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2018,YEAR,RESERVE,RATE_PER_100,0.0182,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2019,YEAR,RESERVE,RATE_PER_100,0.0355,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2020,YEAR,RESERVE,RATE_PER_100,0.0299,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2021,YEAR,RESERVE,RATE_PER_100,0.0411,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2018,YEAR,RESERVE,RATE_PER_100,0.0058,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2019,YEAR,RESERVE,RATE_PER_100,0.0093,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2020,YEAR,RESERVE,RATE_PER_100,0.0402,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2021,YEAR,RESERVE,RATE_PER_100,0.033,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,418,Lao People's Democratic Republic,2019,YEAR,RESERVE,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,418,Lao People's Democratic Republic,2020,YEAR,RESERVE,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,418,Lao People's Democratic Republic,2021,YEAR,RESERVE,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2016,YEAR,RESERVE,RATE_PER_100,0.2335,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2017,YEAR,RESERVE,RATE_PER_100,0.252,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2018,YEAR,RESERVE,RATE_PER_100,0.3645,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2019,YEAR,RESERVE,RATE_PER_100,0.4384,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2020,YEAR,RESERVE,RATE_PER_100,0.7007,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2021,YEAR,RESERVE,RATE_PER_100,0.159,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2016,YEAR,RESERVE,RATE_PER_100,0.1055,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2017,YEAR,RESERVE,RATE_PER_100,0.1191,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2018,YEAR,RESERVE,RATE_PER_100,0.1169,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2019,YEAR,RESERVE,RATE_PER_100,0.1479,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2020,YEAR,RESERVE,RATE_PER_100,0.1131,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2021,YEAR,RESERVE,RATE_PER_100,0.158,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2017,YEAR,RESERVE,RATE_PER_100,0.0006,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2018,YEAR,RESERVE,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2019,YEAR,RESERVE,RATE_PER_100,0.0032,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2020,YEAR,RESERVE,RATE_PER_100,0.0247,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2021,YEAR,RESERVE,RATE_PER_100,0.0102,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2017,YEAR,RESERVE,RATE_PER_100,0,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2018,YEAR,RESERVE,RATE_PER_100,0.0012,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2019,YEAR,RESERVE,RATE_PER_100,0.0029,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2020,YEAR,RESERVE,RATE_PER_100,0,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2021,YEAR,RESERVE,RATE_PER_100,0,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2016,YEAR,RESERVE,RATE_PER_100,0.1138,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2017,YEAR,RESERVE,RATE_PER_100,0.1256,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2018,YEAR,RESERVE,RATE_PER_100,0.3996,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2019,YEAR,RESERVE,RATE_PER_100,0.1226,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2020,YEAR,RESERVE,RATE_PER_100,0.0989,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2021,YEAR,RESERVE,RATE_PER_100,0.434,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2016,YEAR,RESERVE,RATE_PER_100,0.0145,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2017,YEAR,RESERVE,RATE_PER_100,0.0108,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2018,YEAR,RESERVE,RATE_PER_100,0.0142,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2019,YEAR,RESERVE,RATE_PER_100,0.0193,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2020,YEAR,RESERVE,RATE_PER_100,0.0207,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2021,YEAR,RESERVE,RATE_PER_100,0.0236,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2016,YEAR,RESERVE,RATE_PER_100,0.1041,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2017,YEAR,RESERVE,RATE_PER_100,0.1123,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2018,YEAR,RESERVE,RATE_PER_100,0.1163,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2019,YEAR,RESERVE,RATE_PER_100,0.1235,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2020,YEAR,RESERVE,RATE_PER_100,0.1381,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2021,YEAR,RESERVE,RATE_PER_100,0.1486,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2016,YEAR,RESERVE,RATE_PER_100,0.0155,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2017,YEAR,RESERVE,RATE_PER_100,0.0018,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2018,YEAR,RESERVE,RATE_PER_100,0.0066,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2019,YEAR,RESERVE,RATE_PER_100,0.0722,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2020,YEAR,RESERVE,RATE_PER_100,0.03,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2021,YEAR,RESERVE,RATE_PER_100,0.0755,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,512,Oman,2021,YEAR,RESERVE,RATE_PER_100,0.6199,"Only consumption in the public sector reported, For antibiotics: only A07AA and J01 reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,604,Peru,2019,YEAR,RESERVE,RATE_PER_100,0.1059,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,604,Peru,2020,YEAR,RESERVE,RATE_PER_100,0.1411,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,604,Peru,2021,YEAR,RESERVE,RATE_PER_100,0.1776,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2016,YEAR,RESERVE,RATE_PER_100,0.0665,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2017,YEAR,RESERVE,RATE_PER_100,0.0575,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2018,YEAR,RESERVE,RATE_PER_100,0.0966,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2019,YEAR,RESERVE,RATE_PER_100,0.0719,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2020,YEAR,RESERVE,RATE_PER_100,0.1077,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2021,YEAR,RESERVE,RATE_PER_100,0.1223,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2016,YEAR,RESERVE,RATE_PER_100,0.2275,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2017,YEAR,RESERVE,RATE_PER_100,0.2448,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2018,YEAR,RESERVE,RATE_PER_100,0.2507,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2019,YEAR,RESERVE,RATE_PER_100,0.2844,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2020,YEAR,RESERVE,RATE_PER_100,0.3634,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2021,YEAR,RESERVE,RATE_PER_100,0.377,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,634,Qatar,2021,YEAR,RESERVE,RATE_PER_100,0.4787,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2016,YEAR,RESERVE,RATE_PER_100,0.0812,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2017,YEAR,RESERVE,RATE_PER_100,0.0837,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2018,YEAR,RESERVE,RATE_PER_100,0.1887,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2019,YEAR,RESERVE,RATE_PER_100,0.1217,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2020,YEAR,RESERVE,RATE_PER_100,0.1543,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2021,YEAR,RESERVE,RATE_PER_100,0.2056,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2016,YEAR,RESERVE,RATE_PER_100,0.0441,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2017,YEAR,RESERVE,RATE_PER_100,0.0631,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2018,YEAR,RESERVE,RATE_PER_100,0.1128,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2019,YEAR,RESERVE,RATE_PER_100,0.126,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2020,YEAR,RESERVE,RATE_PER_100,0.1952,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2021,YEAR,RESERVE,RATE_PER_100,0.2985,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,729,Sudan,2021,YEAR,RESERVE,RATE_PER_100,0,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2016,YEAR,RESERVE,RATE_PER_100,0.1392,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2017,YEAR,RESERVE,RATE_PER_100,0.1594,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2018,YEAR,RESERVE,RATE_PER_100,0.1582,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2019,YEAR,RESERVE,RATE_PER_100,0.1683,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2020,YEAR,RESERVE,RATE_PER_100,0.2339,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2021,YEAR,RESERVE,RATE_PER_100,0.3826,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2016,YEAR,RESERVE,RATE_PER_100,0.1401,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2017,YEAR,RESERVE,RATE_PER_100,0.1387,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2018,YEAR,RESERVE,RATE_PER_100,0.1464,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2019,YEAR,RESERVE,RATE_PER_100,0.1813,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2020,YEAR,RESERVE,RATE_PER_100,0.2248,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2021,YEAR,RESERVE,RATE_PER_100,0.2617,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2016,YEAR,RESERVE,RATE_PER_100,0.0371,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2017,YEAR,RESERVE,RATE_PER_100,0.0119,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2018,YEAR,RESERVE,RATE_PER_100,0.1353,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2019,YEAR,RESERVE,RATE_PER_100,0.0946,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2020,YEAR,RESERVE,RATE_PER_100,0.1169,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2021,YEAR,RESERVE,RATE_PER_100,1.1274,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2016,YEAR,RESERVE,RATE_PER_100,0,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2017,YEAR,RESERVE,RATE_PER_100,0,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2018,YEAR,RESERVE,RATE_PER_100,0,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2019,YEAR,RESERVE,RATE_PER_100,0,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2016,YEAR,RESERVE,RATE_PER_100,0.0613,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2017,YEAR,RESERVE,RATE_PER_100,0.0232,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2018,YEAR,RESERVE,RATE_PER_100,0.0249,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2019,YEAR,RESERVE,RATE_PER_100,0.0367,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2020,YEAR,RESERVE,RATE_PER_100,0.0332,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2021,YEAR,RESERVE,RATE_PER_100,0.0461,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,834,United Republic of Tanzania,2017,YEAR,RESERVE,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,834,United Republic of Tanzania,2018,YEAR,RESERVE,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,834,United Republic of Tanzania,2019,YEAR,RESERVE,RATE_PER_100,0.0001,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2018,YEAR,RESERVE,RATE_PER_100,0.0342,Data is likely to overestimate consumption,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2019,YEAR,RESERVE,RATE_PER_100,0.0241,Data is likely to overestimate consumption,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2020,YEAR,RESERVE,RATE_PER_100,0.0096,Data is likely to overestimate consumption,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2021,YEAR,RESERVE,RATE_PER_100,0.0205,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2021,YEAR,NULL_Z,RATE_PER_100,0.5986,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2020,YEAR,NULL_Z,RATE_PER_100,8.9985,Data is likely to overestimate consumption,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2019,YEAR,NULL_Z,RATE_PER_100,11.7993,Data is likely to overestimate consumption,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2018,YEAR,NULL_Z,RATE_PER_100,10.2,Data is likely to overestimate consumption,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,834,United Republic of Tanzania,2019,YEAR,NULL_Z,RATE_PER_100,5.9374,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,834,United Republic of Tanzania,2018,YEAR,NULL_Z,RATE_PER_100,5.5424,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,834,United Republic of Tanzania,2017,YEAR,NULL_Z,RATE_PER_100,2.7535,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2021,YEAR,NULL_Z,RATE_PER_100,3.8843,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2020,YEAR,NULL_Z,RATE_PER_100,3.6004,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2019,YEAR,NULL_Z,RATE_PER_100,2.8108,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2018,YEAR,NULL_Z,RATE_PER_100,2.3389,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2017,YEAR,NULL_Z,RATE_PER_100,0.0031,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2016,YEAR,NULL_Z,RATE_PER_100,0.0051,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2019,YEAR,NULL_Z,RATE_PER_100,2.057,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2018,YEAR,NULL_Z,RATE_PER_100,0.4743,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2017,YEAR,NULL_Z,RATE_PER_100,2.057,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2016,YEAR,NULL_Z,RATE_PER_100,0.4743,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2021,YEAR,NULL_Z,RATE_PER_100,4.9137,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2020,YEAR,NULL_Z,RATE_PER_100,2.9345,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2019,YEAR,NULL_Z,RATE_PER_100,2.3052,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2018,YEAR,NULL_Z,RATE_PER_100,4.3272,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2017,YEAR,NULL_Z,RATE_PER_100,5.219,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2016,YEAR,NULL_Z,RATE_PER_100,5.3041,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2021,YEAR,NULL_Z,RATE_PER_100,8.4499,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2020,YEAR,NULL_Z,RATE_PER_100,8.617,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2019,YEAR,NULL_Z,RATE_PER_100,8.1059,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2018,YEAR,NULL_Z,RATE_PER_100,10.1741,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2017,YEAR,NULL_Z,RATE_PER_100,10.2311,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2016,YEAR,NULL_Z,RATE_PER_100,9.4134,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2021,YEAR,NULL_Z,RATE_PER_100,5.6526,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2020,YEAR,NULL_Z,RATE_PER_100,7.0966,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2019,YEAR,NULL_Z,RATE_PER_100,11.0102,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2018,YEAR,NULL_Z,RATE_PER_100,11.5926,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2017,YEAR,NULL_Z,RATE_PER_100,12.0311,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2016,YEAR,NULL_Z,RATE_PER_100,10.4344,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,729,Sudan,2021,YEAR,NULL_Z,RATE_PER_100,0,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2021,YEAR,NULL_Z,RATE_PER_100,2.428,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2020,YEAR,NULL_Z,RATE_PER_100,2.9229,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2019,YEAR,NULL_Z,RATE_PER_100,4.7079,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2018,YEAR,NULL_Z,RATE_PER_100,4.3467,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2017,YEAR,NULL_Z,RATE_PER_100,6.3605,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2016,YEAR,NULL_Z,RATE_PER_100,3.9186,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2021,YEAR,NULL_Z,RATE_PER_100,1.1446,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2020,YEAR,NULL_Z,RATE_PER_100,1.2955,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2019,YEAR,NULL_Z,RATE_PER_100,1.4187,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2018,YEAR,NULL_Z,RATE_PER_100,1.6373,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2017,YEAR,NULL_Z,RATE_PER_100,1.661,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2016,YEAR,NULL_Z,RATE_PER_100,1.3713,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,634,Qatar,2021,YEAR,NULL_Z,RATE_PER_100,0.0051,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2021,YEAR,NULL_Z,RATE_PER_100,0.2313,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2020,YEAR,NULL_Z,RATE_PER_100,0.2162,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2019,YEAR,NULL_Z,RATE_PER_100,0.1897,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2018,YEAR,NULL_Z,RATE_PER_100,0.2103,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2017,YEAR,NULL_Z,RATE_PER_100,0.2432,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2016,YEAR,NULL_Z,RATE_PER_100,0.1828,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2021,YEAR,NULL_Z,RATE_PER_100,1.0589,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2020,YEAR,NULL_Z,RATE_PER_100,1.2007,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2019,YEAR,NULL_Z,RATE_PER_100,1.1348,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2018,YEAR,NULL_Z,RATE_PER_100,1.1375,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2017,YEAR,NULL_Z,RATE_PER_100,1.1361,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2016,YEAR,NULL_Z,RATE_PER_100,1.3398,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,604,Peru,2021,YEAR,NULL_Z,RATE_PER_100,0.0043,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,604,Peru,2020,YEAR,NULL_Z,RATE_PER_100,0.0125,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,604,Peru,2019,YEAR,NULL_Z,RATE_PER_100,0,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,512,Oman,2021,YEAR,NULL_Z,RATE_PER_100,0,"Only consumption in the public sector reported, For antibiotics: only A07AA and J01 reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2021,YEAR,NULL_Z,RATE_PER_100,15.3513,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2020,YEAR,NULL_Z,RATE_PER_100,17.4963,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2019,YEAR,NULL_Z,RATE_PER_100,16.8623,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2018,YEAR,NULL_Z,RATE_PER_100,0.1058,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2017,YEAR,NULL_Z,RATE_PER_100,0.1007,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2016,YEAR,NULL_Z,RATE_PER_100,0.1136,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2021,YEAR,NULL_Z,RATE_PER_100,25.9583,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2020,YEAR,NULL_Z,RATE_PER_100,25.6294,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2019,YEAR,NULL_Z,RATE_PER_100,20.2766,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2018,YEAR,NULL_Z,RATE_PER_100,24.0911,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2017,YEAR,NULL_Z,RATE_PER_100,23.0799,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2016,YEAR,NULL_Z,RATE_PER_100,21.895,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2021,YEAR,NULL_Z,RATE_PER_100,1.6069,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2020,YEAR,NULL_Z,RATE_PER_100,2.7067,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2019,YEAR,NULL_Z,RATE_PER_100,4.3258,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2018,YEAR,NULL_Z,RATE_PER_100,4.5098,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2017,YEAR,NULL_Z,RATE_PER_100,4.4416,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2016,YEAR,NULL_Z,RATE_PER_100,4.6854,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2021,YEAR,NULL_Z,RATE_PER_100,1.4037,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2020,YEAR,NULL_Z,RATE_PER_100,1.1336,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2019,YEAR,NULL_Z,RATE_PER_100,1.3196,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2018,YEAR,NULL_Z,RATE_PER_100,1.4834,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2017,YEAR,NULL_Z,RATE_PER_100,1.3417,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2016,YEAR,NULL_Z,RATE_PER_100,1.348,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2021,YEAR,NULL_Z,RATE_PER_100,0.3638,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2020,YEAR,NULL_Z,RATE_PER_100,0.4132,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2019,YEAR,NULL_Z,RATE_PER_100,0,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2018,YEAR,NULL_Z,RATE_PER_100,0,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2017,YEAR,NULL_Z,RATE_PER_100,0,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2021,YEAR,NULL_Z,RATE_PER_100,0.751,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2020,YEAR,NULL_Z,RATE_PER_100,0.6926,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2019,YEAR,NULL_Z,RATE_PER_100,0.8808,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2018,YEAR,NULL_Z,RATE_PER_100,1.0365,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2017,YEAR,NULL_Z,RATE_PER_100,1.0699,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2021,YEAR,NULL_Z,RATE_PER_100,0.1599,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2020,YEAR,NULL_Z,RATE_PER_100,0.2825,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2019,YEAR,NULL_Z,RATE_PER_100,0.1419,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2018,YEAR,NULL_Z,RATE_PER_100,0.1616,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2017,YEAR,NULL_Z,RATE_PER_100,0.1992,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2016,YEAR,NULL_Z,RATE_PER_100,0.2529,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2021,YEAR,NULL_Z,RATE_PER_100,0.6337,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2020,YEAR,NULL_Z,RATE_PER_100,0.8455,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2019,YEAR,NULL_Z,RATE_PER_100,0.8174,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2018,YEAR,NULL_Z,RATE_PER_100,0.8709,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2017,YEAR,NULL_Z,RATE_PER_100,0.9125,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2016,YEAR,NULL_Z,RATE_PER_100,0.9242,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,418,Lao People's Democratic Republic,2021,YEAR,NULL_Z,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,418,Lao People's Democratic Republic,2020,YEAR,NULL_Z,RATE_PER_100,0.0277,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,418,Lao People's Democratic Republic,2019,YEAR,NULL_Z,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2021,YEAR,NULL_Z,RATE_PER_100,4.3918,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2020,YEAR,NULL_Z,RATE_PER_100,11.2019,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2019,YEAR,NULL_Z,RATE_PER_100,4.3792,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2018,YEAR,NULL_Z,RATE_PER_100,8.4997,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2021,YEAR,NULL_Z,RATE_PER_100,2.7092,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2020,YEAR,NULL_Z,RATE_PER_100,1.9389,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2019,YEAR,NULL_Z,RATE_PER_100,1.5356,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2018,YEAR,NULL_Z,RATE_PER_100,2.3085,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2017,YEAR,NULL_Z,RATE_PER_100,1.331,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2021,YEAR,NULL_Z,RATE_PER_100,1.4793,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2020,YEAR,NULL_Z,RATE_PER_100,1.4594,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2019,YEAR,NULL_Z,RATE_PER_100,1.2231,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2018,YEAR,NULL_Z,RATE_PER_100,1.2243,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2017,YEAR,NULL_Z,RATE_PER_100,1.2202,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2016,YEAR,NULL_Z,RATE_PER_100,1.1969,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2021,YEAR,NULL_Z,RATE_PER_100,4.4992,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2020,YEAR,NULL_Z,RATE_PER_100,3.7343,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2019,YEAR,NULL_Z,RATE_PER_100,4.0614,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2018,YEAR,NULL_Z,RATE_PER_100,3.3719,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2017,YEAR,NULL_Z,RATE_PER_100,3.0473,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2016,YEAR,NULL_Z,RATE_PER_100,3.209,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,364,Iran (Islamic Republic of),2021,YEAR,NULL_Z,RATE_PER_100,0.1428,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,364,Iran (Islamic Republic of),2020,YEAR,NULL_Z,RATE_PER_100,0.1338,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2021,YEAR,NULL_Z,RATE_PER_100,0.0642,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2020,YEAR,NULL_Z,RATE_PER_100,0.0834,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2019,YEAR,NULL_Z,RATE_PER_100,0.0694,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2018,YEAR,NULL_Z,RATE_PER_100,0.0446,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2017,YEAR,NULL_Z,RATE_PER_100,0.0366,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2016,YEAR,NULL_Z,RATE_PER_100,0.0379,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2021,YEAR,NULL_Z,RATE_PER_100,0.196,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2020,YEAR,NULL_Z,RATE_PER_100,0.1932,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2019,YEAR,NULL_Z,RATE_PER_100,0.1644,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2018,YEAR,NULL_Z,RATE_PER_100,0.1598,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2017,YEAR,NULL_Z,RATE_PER_100,0.1546,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2016,YEAR,NULL_Z,RATE_PER_100,0.1915,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2021,YEAR,NULL_Z,RATE_PER_100,0.1136,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2020,YEAR,NULL_Z,RATE_PER_100,0.2395,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2019,YEAR,NULL_Z,RATE_PER_100,0.3044,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2018,YEAR,NULL_Z,RATE_PER_100,0.4005,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2017,YEAR,NULL_Z,RATE_PER_100,0.2037,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2016,YEAR,NULL_Z,RATE_PER_100,0.0163,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2020,YEAR,NULL_Z,RATE_PER_100,1.6477,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2019,YEAR,NULL_Z,RATE_PER_100,1.8703,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2018,YEAR,NULL_Z,RATE_PER_100,2.1991,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2017,YEAR,NULL_Z,RATE_PER_100,4.2085,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2016,YEAR,NULL_Z,RATE_PER_100,1.1315,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2021,YEAR,NULL_Z,RATE_PER_100,1.283,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2020,YEAR,NULL_Z,RATE_PER_100,0.9916,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2019,YEAR,NULL_Z,RATE_PER_100,0.6296,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2018,YEAR,NULL_Z,RATE_PER_100,0.5509,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2017,YEAR,NULL_Z,RATE_PER_100,0.4283,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2016,YEAR,NULL_Z,RATE_PER_100,0.3225,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,266,Gabon,2021,YEAR,NULL_Z,RATE_PER_100,5.0703,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,266,Gabon,2020,YEAR,NULL_Z,RATE_PER_100,0.2271,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2021,YEAR,NULL_Z,RATE_PER_100,2.4401,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2020,YEAR,NULL_Z,RATE_PER_100,2.6028,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2019,YEAR,NULL_Z,RATE_PER_100,2.3164,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2018,YEAR,NULL_Z,RATE_PER_100,2.4607,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2017,YEAR,NULL_Z,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2016,YEAR,NULL_Z,RATE_PER_100,0.0001,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2021,YEAR,NULL_Z,RATE_PER_100,7.9807,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2020,YEAR,NULL_Z,RATE_PER_100,8.2756,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2019,YEAR,NULL_Z,RATE_PER_100,7.5534,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2018,YEAR,NULL_Z,RATE_PER_100,7.7314,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2017,YEAR,NULL_Z,RATE_PER_100,7.0404,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2016,YEAR,NULL_Z,RATE_PER_100,7.5531,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,231,Ethiopia,2019,YEAR,NULL_Z,RATE_PER_100,0,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,231,Ethiopia,2018,YEAR,NULL_Z,RATE_PER_100,0.0055,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,231,Ethiopia,2017,YEAR,NULL_Z,RATE_PER_100,0.003,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2021,YEAR,NULL_Z,RATE_PER_100,0.0014,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2020,YEAR,NULL_Z,RATE_PER_100,0.0016,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2019,YEAR,NULL_Z,RATE_PER_100,0.0009,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2018,YEAR,NULL_Z,RATE_PER_100,0.0023,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2017,YEAR,NULL_Z,RATE_PER_100,0.002,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2016,YEAR,NULL_Z,RATE_PER_100,0.0007,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2021,YEAR,NULL_Z,RATE_PER_100,2.2772,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2020,YEAR,NULL_Z,RATE_PER_100,2.3829,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2019,YEAR,NULL_Z,RATE_PER_100,2.0865,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2018,YEAR,NULL_Z,RATE_PER_100,2.0504,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2017,YEAR,NULL_Z,RATE_PER_100,2.0931,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2016,YEAR,NULL_Z,RATE_PER_100,2.1237,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,818,Egypt,2021,YEAR,NULL_Z,RATE_PER_100,1.1828,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,818,Egypt,2020,YEAR,NULL_Z,RATE_PER_100,0.8434,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2021,YEAR,NULL_Z,RATE_PER_100,2.6431,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2020,YEAR,NULL_Z,RATE_PER_100,2.3569,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2019,YEAR,NULL_Z,RATE_PER_100,2.0278,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2018,YEAR,NULL_Z,RATE_PER_100,1.8366,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2017,YEAR,NULL_Z,RATE_PER_100,1.724,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2016,YEAR,NULL_Z,RATE_PER_100,1.5569,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2021,YEAR,NULL_Z,RATE_PER_100,1.7215,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2020,YEAR,NULL_Z,RATE_PER_100,1.9703,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2019,YEAR,NULL_Z,RATE_PER_100,1.8815,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2018,YEAR,NULL_Z,RATE_PER_100,1.7624,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2017,YEAR,NULL_Z,RATE_PER_100,1.6352,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2016,YEAR,NULL_Z,RATE_PER_100,1.6202,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,203,Czechia,2021,YEAR,NULL_Z,RATE_PER_100,0.5242,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,203,Czechia,2020,YEAR,NULL_Z,RATE_PER_100,0.6142,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,203,Czechia,2019,YEAR,NULL_Z,RATE_PER_100,1.189,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2021,YEAR,NULL_Z,RATE_PER_100,2.1994,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2020,YEAR,NULL_Z,RATE_PER_100,1.6147,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2019,YEAR,NULL_Z,RATE_PER_100,1.5768,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2018,YEAR,NULL_Z,RATE_PER_100,0.0548,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2017,YEAR,NULL_Z,RATE_PER_100,0.0543,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2016,YEAR,NULL_Z,RATE_PER_100,0.0773,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2021,YEAR,NULL_Z,RATE_PER_100,0.88,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2020,YEAR,NULL_Z,RATE_PER_100,0.8892,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2019,YEAR,NULL_Z,RATE_PER_100,0.4337,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2018,YEAR,NULL_Z,RATE_PER_100,1.0084,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2021,YEAR,NULL_Z,RATE_PER_100,0.6735,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2020,YEAR,NULL_Z,RATE_PER_100,0.2612,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2019,YEAR,NULL_Z,RATE_PER_100,0.1898,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2018,YEAR,NULL_Z,RATE_PER_100,0.1957,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2021,YEAR,NULL_Z,RATE_PER_100,0.3428,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2020,YEAR,NULL_Z,RATE_PER_100,0.3242,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2019,YEAR,NULL_Z,RATE_PER_100,0.2705,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2018,YEAR,NULL_Z,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2017,YEAR,NULL_Z,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2016,YEAR,NULL_Z,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,064,Bhutan,2021,YEAR,NULL_Z,RATE_PER_100,0,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,064,Bhutan,2020,YEAR,NULL_Z,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,064,Bhutan,2019,YEAR,NULL_Z,RATE_PER_100,0,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,096,Brunei Darussalam,2021,YEAR,NULL_Z,RATE_PER_100,0.5597,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,096,Brunei Darussalam,2020,YEAR,NULL_Z,RATE_PER_100,0,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,096,Brunei Darussalam,2019,YEAR,NULL_Z,RATE_PER_100,0.001,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2021,YEAR,NULL_Z,RATE_PER_100,1.4506,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2020,YEAR,NULL_Z,RATE_PER_100,1.4476,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2019,YEAR,NULL_Z,RATE_PER_100,1.992,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2018,YEAR,NULL_Z,RATE_PER_100,2.7247,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2017,YEAR,NULL_Z,RATE_PER_100,1.8172,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2016,YEAR,NULL_Z,RATE_PER_100,2.371,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2020,YEAR,NULL_Z,RATE_PER_100,0.3616,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2019,YEAR,NULL_Z,RATE_PER_100,0.3987,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2018,YEAR,NULL_Z,RATE_PER_100,0.2247,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2017,YEAR,NULL_Z,RATE_PER_100,0.2431,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2016,YEAR,NULL_Z,RATE_PER_100,0.192,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,854,Burkina Faso,2018,YEAR,NULL_Z,RATE_PER_100,0.5726,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,854,Burkina Faso,2017,YEAR,NULL_Z,RATE_PER_100,0.3927,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2021,YEAR,NULL_Z,RATE_PER_100,3.2333,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2020,YEAR,NULL_Z,RATE_PER_100,1.9496,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2019,YEAR,NULL_Z,RATE_PER_100,1.7572,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2018,YEAR,NULL_Z,RATE_PER_100,2.0304,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2017,YEAR,NULL_Z,RATE_PER_100,2.3116,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2016,YEAR,NULL_Z,RATE_PER_100,0.4485,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2021,YEAR,NULL_Z,RATE_PER_100,0.2892,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2020,YEAR,NULL_Z,RATE_PER_100,0.2956,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2019,YEAR,NULL_Z,RATE_PER_100,0.261,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2018,YEAR,NULL_Z,RATE_PER_100,0.2742,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2017,YEAR,NULL_Z,RATE_PER_100,0.2766,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2016,YEAR,NULL_Z,RATE_PER_100,0.2616,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2021,YEAR,NULL_Z,RATE_PER_100,1.2534,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2020,YEAR,NULL_Z,RATE_PER_100,0.3721,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2019,YEAR,NULL_Z,RATE_PER_100,1.6224,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2018,YEAR,NULL_Z,RATE_PER_100,1.8673,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2017,YEAR,NULL_Z,RATE_PER_100,1.5432,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2016,YEAR,NULL_Z,RATE_PER_100,1.5924,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2021,YEAR,NULL_Z,RATE_PER_100,2.2167,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2020,YEAR,NULL_Z,RATE_PER_100,2.3853,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2019,YEAR,NULL_Z,RATE_PER_100,3.4466,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2018,YEAR,NULL_Z,RATE_PER_100,2.5171,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2017,YEAR,NULL_Z,RATE_PER_100,4.5933,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2016,YEAR,NULL_Z,RATE_PER_100,3.8928,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2016,YEAR,WATCH,RATE_PER_100,40.0847,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2017,YEAR,WATCH,RATE_PER_100,31.1025,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2018,YEAR,WATCH,RATE_PER_100,35.3234,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2019,YEAR,WATCH,RATE_PER_100,40.7599,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2020,YEAR,WATCH,RATE_PER_100,51.1454,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2021,YEAR,WATCH,RATE_PER_100,48.6159,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2016,YEAR,WATCH,RATE_PER_100,39.8242,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2017,YEAR,WATCH,RATE_PER_100,39.7391,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2018,YEAR,WATCH,RATE_PER_100,39.8796,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2019,YEAR,WATCH,RATE_PER_100,39.2133,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2020,YEAR,WATCH,RATE_PER_100,37.2597,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2021,YEAR,WATCH,RATE_PER_100,37.4291,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2016,YEAR,WATCH,RATE_PER_100,36.8231,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2017,YEAR,WATCH,RATE_PER_100,36.4864,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2018,YEAR,WATCH,RATE_PER_100,33.3626,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2019,YEAR,WATCH,RATE_PER_100,31.691,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2020,YEAR,WATCH,RATE_PER_100,32.208,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2021,YEAR,WATCH,RATE_PER_100,31.0896,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2016,YEAR,WATCH,RATE_PER_100,20.9312,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2017,YEAR,WATCH,RATE_PER_100,31.629,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2018,YEAR,WATCH,RATE_PER_100,20.8435,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2019,YEAR,WATCH,RATE_PER_100,21.869,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2020,YEAR,WATCH,RATE_PER_100,23.5492,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2021,YEAR,WATCH,RATE_PER_100,27.6086,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,854,Burkina Faso,2017,YEAR,WATCH,RATE_PER_100,12.319,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,854,Burkina Faso,2018,YEAR,WATCH,RATE_PER_100,15.8579,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2016,YEAR,WATCH,RATE_PER_100,64.188,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2017,YEAR,WATCH,RATE_PER_100,51.6521,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2018,YEAR,WATCH,RATE_PER_100,58.1708,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2019,YEAR,WATCH,RATE_PER_100,62.3418,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2020,YEAR,WATCH,RATE_PER_100,58.7923,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2016,YEAR,WATCH,RATE_PER_100,41.406,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2017,YEAR,WATCH,RATE_PER_100,36.2487,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2018,YEAR,WATCH,RATE_PER_100,35.7322,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2019,YEAR,WATCH,RATE_PER_100,30.9238,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2020,YEAR,WATCH,RATE_PER_100,51.6159,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2021,YEAR,WATCH,RATE_PER_100,32.9196,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,096,Brunei Darussalam,2019,YEAR,WATCH,RATE_PER_100,33.116,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,096,Brunei Darussalam,2020,YEAR,WATCH,RATE_PER_100,27.5041,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,096,Brunei Darussalam,2021,YEAR,WATCH,RATE_PER_100,29.6446,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,064,Bhutan,2019,YEAR,WATCH,RATE_PER_100,12.1412,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,064,Bhutan,2020,YEAR,WATCH,RATE_PER_100,12.1978,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,064,Bhutan,2021,YEAR,WATCH,RATE_PER_100,13.1991,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2016,YEAR,WATCH,RATE_PER_100,40.8589,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2017,YEAR,WATCH,RATE_PER_100,40.055,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2018,YEAR,WATCH,RATE_PER_100,38.2335,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2019,YEAR,WATCH,RATE_PER_100,36.9258,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2020,YEAR,WATCH,RATE_PER_100,35.6112,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2021,YEAR,WATCH,RATE_PER_100,34.0252,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2018,YEAR,WATCH,RATE_PER_100,20.7429,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2019,YEAR,WATCH,RATE_PER_100,27.6906,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2020,YEAR,WATCH,RATE_PER_100,27.5313,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2021,YEAR,WATCH,RATE_PER_100,18.6231,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2018,YEAR,WATCH,RATE_PER_100,31.6107,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2019,YEAR,WATCH,RATE_PER_100,25.1851,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2020,YEAR,WATCH,RATE_PER_100,31.4971,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2021,YEAR,WATCH,RATE_PER_100,33.2426,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2016,YEAR,WATCH,RATE_PER_100,52.1499,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2017,YEAR,WATCH,RATE_PER_100,50.7139,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2018,YEAR,WATCH,RATE_PER_100,51.2216,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2019,YEAR,WATCH,RATE_PER_100,50.1167,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2020,YEAR,WATCH,RATE_PER_100,54.6359,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2021,YEAR,WATCH,RATE_PER_100,50.0494,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,203,Czechia,2019,YEAR,WATCH,RATE_PER_100,38.2348,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,203,Czechia,2020,YEAR,WATCH,RATE_PER_100,36.9597,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,203,Czechia,2021,YEAR,WATCH,RATE_PER_100,37.431,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2016,YEAR,WATCH,RATE_PER_100,47.1524,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2017,YEAR,WATCH,RATE_PER_100,44.4801,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2018,YEAR,WATCH,RATE_PER_100,42.5562,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2019,YEAR,WATCH,RATE_PER_100,38.4807,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2020,YEAR,WATCH,RATE_PER_100,34.6344,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2021,YEAR,WATCH,RATE_PER_100,32.7365,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2016,YEAR,WATCH,RATE_PER_100,19.279,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2017,YEAR,WATCH,RATE_PER_100,19.1966,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2018,YEAR,WATCH,RATE_PER_100,18.551,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2019,YEAR,WATCH,RATE_PER_100,18.0387,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2020,YEAR,WATCH,RATE_PER_100,17.0281,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2021,YEAR,WATCH,RATE_PER_100,16.364,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,818,Egypt,2020,YEAR,WATCH,RATE_PER_100,42.8673,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,818,Egypt,2021,YEAR,WATCH,RATE_PER_100,43.6124,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2016,YEAR,WATCH,RATE_PER_100,34.8232,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2017,YEAR,WATCH,RATE_PER_100,35.0828,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2018,YEAR,WATCH,RATE_PER_100,35.4679,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2019,YEAR,WATCH,RATE_PER_100,34.9957,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2020,YEAR,WATCH,RATE_PER_100,35.6568,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2021,YEAR,WATCH,RATE_PER_100,35.3257,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2016,YEAR,WATCH,RATE_PER_100,40.4206,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2017,YEAR,WATCH,RATE_PER_100,40.4543,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2018,YEAR,WATCH,RATE_PER_100,39.1651,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2019,YEAR,WATCH,RATE_PER_100,38.4538,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2020,YEAR,WATCH,RATE_PER_100,38.4763,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2021,YEAR,WATCH,RATE_PER_100,35.9867,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,231,Ethiopia,2017,YEAR,WATCH,RATE_PER_100,39.0116,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,231,Ethiopia,2018,YEAR,WATCH,RATE_PER_100,59.7998,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,231,Ethiopia,2019,YEAR,WATCH,RATE_PER_100,51.5951,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2016,YEAR,WATCH,RATE_PER_100,20.2025,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2017,YEAR,WATCH,RATE_PER_100,20.0466,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2018,YEAR,WATCH,RATE_PER_100,20.2982,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2019,YEAR,WATCH,RATE_PER_100,19.0616,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2020,YEAR,WATCH,RATE_PER_100,21.3082,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2021,YEAR,WATCH,RATE_PER_100,21.5155,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2016,YEAR,WATCH,RATE_PER_100,29.2528,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2017,YEAR,WATCH,RATE_PER_100,28.6969,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2018,YEAR,WATCH,RATE_PER_100,26.1962,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2019,YEAR,WATCH,RATE_PER_100,24.9418,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2020,YEAR,WATCH,RATE_PER_100,26.0645,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2021,YEAR,WATCH,RATE_PER_100,24.3907,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,266,Gabon,2020,YEAR,WATCH,RATE_PER_100,18.8062,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,266,Gabon,2021,YEAR,WATCH,RATE_PER_100,23.8784,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2016,YEAR,WATCH,RATE_PER_100,33.1861,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2017,YEAR,WATCH,RATE_PER_100,32.9284,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2018,YEAR,WATCH,RATE_PER_100,32.284,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2019,YEAR,WATCH,RATE_PER_100,31.3396,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2020,YEAR,WATCH,RATE_PER_100,31.0575,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2021,YEAR,WATCH,RATE_PER_100,29.8087,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2016,YEAR,WATCH,RATE_PER_100,33.8661,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2017,YEAR,WATCH,RATE_PER_100,32.752,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2018,YEAR,WATCH,RATE_PER_100,54.4017,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2019,YEAR,WATCH,RATE_PER_100,44.2285,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2020,YEAR,WATCH,RATE_PER_100,45.5005,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2016,YEAR,WATCH,RATE_PER_100,34.4594,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2017,YEAR,WATCH,RATE_PER_100,36.0333,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2018,YEAR,WATCH,RATE_PER_100,36.8206,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2019,YEAR,WATCH,RATE_PER_100,36.4885,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2020,YEAR,WATCH,RATE_PER_100,37.81,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2021,YEAR,WATCH,RATE_PER_100,39.0965,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2016,YEAR,WATCH,RATE_PER_100,51.6984,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2017,YEAR,WATCH,RATE_PER_100,52.1462,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2018,YEAR,WATCH,RATE_PER_100,51.196,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2019,YEAR,WATCH,RATE_PER_100,49.1358,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2020,YEAR,WATCH,RATE_PER_100,48.5515,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2021,YEAR,WATCH,RATE_PER_100,50.3602,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2016,YEAR,WATCH,RATE_PER_100,35.0755,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2017,YEAR,WATCH,RATE_PER_100,35.5041,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2018,YEAR,WATCH,RATE_PER_100,31.4976,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2019,YEAR,WATCH,RATE_PER_100,29.247,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2020,YEAR,WATCH,RATE_PER_100,28.6154,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2021,YEAR,WATCH,RATE_PER_100,25.7165,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,364,Iran (Islamic Republic of),2020,YEAR,WATCH,RATE_PER_100,49.4236,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,364,Iran (Islamic Republic of),2021,YEAR,WATCH,RATE_PER_100,50.5698,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2016,YEAR,WATCH,RATE_PER_100,14.798,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2017,YEAR,WATCH,RATE_PER_100,14.7065,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2018,YEAR,WATCH,RATE_PER_100,15.2621,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2019,YEAR,WATCH,RATE_PER_100,13.0195,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2020,YEAR,WATCH,RATE_PER_100,13.3491,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2021,YEAR,WATCH,RATE_PER_100,12.2896,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2016,YEAR,WATCH,RATE_PER_100,50.9632,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2017,YEAR,WATCH,RATE_PER_100,51.4726,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2018,YEAR,WATCH,RATE_PER_100,51.5577,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2019,YEAR,WATCH,RATE_PER_100,50.1166,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2020,YEAR,WATCH,RATE_PER_100,51.6096,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2021,YEAR,WATCH,RATE_PER_100,50.9611,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2017,YEAR,WATCH,RATE_PER_100,33.5547,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2018,YEAR,WATCH,RATE_PER_100,41.417,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2019,YEAR,WATCH,RATE_PER_100,37.2812,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2020,YEAR,WATCH,RATE_PER_100,46.7157,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2021,YEAR,WATCH,RATE_PER_100,42.5728,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2018,YEAR,WATCH,RATE_PER_100,15.9288,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2019,YEAR,WATCH,RATE_PER_100,41.9264,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2020,YEAR,WATCH,RATE_PER_100,37.2361,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2021,YEAR,WATCH,RATE_PER_100,39.0222,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,418,Lao People's Democratic Republic,2019,YEAR,WATCH,RATE_PER_100,18.0102,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,418,Lao People's Democratic Republic,2020,YEAR,WATCH,RATE_PER_100,21.0066,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,418,Lao People's Democratic Republic,2021,YEAR,WATCH,RATE_PER_100,22.1125,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2016,YEAR,WATCH,RATE_PER_100,28.3608,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2017,YEAR,WATCH,RATE_PER_100,28.9799,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2018,YEAR,WATCH,RATE_PER_100,30.2452,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2019,YEAR,WATCH,RATE_PER_100,31.2617,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2020,YEAR,WATCH,RATE_PER_100,31.39,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2021,YEAR,WATCH,RATE_PER_100,30.2039,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2016,YEAR,WATCH,RATE_PER_100,30.9457,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2017,YEAR,WATCH,RATE_PER_100,30.3723,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2018,YEAR,WATCH,RATE_PER_100,31.314,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2019,YEAR,WATCH,RATE_PER_100,30.6063,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2020,YEAR,WATCH,RATE_PER_100,29.6585,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2021,YEAR,WATCH,RATE_PER_100,28.1713,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2017,YEAR,WATCH,RATE_PER_100,75.5861,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2018,YEAR,WATCH,RATE_PER_100,63.246,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2019,YEAR,WATCH,RATE_PER_100,54.9891,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2020,YEAR,WATCH,RATE_PER_100,60.0572,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2021,YEAR,WATCH,RATE_PER_100,62.9484,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2017,YEAR,WATCH,RATE_PER_100,43.4358,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2018,YEAR,WATCH,RATE_PER_100,32.1128,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2019,YEAR,WATCH,RATE_PER_100,45.6257,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2020,YEAR,WATCH,RATE_PER_100,22.3778,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2021,YEAR,WATCH,RATE_PER_100,15.9802,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2016,YEAR,WATCH,RATE_PER_100,52.1116,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2017,YEAR,WATCH,RATE_PER_100,49.0619,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2018,YEAR,WATCH,RATE_PER_100,51.7548,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2019,YEAR,WATCH,RATE_PER_100,48.6354,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2020,YEAR,WATCH,RATE_PER_100,43.9973,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2021,YEAR,WATCH,RATE_PER_100,40.2407,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2016,YEAR,WATCH,RATE_PER_100,38.1426,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2017,YEAR,WATCH,RATE_PER_100,37.6863,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2018,YEAR,WATCH,RATE_PER_100,38.8575,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2019,YEAR,WATCH,RATE_PER_100,36.627,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2020,YEAR,WATCH,RATE_PER_100,49.9637,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2021,YEAR,WATCH,RATE_PER_100,53.1853,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2016,YEAR,WATCH,RATE_PER_100,16.2313,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2017,YEAR,WATCH,RATE_PER_100,15.6342,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2018,YEAR,WATCH,RATE_PER_100,15.0893,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2019,YEAR,WATCH,RATE_PER_100,15.3698,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2020,YEAR,WATCH,RATE_PER_100,15.2652,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2021,YEAR,WATCH,RATE_PER_100,14.9953,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2016,YEAR,WATCH,RATE_PER_100,67.6775,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2017,YEAR,WATCH,RATE_PER_100,67.9515,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2018,YEAR,WATCH,RATE_PER_100,74.1246,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2019,YEAR,WATCH,RATE_PER_100,55.1208,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2020,YEAR,WATCH,RATE_PER_100,47.7069,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2021,YEAR,WATCH,RATE_PER_100,54.944,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,512,Oman,2021,YEAR,WATCH,RATE_PER_100,23.8455,"Only consumption in the public sector reported, For antibiotics: only A07AA and J01 reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,604,Peru,2019,YEAR,WATCH,RATE_PER_100,33.1745,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,604,Peru,2020,YEAR,WATCH,RATE_PER_100,41.5863,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,604,Peru,2021,YEAR,WATCH,RATE_PER_100,38.7711,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2016,YEAR,WATCH,RATE_PER_100,37.8568,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2017,YEAR,WATCH,RATE_PER_100,39.8349,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2018,YEAR,WATCH,RATE_PER_100,43.6915,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2019,YEAR,WATCH,RATE_PER_100,38.9762,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2020,YEAR,WATCH,RATE_PER_100,36.4111,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2021,YEAR,WATCH,RATE_PER_100,38.4391,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2016,YEAR,WATCH,RATE_PER_100,39.3804,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2017,YEAR,WATCH,RATE_PER_100,36.545,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2018,YEAR,WATCH,RATE_PER_100,36.2367,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2019,YEAR,WATCH,RATE_PER_100,37.7649,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2020,YEAR,WATCH,RATE_PER_100,37.1722,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2021,YEAR,WATCH,RATE_PER_100,37.1481,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,634,Qatar,2021,YEAR,WATCH,RATE_PER_100,29.2311,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2016,YEAR,WATCH,RATE_PER_100,42.9139,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2017,YEAR,WATCH,RATE_PER_100,44.4706,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2018,YEAR,WATCH,RATE_PER_100,45.615,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2019,YEAR,WATCH,RATE_PER_100,46.0485,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2020,YEAR,WATCH,RATE_PER_100,49.0369,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2021,YEAR,WATCH,RATE_PER_100,49.9913,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2016,YEAR,WATCH,RATE_PER_100,45.4479,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2017,YEAR,WATCH,RATE_PER_100,43.5315,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2018,YEAR,WATCH,RATE_PER_100,46.2764,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2019,YEAR,WATCH,RATE_PER_100,45.9807,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2020,YEAR,WATCH,RATE_PER_100,56.1198,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2021,YEAR,WATCH,RATE_PER_100,54.3852,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,729,Sudan,2021,YEAR,WATCH,RATE_PER_100,64.3565,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2016,YEAR,WATCH,RATE_PER_100,26.3167,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2017,YEAR,WATCH,RATE_PER_100,26.7776,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2018,YEAR,WATCH,RATE_PER_100,26.8769,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2019,YEAR,WATCH,RATE_PER_100,26.5281,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2020,YEAR,WATCH,RATE_PER_100,29.13,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2021,YEAR,WATCH,RATE_PER_100,29.7052,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2016,YEAR,WATCH,RATE_PER_100,19.8243,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2017,YEAR,WATCH,RATE_PER_100,19.5456,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2018,YEAR,WATCH,RATE_PER_100,19.3664,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2019,YEAR,WATCH,RATE_PER_100,20.7246,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2020,YEAR,WATCH,RATE_PER_100,23.2059,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2021,YEAR,WATCH,RATE_PER_100,23.7544,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2016,YEAR,WATCH,RATE_PER_100,34.6617,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2017,YEAR,WATCH,RATE_PER_100,49.3914,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2018,YEAR,WATCH,RATE_PER_100,53.9639,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2019,YEAR,WATCH,RATE_PER_100,43.5716,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2020,YEAR,WATCH,RATE_PER_100,57.039,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2021,YEAR,WATCH,RATE_PER_100,46.278,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2016,YEAR,WATCH,RATE_PER_100,14.6802,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2017,YEAR,WATCH,RATE_PER_100,12.1663,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2018,YEAR,WATCH,RATE_PER_100,14.6802,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2019,YEAR,WATCH,RATE_PER_100,12.1663,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2016,YEAR,WATCH,RATE_PER_100,23.6168,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2017,YEAR,WATCH,RATE_PER_100,24.9246,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2018,YEAR,WATCH,RATE_PER_100,23.6026,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2019,YEAR,WATCH,RATE_PER_100,22.4083,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2020,YEAR,WATCH,RATE_PER_100,25.0326,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2021,YEAR,WATCH,RATE_PER_100,32.3026,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,834,United Republic of Tanzania,2017,YEAR,WATCH,RATE_PER_100,5.3322,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,834,United Republic of Tanzania,2018,YEAR,WATCH,RATE_PER_100,28.5457,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,834,United Republic of Tanzania,2019,YEAR,WATCH,RATE_PER_100,38.4481,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2018,YEAR,WATCH,RATE_PER_100,17.7602,Data is likely to overestimate consumption,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2019,YEAR,WATCH,RATE_PER_100,15.8379,Data is likely to overestimate consumption,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2020,YEAR,WATCH,RATE_PER_100,24.2912,Data is likely to overestimate consumption,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2021,YEAR,WATCH,RATE_PER_100,27.4892,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2021,YEAR,ACCESS,RATE_PER_100,71.8918,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2020,YEAR,ACCESS,RATE_PER_100,66.7007,Data is likely to overestimate consumption,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,834,United Republic of Tanzania,2019,YEAR,ACCESS,RATE_PER_100,55.6145,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2018,YEAR,ACCESS,RATE_PER_100,72.0057,Data is likely to overestimate consumption,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,800,Uganda,2019,YEAR,ACCESS,RATE_PER_100,72.3386,Data is likely to overestimate consumption,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,834,United Republic of Tanzania,2018,YEAR,ACCESS,RATE_PER_100,65.912,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2021,YEAR,ACCESS,RATE_PER_100,63.767,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,834,United Republic of Tanzania,2017,YEAR,ACCESS,RATE_PER_100,91.9143,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2020,YEAR,ACCESS,RATE_PER_100,71.3338,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2019,YEAR,ACCESS,RATE_PER_100,74.7442,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2016,YEAR,ACCESS,RATE_PER_100,76.3168,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2017,YEAR,ACCESS,RATE_PER_100,75.0491,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,788,Tunisia,2018,YEAR,ACCESS,RATE_PER_100,74.0335,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2019,YEAR,ACCESS,RATE_PER_100,85.7767,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2017,YEAR,ACCESS,RATE_PER_100,85.7767,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2018,YEAR,ACCESS,RATE_PER_100,84.8455,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,626,Timor-Leste,2016,YEAR,ACCESS,RATE_PER_100,84.8455,"Only consumption in the public sector reported, Only consumption in the community reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2021,YEAR,ACCESS,RATE_PER_100,47.6809,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2018,YEAR,ACCESS,RATE_PER_100,41.5736,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2019,YEAR,ACCESS,RATE_PER_100,54.0286,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2020,YEAR,ACCESS,RATE_PER_100,39.9096,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2017,YEAR,ACCESS,RATE_PER_100,45.3777,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2021,YEAR,ACCESS,RATE_PER_100,67.534,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,762,Tajikistan,2016,YEAR,ACCESS,RATE_PER_100,59.9971,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2020,YEAR,ACCESS,RATE_PER_100,67.9522,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2019,YEAR,ACCESS,RATE_PER_100,70.9882,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2016,YEAR,ACCESS,RATE_PER_100,70.6222,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2017,YEAR,ACCESS,RATE_PER_100,70.0847,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,752,Sweden,2018,YEAR,ACCESS,RATE_PER_100,70.313,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2021,YEAR,ACCESS,RATE_PER_100,64.2596,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2019,YEAR,ACCESS,RATE_PER_100,62.2934,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2020,YEAR,ACCESS,RATE_PER_100,63.5396,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2018,YEAR,ACCESS,RATE_PER_100,61.3722,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2017,YEAR,ACCESS,RATE_PER_100,61.0319,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2021,YEAR,ACCESS,RATE_PER_100,42.8884,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,729,Sudan,2021,YEAR,ACCESS,RATE_PER_100,35.6435,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,705,Slovenia,2016,YEAR,ACCESS,RATE_PER_100,63.1096,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2020,YEAR,ACCESS,RATE_PER_100,40.7621,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2018,YEAR,ACCESS,RATE_PER_100,49.2641,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2019,YEAR,ACCESS,RATE_PER_100,49.1854,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2017,YEAR,ACCESS,RATE_PER_100,50.0449,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,643,Russian Federation,2016,YEAR,ACCESS,RATE_PER_100,50.5894,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2019,YEAR,ACCESS,RATE_PER_100,52.4111,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2020,YEAR,ACCESS,RATE_PER_100,49.5133,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2021,YEAR,ACCESS,RATE_PER_100,48.6584,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2018,YEAR,ACCESS,RATE_PER_100,52.559,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2016,YEAR,ACCESS,RATE_PER_100,55.6336,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,642,Romania,2017,YEAR,ACCESS,RATE_PER_100,53.7847,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,634,Qatar,2021,YEAR,ACCESS,RATE_PER_100,70.2851,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2021,YEAR,ACCESS,RATE_PER_100,62.2436,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2018,YEAR,ACCESS,RATE_PER_100,63.3023,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2019,YEAR,ACCESS,RATE_PER_100,61.761,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2020,YEAR,ACCESS,RATE_PER_100,62.2482,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2017,YEAR,ACCESS,RATE_PER_100,62.967,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2021,YEAR,ACCESS,RATE_PER_100,60.3798,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,620,Portugal,2016,YEAR,ACCESS,RATE_PER_100,60.2093,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2020,YEAR,ACCESS,RATE_PER_100,62.2805,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2019,YEAR,ACCESS,RATE_PER_100,59.8171,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2016,YEAR,ACCESS,RATE_PER_100,60.7369,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2017,YEAR,ACCESS,RATE_PER_100,58.9715,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,616,Poland,2018,YEAR,ACCESS,RATE_PER_100,55.0744,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,604,Peru,2021,YEAR,ACCESS,RATE_PER_100,61.047,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,604,Peru,2019,YEAR,ACCESS,RATE_PER_100,66.7196,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,604,Peru,2020,YEAR,ACCESS,RATE_PER_100,58.2601,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,512,Oman,2021,YEAR,ACCESS,RATE_PER_100,75.5345,"Only consumption in the public sector reported, For antibiotics: only A07AA and J01 reported",PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2021,YEAR,ACCESS,RATE_PER_100,29.6293,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2018,YEAR,ACCESS,RATE_PER_100,25.763,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2019,YEAR,ACCESS,RATE_PER_100,27.9447,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2020,YEAR,ACCESS,RATE_PER_100,34.7667,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2017,YEAR,ACCESS,RATE_PER_100,31.946,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2021,YEAR,ACCESS,RATE_PER_100,58.8978,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,524,Nepal,2016,YEAR,ACCESS,RATE_PER_100,32.1934,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2020,YEAR,ACCESS,RATE_PER_100,58.9673,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2019,YEAR,ACCESS,RATE_PER_100,64.2302,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2016,YEAR,ACCESS,RATE_PER_100,61.7696,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2017,YEAR,ACCESS,RATE_PER_100,61.1736,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,578,Norway,2018,YEAR,ACCESS,RATE_PER_100,60.7033,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2021,YEAR,ACCESS,RATE_PER_100,45.1842,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2019,YEAR,ACCESS,RATE_PER_100,59.0279,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2020,YEAR,ACCESS,RATE_PER_100,47.3089,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2018,YEAR,ACCESS,RATE_PER_100,56.6185,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2017,YEAR,ACCESS,RATE_PER_100,57.8613,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2020,YEAR,ACCESS,RATE_PER_100,54.7701,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2021,YEAR,ACCESS,RATE_PER_100,57.9216,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,499,Montenegro,2016,YEAR,ACCESS,RATE_PER_100,57.1575,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2019,YEAR,ACCESS,RATE_PER_100,49.9225,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2017,YEAR,ACCESS,RATE_PER_100,49.4708,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2018,YEAR,ACCESS,RATE_PER_100,46.3622,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,470,Malta,2016,YEAR,ACCESS,RATE_PER_100,46.4266,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2021,YEAR,ACCESS,RATE_PER_100,83.6559,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2018,YEAR,ACCESS,RATE_PER_100,67.8861,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2019,YEAR,ACCESS,RATE_PER_100,54.3715,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2020,YEAR,ACCESS,RATE_PER_100,77.209,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,466,Mali,2017,YEAR,ACCESS,RATE_PER_100,56.5642,Data incomplete: not all antibacterials reported systematically,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2020,YEAR,ACCESS,RATE_PER_100,39.2255,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2021,YEAR,ACCESS,RATE_PER_100,36.2904,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2019,YEAR,ACCESS,RATE_PER_100,44.1268,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2018,YEAR,ACCESS,RATE_PER_100,35.7175,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2020,YEAR,ACCESS,RATE_PER_100,69.9458,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2021,YEAR,ACCESS,RATE_PER_100,71.5108,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,462,Maldives,2017,YEAR,ACCESS,RATE_PER_100,23.3434,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2019,YEAR,ACCESS,RATE_PER_100,69.1038,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2017,YEAR,ACCESS,RATE_PER_100,69.3094,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2018,YEAR,ACCESS,RATE_PER_100,68.4075,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,428,Latvia,2016,YEAR,ACCESS,RATE_PER_100,68.6959,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2021,YEAR,ACCESS,RATE_PER_100,69.0034,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2018,YEAR,ACCESS,RATE_PER_100,68.5194,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2019,YEAR,ACCESS,RATE_PER_100,67.4824,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2020,YEAR,ACCESS,RATE_PER_100,67.0638,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2017,YEAR,ACCESS,RATE_PER_100,69.8556,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,418,Lao People's Democratic Republic,2021,YEAR,ACCESS,RATE_PER_100,77.8875,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,440,Lithuania,2016,YEAR,ACCESS,RATE_PER_100,70.4816,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,418,Lao People's Democratic Republic,2020,YEAR,ACCESS,RATE_PER_100,78.9657,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,418,Lao People's Democratic Republic,2019,YEAR,ACCESS,RATE_PER_100,81.9898,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2019,YEAR,ACCESS,RATE_PER_100,53.6851,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2020,YEAR,ACCESS,RATE_PER_100,51.5218,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2021,YEAR,ACCESS,RATE_PER_100,56.553,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,404,Kenya,2018,YEAR,ACCESS,RATE_PER_100,75.5657,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2020,YEAR,ACCESS,RATE_PER_100,51.3155,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2021,YEAR,ACCESS,RATE_PER_100,54.6769,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2019,YEAR,ACCESS,RATE_PER_100,61.1476,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2018,YEAR,ACCESS,RATE_PER_100,56.2562,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2020,YEAR,ACCESS,RATE_PER_100,46.5021,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2021,YEAR,ACCESS,RATE_PER_100,47.0914,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,400,Jordan,2017,YEAR,ACCESS,RATE_PER_100,65.0977,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2019,YEAR,ACCESS,RATE_PER_100,48.3268,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2017,YEAR,ACCESS,RATE_PER_100,47.0013,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2018,YEAR,ACCESS,RATE_PER_100,46.9087,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,380,Italy,2016,YEAR,ACCESS,RATE_PER_100,47.6277,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2021,YEAR,ACCESS,RATE_PER_100,83.1391,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2018,YEAR,ACCESS,RATE_PER_100,81.2859,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2019,YEAR,ACCESS,RATE_PER_100,82.8636,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2020,YEAR,ACCESS,RATE_PER_100,82.8342,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2017,YEAR,ACCESS,RATE_PER_100,82.1431,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,364,Iran (Islamic Republic of),2021,YEAR,ACCESS,RATE_PER_100,49.2362,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,352,Iceland,2016,YEAR,ACCESS,RATE_PER_100,81.9662,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,364,Iran (Islamic Republic of),2020,YEAR,ACCESS,RATE_PER_100,50.3703,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2021,YEAR,ACCESS,RATE_PER_100,73.7006,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2018,YEAR,ACCESS,RATE_PER_100,68.122,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2019,YEAR,ACCESS,RATE_PER_100,70.2697,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2020,YEAR,ACCESS,RATE_PER_100,70.781,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2017,YEAR,ACCESS,RATE_PER_100,64.1492,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2021,YEAR,ACCESS,RATE_PER_100,49.3138,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,372,Ireland,2016,YEAR,ACCESS,RATE_PER_100,64.5922,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2020,YEAR,ACCESS,RATE_PER_100,51.15,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2019,YEAR,ACCESS,RATE_PER_100,50.6332,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2016,YEAR,ACCESS,RATE_PER_100,48.0535,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2017,YEAR,ACCESS,RATE_PER_100,47.6388,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,348,Hungary,2018,YEAR,ACCESS,RATE_PER_100,48.5822,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2021,YEAR,ACCESS,RATE_PER_100,60.4257,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2019,YEAR,ACCESS,RATE_PER_100,63.0321,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2020,YEAR,ACCESS,RATE_PER_100,61.7031,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2018,YEAR,ACCESS,RATE_PER_100,62.6414,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2017,YEAR,ACCESS,RATE_PER_100,63.6358,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2019,YEAR,ACCESS,RATE_PER_100,53.8527,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2020,YEAR,ACCESS,RATE_PER_100,52.6322,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,191,Croatia,2016,YEAR,ACCESS,RATE_PER_100,65.4387,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2018,YEAR,ACCESS,RATE_PER_100,43.3704,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2016,YEAR,ACCESS,RATE_PER_100,59.9896,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,268,Georgia,2017,YEAR,ACCESS,RATE_PER_100,62.8592,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2021,YEAR,ACCESS,RATE_PER_100,68.4699,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2020,YEAR,ACCESS,RATE_PER_100,67.5035,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2017,YEAR,ACCESS,RATE_PER_100,66.2707,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2018,YEAR,ACCESS,RATE_PER_100,66.7636,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2019,YEAR,ACCESS,RATE_PER_100,67.614,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,826,United Kingdom of Great Britain and Northern Ireland,2016,YEAR,ACCESS,RATE_PER_100,66.1545,Only consumption in the public sector reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,266,Gabon,2020,YEAR,ACCESS,RATE_PER_100,80.9667,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,266,Gabon,2021,YEAR,ACCESS,RATE_PER_100,70.5917,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2021,YEAR,ACCESS,RATE_PER_100,72.7826,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2020,YEAR,ACCESS,RATE_PER_100,70.9388,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2017,YEAR,ACCESS,RATE_PER_100,71.1371,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2018,YEAR,ACCESS,RATE_PER_100,71.1098,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2019,YEAR,ACCESS,RATE_PER_100,72.4589,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,250,France,2016,YEAR,ACCESS,RATE_PER_100,70.5761,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2020,YEAR,ACCESS,RATE_PER_100,70.274,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2021,YEAR,ACCESS,RATE_PER_100,70.3585,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2019,YEAR,ACCESS,RATE_PER_100,73.2678,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2018,YEAR,ACCESS,RATE_PER_100,71.8536,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,231,Ethiopia,2019,YEAR,ACCESS,RATE_PER_100,48.4049,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2016,YEAR,ACCESS,RATE_PER_100,72.1518,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,246,Finland,2017,YEAR,ACCESS,RATE_PER_100,72.8179,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,231,Ethiopia,2018,YEAR,ACCESS,RATE_PER_100,40.1534,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2021,YEAR,ACCESS,RATE_PER_100,63.7953,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,231,Ethiopia,2017,YEAR,ACCESS,RATE_PER_100,60.9854,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2020,YEAR,ACCESS,RATE_PER_100,61.3351,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2019,YEAR,ACCESS,RATE_PER_100,61.3697,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2016,YEAR,ACCESS,RATE_PER_100,59.4962,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2017,YEAR,ACCESS,RATE_PER_100,59.4185,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,233,Estonia,2018,YEAR,ACCESS,RATE_PER_100,60.6929,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2021,YEAR,ACCESS,RATE_PER_100,61.5742,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2019,YEAR,ACCESS,RATE_PER_100,62.3246,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2020,YEAR,ACCESS,RATE_PER_100,61.1497,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2018,YEAR,ACCESS,RATE_PER_100,61.9797,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2017,YEAR,ACCESS,RATE_PER_100,62.3531,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,818,Egypt,2020,YEAR,ACCESS,RATE_PER_100,54.9962,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,818,Egypt,2021,YEAR,ACCESS,RATE_PER_100,53.9963,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,724,Spain,2016,YEAR,ACCESS,RATE_PER_100,62.6113,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2021,YEAR,ACCESS,RATE_PER_100,80.7157,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2019,YEAR,ACCESS,RATE_PER_100,79.6677,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2020,YEAR,ACCESS,RATE_PER_100,80.3138,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2018,YEAR,ACCESS,RATE_PER_100,79.3326,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2017,YEAR,ACCESS,RATE_PER_100,78.844,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2020,YEAR,ACCESS,RATE_PER_100,63.1929,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2021,YEAR,ACCESS,RATE_PER_100,65.3452,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,208,Denmark,2016,YEAR,ACCESS,RATE_PER_100,78.934,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2019,YEAR,ACCESS,RATE_PER_100,59.4808,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2017,YEAR,ACCESS,RATE_PER_100,53.7376,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2018,YEAR,ACCESS,RATE_PER_100,55.5285,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,276,Germany,2016,YEAR,ACCESS,RATE_PER_100,51.0847,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,203,Czechia,2021,YEAR,ACCESS,RATE_PER_100,61.612,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2021,YEAR,ACCESS,RATE_PER_100,47.4121,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,203,Czechia,2019,YEAR,ACCESS,RATE_PER_100,60.4098,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,203,Czechia,2020,YEAR,ACCESS,RATE_PER_100,62.193,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2020,YEAR,ACCESS,RATE_PER_100,43.6134,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2018,YEAR,ACCESS,RATE_PER_100,48.6337,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2019,YEAR,ACCESS,RATE_PER_100,48.1881,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2017,YEAR,ACCESS,RATE_PER_100,49.1686,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,196,Cyprus,2016,YEAR,ACCESS,RATE_PER_100,47.7294,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2019,YEAR,ACCESS,RATE_PER_100,74.2346,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2020,YEAR,ACCESS,RATE_PER_100,67.481,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2021,YEAR,ACCESS,RATE_PER_100,65.7245,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,170,Colombia,2018,YEAR,ACCESS,RATE_PER_100,67.2785,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2020,YEAR,ACCESS,RATE_PER_100,72.2075,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2021,YEAR,ACCESS,RATE_PER_100,80.7035,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2019,YEAR,ACCESS,RATE_PER_100,72.1197,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,384,C™te d'Ivoire,2018,YEAR,ACCESS,RATE_PER_100,79.0614,Data incomplete since not collected from all sources of data,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2019,YEAR,ACCESS,RATE_PER_100,62.4309,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2020,YEAR,ACCESS,RATE_PER_100,63.6626,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2021,YEAR,ACCESS,RATE_PER_100,65.2131,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2018,YEAR,ACCESS,RATE_PER_100,61.3659,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2016,YEAR,ACCESS,RATE_PER_100,58.7873,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,756,Switzerland,2017,YEAR,ACCESS,RATE_PER_100,59.5645,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,064,Bhutan,2021,YEAR,ACCESS,RATE_PER_100,86.7991,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,064,Bhutan,2020,YEAR,ACCESS,RATE_PER_100,87.7973,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,096,Brunei Darussalam,2020,YEAR,ACCESS,RATE_PER_100,72.209,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,096,Brunei Darussalam,2021,YEAR,ACCESS,RATE_PER_100,69.7565,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,064,Bhutan,2019,YEAR,ACCESS,RATE_PER_100,87.8526,For antibiotics: only J01 and P01AB reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,096,Brunei Darussalam,2019,YEAR,ACCESS,RATE_PER_100,66.7815,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2020,YEAR,ACCESS,RATE_PER_100,46.5611,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2021,YEAR,ACCESS,RATE_PER_100,65.1718,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2019,YEAR,ACCESS,RATE_PER_100,66.7595,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2018,YEAR,ACCESS,RATE_PER_100,60.8942,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2020,YEAR,ACCESS,RATE_PER_100,40.617,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2016,YEAR,ACCESS,RATE_PER_100,56.0646,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,112,Belarus,2017,YEAR,ACCESS,RATE_PER_100,61.5998,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2019,YEAR,ACCESS,RATE_PER_100,37.0411,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2017,YEAR,ACCESS,RATE_PER_100,48.0581,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2018,YEAR,ACCESS,RATE_PER_100,41.5328,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,050,Bangladesh,2016,YEAR,ACCESS,RATE_PER_100,35.6001,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,854,Burkina Faso,2018,YEAR,ACCESS,RATE_PER_100,83.5695,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2020,YEAR,ACCESS,RATE_PER_100,74.5011,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2021,YEAR,ACCESS,RATE_PER_100,69.1581,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,854,Burkina Faso,2017,YEAR,ACCESS,RATE_PER_100,87.2883,For antibiotics: only A07AA and J01 reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2019,YEAR,ACCESS,RATE_PER_100,76.3738,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2017,YEAR,ACCESS,RATE_PER_100,66.0594,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2018,YEAR,ACCESS,RATE_PER_100,77.126,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,204,Benin,2016,YEAR,ACCESS,RATE_PER_100,78.6203,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2021,YEAR,ACCESS,RATE_PER_100,68.4793,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2018,YEAR,ACCESS,RATE_PER_100,66.2393,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2019,YEAR,ACCESS,RATE_PER_100,67.9242,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2020,YEAR,ACCESS,RATE_PER_100,67.3446,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2017,YEAR,ACCESS,RATE_PER_100,63.1191,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2021,YEAR,ACCESS,RATE_PER_100,60.0144,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,056,Belgium,2016,YEAR,ACCESS,RATE_PER_100,62.8049,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2020,YEAR,ACCESS,RATE_PER_100,61.1758,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2019,YEAR,ACCESS,RATE_PER_100,58.3106,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2016,YEAR,ACCESS,RATE_PER_100,58.4118,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2017,YEAR,ACCESS,RATE_PER_100,58.5349,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,040,Austria,2018,YEAR,ACCESS,RATE_PER_100,58.0641,Only consumption in the community reported,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2021,YEAR,ACCESS,RATE_PER_100,49.0209,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2019,YEAR,ACCESS,RATE_PER_100,55.6748,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2020,YEAR,ACCESS,RATE_PER_100,46.3451,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2018,YEAR,ACCESS,RATE_PER_100,62.0864,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2016,YEAR,ACCESS,RATE_PER_100,55.937,,PUBLISHED
+19E688D,Antibiotic consumption pattern,GLASSAMC_AWARE,051,Armenia,2017,YEAR,ACCESS,RATE_PER_100,64.1826,,PUBLISHED
