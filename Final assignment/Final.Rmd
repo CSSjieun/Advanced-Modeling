@@ -1,0 +1,743 @@
+---
+title: "Final Advanced Modelling Assign"
+author: "Jieun Park"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# During the past week, how often were you happy?
+
+## Data collection
+
+```{r}
+rm(list=rm())
+library(readr)
+library(dplyr)
+happy <- read.csv("./jieun/UC3M/Advanced Modeling/Advanced Modeling/Final assignment/CRON2W4e01.csv")
+
+
+happy <- happy |> select(cntry, w4q1, w4q2, w4q3, w4q4, w4q5, w4q6, w4q7, w4q8, w4q9, agea, eduyrs, c2weight)
+```
+
+This data is obtained from ESS(European Social Survey) and it is related to the level of happiness.
+
+- idno: Respondent's identification number
+- cntry: Country
+- w4q1 : In order to make the [country] an ideal society: Getting rid of poverty
+- w4q2: In order to make the [country] an ideal society: Making life easier for families
+- w4q3: In order to make the [country] an ideal society: Emphasising religious values
+- w4q4: In order to make the [country] an ideal society: Being accepting of people coming to live in the [country] from other countries
+- w4q5: In order to make the [country] an ideal society: People living healthy long lives
+- w4q6: In order to make the [country] an ideal society: Living in freedom
+- w4q7: In order to make the [country] an ideal society: Having strong military power
+- w4q8: In order to make the [country] an ideal society: Fighting all forms of inequality
+- w4q9: In order to make the [country] an ideal society: Providing high quality education
+- agea: Age of respondent, calculated
+- eduyrs: Years of full-time education completed
+- c2weight: Happiness weight
+
+**From w4q1 to w4q9**
+
+Value	Category
+1	Not a priority at all
+2	A small priority
+3	A medium priority
+4	An important priority
+5	A top priority
+9	No answer*
+
+**For eduyrs**
+
+Value	Category
+77	Refusal*
+88	Don't know*
+99	No answer*
+
+
+```{r}
+# remove no answer from answers and meaningless values from eduyrs
+happy <- happy |> filter(w4q1 !=9 &
+                         w4q2 !=9 &
+                         w4q3 !=9 &
+                         w4q4 !=9 &
+                         w4q5 !=9 &
+                         w4q6 !=9 &
+                         w4q7 !=9 &
+                         w4q8 !=9 &
+                         w4q9 !=9 &
+                         eduyrs != 77 &
+                         eduyrs != 88 &
+                         eduyrs != 99 &
+                         agea != 999
+                         )
+
+summary(happy)
+```
+
+### Making ordinal variable as binary variable
+
+```{r}
+happy <- happy |> rename("rid_poverty" = "w4q1",
+                         "easy_family_life" = "w4q2",
+                         "religious" = "w4q3",
+                         "imigration_accept" = "w4q4",
+                         "health_long_life" = "w4q5",
+                         "freedom" = "w4q6",
+                         "strong_military_power" = "w4q7",
+                         "equality" = "w4q8",
+                         "quality_of_edu" = "w4q9",
+                         "happiness" = "c2weight")
+
+#rid_poverty
+happy <- happy %>%
+  mutate(rid_poverty = case_when(
+    rid_poverty %in% c(1, 2) ~ 0,
+    rid_poverty %in% c(4, 5) ~ 1,
+    TRUE ~ NA_real_
+  ))
+
+# easy_family_life
+happy <- happy %>%
+  mutate(easy_family_life = case_when(
+    easy_family_life %in% c(1, 2) ~ 0,
+    easy_family_life %in% c(4, 5) ~ 1,
+    TRUE ~ NA_real_
+  ))
+
+# religious
+happy <- happy %>%
+  mutate(religious = case_when(
+    religious %in% c(1, 2) ~ 0,
+    religious %in% c(4, 5) ~ 1,
+    TRUE ~ NA_real_
+  ))
+
+# imigration_accept
+happy <- happy %>%
+  mutate(imigration_accept = case_when(
+    imigration_accept %in% c(1, 2) ~ 0,
+    imigration_accept %in% c(4, 5) ~ 1,
+    TRUE ~ NA_real_
+  ))
+
+# health_long_life
+happy <- happy %>%
+  mutate(health_long_life = case_when(
+    health_long_life %in% c(1, 2) ~ 0,
+    health_long_life %in% c(4, 5) ~ 1,
+    TRUE ~ NA_real_
+  ))
+
+# freedom
+happy <- happy %>%
+  mutate(freedom = case_when(
+    freedom %in% c(1, 2) ~ 0,
+    freedom %in% c(4, 5) ~ 1,
+    TRUE ~ NA_real_
+  ))
+
+# strong_military_power
+happy <- happy %>%
+  mutate(strong_military_power = case_when(
+    strong_military_power %in% c(1, 2) ~ 0,
+    strong_military_power %in% c(4, 5) ~ 1,
+    TRUE ~ NA_real_
+  ))
+
+# equality
+happy <- happy %>%
+  mutate(equality = case_when(
+    equality %in% c(1, 2) ~ 0,
+    equality %in% c(4, 5) ~ 1,
+    TRUE ~ NA_real_
+  ))
+
+# quality_of_edu
+happy <- happy %>%
+  mutate(quality_of_edu = case_when(
+    quality_of_edu %in% c(1, 2) ~ 0,
+    quality_of_edu %in% c(4, 5) ~ 1,
+    TRUE ~ NA_real_
+  ))
+
+library(tidyr)
+happy <- happy |> drop_na()
+happy
+```
+
+To use the ordinal variable in the machine learning model, I transformed it into binary variable.
+When people feel 1 or 2 (not a priority at all / a small priority) then it becomes 0.
+When people feel 4 or 5 (an important priority / a top priority) then it beomces 1. 
+3 (A medium priority) becomes NA and it is dropped from the dataset because it does not give a lot of insight related to people's priority towards happiness than other responses.
+
+## Data description
+
+```{r}
+dim(happy)
+summary(happy)
+summary(happy$happiness)
+
+happy_q <- happy |> select(-cntry, -agea, -happiness, -eduyrs)
+boxplot(happy_q)
+```
+
+This dataset has 1094 rows and 13 columns.
+The dependent variable **happiness* has minimum number of 0.1224, maximum number of 6.5408, and
+mean happiness is 0.9641
+
+Therefore, for the classification I will split the data into happy and not happy with the criteria of mean value of dependent variable.
+
+As you can see from the boxplot, people think **religious life** and **strong military power** are **not that important** for the happiness.
+In the contrast, people think **freedom** and **quality of education** are two **the most important** feature that affect their happy life. 
+
+## Classification
+
+### Make binary dependent variable for classification
+
+```{r}
+# Make categorical variable
+happy_classification = happy
+
+summary(happy_classification$happiness)
+
+happy_classification$happy = factor(happy_classification$happiness > 0.9641) 
+happy_classification$happiness = NULL
+
+prop.table(table(happy_classification$happy))
+```
+
+For the classification, I made the binary variable called happy which is divided by the criteria of mean value of happiness. 
+Therefore, when the happiness value is lower than the mean value then it means people did not feel happy during the past week. 
+However, when the happy is higher than the mean value of it (0.9641), 
+then the label for it is a happy meaning that people felt happy during the past week.
+
+Proportion of the happy is 0.6590494 for FALSE (not happy) and 0.3409506 for TRUE (happy).
+
+Therefore, in original dataset, there are more people who did not feel happy.
+
+### Data splitting
+
+```{r}
+#install.packages("caret")
+library(caret)
+set.seed(567)
+
+length(happy_classification$happy)
+
+in_train <- createDataPartition(happy_classification$happy, p = 0.8, list = FALSE)  
+# 80% for training
+training <- happy_classification[in_train,]
+testing <- happy_classification[-in_train,]
+nrow(training)
+nrow(testing)
+```
+
+To conduct the modelling, I divide the dataset into train set and test set. 
+I putted 80% of dataset into train set and 20% of dataset into test set.
+
+Total length for the happy from the dataset is 1094
+In train set there are 876 rows and in the test set there are 218 rows.
+
+### 10 fold validation - train_control parameters
+
+```{r}
+ctrl <- trainControl(method = "repeatedcv", 
+                     number = 10,
+                     classProbs = T,
+                     summaryFunction=twoClassSummary,
+                     verboseIter = T)
+
+levels(training$happy) = c("No","Yes")
+levels(testing$happy) = c("No","Yes")
+```
+
+### 1. KNN (K-nearest Neighbors Algorithm)
+### 1-1. Interpretation
+
+```{r}
+knnFit <- train(happy ~ ., 
+                  data = training,
+                  method = "knn",   
+                  preProc=c('scale','center'),
+                  tuneLength = 10,
+                  metric="ROC",
+                  trControl = ctrl)
+print(knnFit)
+summary(knnFit)
+plot(knnFit)
+```
+When the number of neighbors is about 7, the ROC is the lowest.
+By contrast, when the number of neighbors is about 19, the ROC is the highest.
+
+### 1-2. Prediction
+
+```{r}
+knnProb = predict(knnFit, testing, type="prob")
+prediction <- as.factor(ifelse(knnProb[,2] > 0.4, "Yes", "No"))
+
+confusionMatrix(prediction, testing$happy)
+confusionMatrix(prediction, testing$happy)$table
+confusionMatrix(prediction, testing$happy)$overall[1:2]
+```
+
+This model has sensitivity of 0.8264 and specificity of 0.5405 meaning that it predicts Yes better than No
+Accuracy is about 73%.
+
+### 2. Decision Tree
+### 2-1. Interpretation
+
+```{r}
+library(rpart)
+
+# Hyper-parameters
+control = rpart.control(minsplit = 30, maxdepth = 10, cp=0.01)
+
+# minsplit: minimum number of observations in a node before before a split
+# maxdepth: maximum depth of any node of the final tree
+# cp: degree of complexity, the smaller the more branches
+```
+
+```{r}
+model = happy ~.
+dtFit <- rpart(model, data=training, method = "class", control = control)
+summary(dtFit)
+```
+
+```{r}
+# Visualization
+library(rpart.plot)
+rpart.plot(dtFit, digits=3)
+```
+Since only 34% of respondents felt happy during the past week, the root node specifies No.
+
+1-1. When the respondents are more than 36 years old, then about 26% felt happy so they are classified as "NO" and they are about 79% of the whole respondents.
+
+1-1-1. Keeping the condition above, when people have education year more than 13 years, about 17% people felt happy so they are classified as "No" and they are about 54% of the whole respondents.
+
+1-2. Keeping the condition of 1, when people have education year less than 13 years, about 49% felt happy so they are not majority and classified as "No". They are about 24% of the whole respondents. 
+
+1-2-1. Keeping the condition of above (1-1 and 1-2), when people are from AT, BE, CZ, GB, IS, SE, then 30% of people felt happy during the past week so they are classified as "No". This respondents are about 11% of the whole respondents
+
+1-2-2. Keeping the condition of above (1-1 and 1-2), when people are not from AT, BE, CZ, GB, IS, SE, then 66% of respondents felt happy so they are classified as "Yes". They are about 13% of the whole respondents.
+
+1-2-2-1. Keeping the condition of above (1-1, 1-2, and 1-2-2), when people do their education more than 12 years, then 43% of people felt happy so they are classified as "No". They are about 5.5% of whole respondents.
+
+1-2-2. Keeping the condition of above (1-1, 1-2, and 1-2-2), when people do their education less than 12 years, then 82% of people felt happy and they are classified "Yes". They are about 7% of the whole population.
+
+1-2. When the respondents are less than 36 years old, then 61% of them felt happy and they are classified "Yes". They are about 21% of the whole respondents.
+
+1-2-1. Keeping the condition of above (1-2), when people are from AT, BE, CZ, FI, FR, IT, PT, and SI, 50% of people felt happy and they are about 16% of the whole respondents.
+
+1-2-1-1. Keeping the condition of above (1-2 and 1-2-1), when people are more than 22 years old, then 38% of respondents felt happy during the past week and they are about 12% of the whole respondents.
+
+In conclusion, even though about 78% of the whole respondents did not feel happy during the past week, when people are less than 36 years old and live in AT, BE, CZ, FI, FR, IT, PT, and SI then most of them felt happy and subsequently if they are even less than 22 years old, then most of them felt happy as well.
+
+
+### 2-2. Prediction
+
+```{r}
+dtPred <- predict(dtFit, testing, type = "class")
+
+dtProb <- predict(dtFit, testing, type = "prob")
+
+prediction <- as.factor(ifelse(dtProb[,2] > 0.4, "Yes", "No"))
+
+confusionMatrix(prediction, testing$happy)
+confusionMatrix(prediction, testing$happy)$table
+confusionMatrix(prediction, testing$happy)$overall[1:2]
+```
+
+Decision tree has 0.8403 for sensitivity and 0.5270 for specificity meaning it predicts Yes better than No. 
+Accuracy is about 73% meaning that it performs well as much as KNN algorithm.
+
+### 3. Caret
+
+```{r}
+caret.fit <- train(model, 
+                   data = training, 
+                   method = "rpart",
+                   control=rpart.control(minsplit = 8, maxdepth = 12),
+                   trControl = ctrl,
+                   tuneLength=10)
+caret.fit
+```
+
+### 3-1. Interpreation
+
+```{r}
+rpart.plot(caret.fit$finalModel)
+```
+Since only about 34% of people felt happy during the past week, the root node starts with no.
+The root node starts to classify the data using age. 
+When people are more than 36 years old then only about 27% of people felt happy during the past week. 
+Therefore, they are classified as no.
+People who is in more than 36 years old and study more than 13 years, only about 17% of people felt happy during the week. So they are classified as no and they are about 54.2% of the whole respondents.
+
+Among people who is less than 36 years old, about 61% of respondents felt happy during the past week and this is about 21% of the whole respondents.
+Among respondents who are more than 22 years old but less than 36 years old, about 54% of people felt happy during the past week and this amount is about 17% of the whole respondents. 
+Among respondent who is less than 36 years old and less then 22 years old, people felt happy about 92% and this about 4% of the whole respondents.
+
+In conclusion, when people are less than 36 years old then 61% of people felt happy.
+And if they are even less than 22 years old, then 92% of people felt happy.
+
+This means even though 79% of the whole respondents felt unhappy during the past week, when their age is younger then they more prone to feel happy. 
+
+### 3-2. Prediction
+
+```{r}
+dtProb <- predict(caret.fit, testing, type = "prob")
+
+prediction <- as.factor(ifelse(dtProb[,2] > 0.4, "Yes", "No"))
+
+confusionMatrix(prediction, testing$happy)
+confusionMatrix(prediction, testing$happy)$table
+confusionMatrix(prediction, testing$happy)$overall[1:2]
+```
+
+When I use the caret for the prediction, sensitivity is 0.8750 and specificity is 0.5405
+This model predicts Yes better than No.
+Accuracy is about 76% meaning that it performs well.
+Among all models above, this model is the best so far. 
+
+### 4. Random Forest
+
+### 4-1. Interpreation
+
+```{r}
+rfFit <- train(happy ~ ., 
+               data = training,
+               method = "rf",   
+               preProc=c('scale','center'),
+               tuneLength = 10,
+               metric="ROC",
+               trControl = ctrl)
+plot(rfFit)
+```
+
+When the number of predictors is about 2, then ROC is the lowest.
+When the number of predictions is about 4, then ROC is the highest.
+
+### 4-2. Prediction
+
+```{r}
+rfProb = predict(rfFit, testing, type="prob")
+prediction <- as.factor(ifelse(rfProb[,2] > 0.4, "Yes", "No"))
+
+confusionMatrix(prediction, testing$happy)
+confusionMatrix(prediction, testing$happy)$table
+confusionMatrix(prediction, testing$happy)$overall[1:2]
+```
+
+Random Forest has 0.8750 for sensitivity and 0.5811 for specificity meaning that it predicts Yes better than No. Accuracy is about 77% so this is the best model for the classification. 
+
+## Advanced Regression 
+
+### Data splitting
+
+```{r}
+happy <- happy |> select(-cntry)
+
+in_train <- createDataPartition((happy$happiness), p = 0.8, list = FALSE)  # 80% for training
+training <- happy[in_train,]
+testing <- happy[-in_train,]
+nrow(training)
+nrow(testing)
+length(happy$happiness)
+```
+
+For the regression, the dependent variable will be used in the continuous variable format. 
+Training set has 878 rows and testing set has 216.
+In total, the original dataset of happy has 1094 rows. 
+
+### Description for the data
+
+```{r}
+training %>% ggplot(aes(x=happiness)) + geom_density(fill="navyblue") + scale_x_log10()
+```
+when we do the log_scale then the happiness looks normal distribution.
+
+```{r}
+training %>% ggplot(aes(x=happiness)) + geom_density(fill="navyblue")
+```
+But originally it looks having a right long tail. 
+ 
+```{r}
+summary(training)
+```
+
+
+### The most correlated variables
+
+```{r}
+corr_matrix <- cor(training[, 1:12]) 
+corr_happiness <- corr_matrix[,12]
+corr_happy <- sort(corr_happiness, decreasing = TRUE)
+# correlation of each variables with the price
+# correlation between price and logitude and latitude is low because the relationship is not linear
+
+corr=data.frame(corr_happy)
+ggplot(corr,aes(x = row.names(corr), y = corr_happy)) + 
+  geom_bar(stat = "identity", fill = "lightblue") + 
+  scale_x_discrete(limits= row.names(corr)) +
+  labs(x = "Predictors", y = "Happiness", title = "Correlations") + 
+  theme(plot.title = element_text(hjust = 0, size = rel(1.5)),
+        axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+Religious has the highest correlation with happiness and eduyrs and agea have the lowest correlation with it.
+
+### Multiple Regression
+
+```{r}
+linFit <- lm(log(happiness) ~ rid_poverty + easy_family_life + religious + imigration_accept + 
+               health_long_life + freedom + strong_military_power + equality + quality_of_edu + I(agea^2) +
+               I(eduyrs^2), data=training)
+# we are using logarithm of price and the size of the house
+# size is basically squared meter so we can erase the square using the logarithm
+summary(linFit)
+```
+
+Variable of equality, age, and eduyrs are three variables which are statistically significant for the happiness. I put the I(^) for the agea and eduyrs because they often do not have linear relationship with the variable of happiness.
+
+### Model Selection
+
+```{r}
+#install.packages("olsrr")
+library(olsrr)
+
+model = log(training$happiness) ~ training$rid_poverty + training$easy_family_life + training$religious +
+        training$imigration_accept + training$health_long_life + training$freedom +
+        training$strong_military_power + training$equality + training$quality_of_edu +
+        I(training$agea^2) + I(training$eduyrs^2)
+
+linFit <- lm(model)
+
+ols_step_best_subset(linFit) 
+```
+
+```{r}
+ols_step_forward_p(linFit) # forward based on p-value
+plot(ols_step_forward_p(linFit))
+```
+
+
+```{r}
+ols_step_forward_aic(linFit) # forward based on AIC
+plot(ols_step_forward_aic(linFit))
+```
+When forward selection stepwise is conducted, 5 variables have the lowest AIC.
+
+```{r}
+ols_step_backward_aic(linFit) # backward AIC
+plot(ols_step_backward_aic(linFit))
+```
+When the the backward stepwise is conducted, number of 5, 6 variables have the lowest AIC.
+
+```{r}
+ols_step_both_aic(linFit) # stepwise AIC
+plot(ols_step_both_aic(linFit))
+```
+This model with 5 number of variables seems to be reasonable.
+
+```{r}
+linFit <- lm(log(happiness) ~ quality_of_edu + easy_family_life + religious + equality + 
+               freedom, data=training)
+summary(linFit)
+```
+
+Not many variables are statistically significant, but slightly significant variables are religious and equality. When they increase then the happiness increases.
+
+### Prediction
+
+```{r}
+predictions <- exp(predict(linFit, newdata=testing))
+cor(testing$happiness, predictions)^2
+RMSE <- sqrt(mean((predictions - testing$happiness)^2))
+RMSE
+```
+
+RMSE is 0.6169509 and the correlation is 0.003272029. It does not look reasonable. 
+This is not very reasonable but this looks the best option.
+
+### benchmark
+
+```{r}
+mean(training$happiness)
+
+# This is equivalent to
+benchFit <- lm(happiness ~ 1, data=training)
+predictions <- predict(benchFit, newdata=testing)
+cor(testing$happiness, predictions)^2
+RMSE <- sqrt(mean((predictions - testing$happiness)^2))
+RMSE
+```
+
+From the training set, we can predict the happiness.
+RMSE is 0.6004093.
+
+
+### Statistical Learning tools
+
+```{r}
+ctrl <- trainControl(method = "repeatedcv", 
+                     number = 5, repeats = 1)
+
+print(ctrl)
+```
+
+```{r}
+linFit <- lm(log(happiness) ~ rid_poverty + easy_family_life + religious + imigration_accept +
+               health_long_life + freedom + strong_military_power + equality + quality_of_edu +
+               I(agea^2)+ I(eduyrs^2), data=training)
+
+summary(linFit)
+```
+
+R2 is 0.185 it means this model do not explain very well.
+
+### linear regression
+
+```{r}
+test_results <- data.frame(happiness = log(testing$happiness))
+```
+
+
+```{r}
+model = log(happiness) ~ rid_poverty + religious + imigration_accept +
+               health_long_life + freedom + equality + quality_of_edu +
+               I(agea^2)+ I(eduyrs^2)
+
+lm_tune <- train(model, data = training, 
+                 method = "lm", 
+                 preProc=c('scale', 'center'),
+                 trControl = ctrl)
+lm_tune
+```
+### prediction
+
+```{r}
+test_results$lm <- predict(lm_tune, testing)
+postResample(pred = test_results$lm,  obs = test_results$happiness)
+```
+
+```{r}
+qplot(test_results$lm, test_results$happiness) + 
+  labs(title="Linear Regression Observed VS Predicted", x="Predicted", y="Observed") +
+  lims(x = c(10, 15), y = c(10, 15)) +
+  geom_abline(intercept = 0, slope = 1, colour = "blue") +
+  theme_bw()
+```
+
+### Ridge Regression
+
+```{r}
+# the grid for lambda
+ridge_grid <- expand.grid(lambda = seq(0, .1, length = 100))
+
+# train
+ridge_tune <- train(model, data = training,
+                    method='ridge',
+                    preProc=c('scale','center'),
+                    tuneGrid = ridge_grid,
+                    trControl=ctrl)
+plot(ridge_tune)
+
+# the best tune
+ridge_tune$bestTune
+coef(ridge_tune$finalModel$param) # getting the optimal betas # how to get the cofficient from elasticnet
+
+# prediction
+test_results$ridge <- predict(ridge_tune, testing)
+
+postResample(pred = test_results$ridge,  obs = test_results$happiness)
+```
+
+### Lasso regression
+
+```{r}
+lasso_grid <- expand.grid(fraction = seq(.01, 1, length = 100))
+
+lasso_tune <- train(model, data = training,
+                    method='lasso',
+                    preProc=c('scale','center'),
+                    tuneGrid = lasso_grid,
+                    trControl=ctrl)
+plot(lasso_tune)
+
+lasso_tune$bestTune
+
+test_results$lasso <- predict(lasso_tune, testing)
+postResample(pred = test_results$lasso,  obs = test_results$happiness)
+```
+
+### Elastic Net
+
+```{r}
+modelLookup('glmnet')
+```
+
+```{r}
+elastic_grid = expand.grid(alpha = seq(0, .2, 0.01), lambda = seq(0, .1, 0.01))
+
+glmnet_tune <- train(model, data = training,
+                     method='glmnet',
+                     preProc=c('scale','center'),
+                     tuneGrid = elastic_grid,
+                     trControl=ctrl)
+
+plot(glmnet_tune)
+glmnet_tune$bestTune
+
+test_results$glmnet <- predict(glmnet_tune, testing)
+
+postResample(pred = test_results$glmnet,  obs = test_results$happiness)
+```
+
+
+### KNN
+
+```{r}
+modelLookup('kknn')
+```
+
+
+```{r}
+knn_tune <- train(model, 
+                  data = training,
+                  method = "kknn",   
+                  preProc=c('scale','center'),
+                  tuneGrid = data.frame(kmax=c(11,13,15,19,21),distance=2,kernel='optimal'),
+                  trControl = ctrl)
+plot(knn_tune)
+
+test_results$knn <- predict(knn_tune, testing)
+
+postResample(pred = test_results$knn,  obs = test_results$happiness)
+```
+When the number of neighbors ie less than 20 then the RMSE is the lowest.
+RMSE is 0.4813691
+
+### Random Forest
+
+```{r}
+rf_tune <- train(model, 
+                 data = training,
+                 method = "rf",
+                 preProc=c('scale','center'),
+                 trControl = ctrl,
+                 ntree = 100,
+                 tuneGrid = data.frame(mtry=c(1,3,5,7)), 
+                 # m=3 then we are considering only 3 columns randomly selected
+                 # medium number is squared root of number of columns
+                 importance = TRUE)
+
+plot(rf_tune)
+
+test_results$rf <- predict(rf_tune, testing)
+
+postResample(pred = test_results$rf,  obs = test_results$happiness)
+```
+When the predictor is 3 then the RMSE is the lowest
+RMSE is 0.4669796
+
+
