@@ -19,7 +19,16 @@ Machine learning method is also used in the political area. It helped a lot for 
 
 1. Hold out <br/>
    Divide data set into two subset which are train set and test set. <br/>
-   Model which is trained with train set will be measured for the generalization error using test set. 
+   Model which is trained with train set will be measured for the generalization error using test set.
+
+2. Bootstrapping <br/>
+   Making the subset of D' by selecting number of m data from the original data set permitting the overlaps. <br/>
+   The probability that one data is not selected is **(1-1/m)m** and usually this is about 36.8% of the whole dataset. <br/>
+   In this case we can use D/D' as train set and the other as test set (1/3 of m) then we would use all number of m data set.
+
+3. Parameter tuning <br/>
+   
+   
 
 
 
