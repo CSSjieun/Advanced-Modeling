@@ -11,7 +11,7 @@ We assume data shows independent and identical distribution (i.i.d.). <br/>
 Machine learning algorithms' bias towards specific hypothesis is called **inductive bias** or **bias**. <br/>
 
 There are three core technology in the big data era that are machine learning, cloud computing, and crowdsourcing. <br/>
-Many areas in our reality such as weather forcasting, environmentmonitoring, and sales area use machine learning methods. <br/>
+Many areas in our reality such as weather forcasting, monitoring the environment, and sales area use machine learning methods. <br/>
 For example, in sales area, people can anlyze cutomer's data using machine learning which enable us to do the **target marketing.** <br/>
 Machine learning technology is crucial on the search engine companies such as NAVER, Google, and Baidu. <br/>
 Search is the input, result is the output and the process for more sophisticated search engine is improved by machine learning method. <br/>
