@@ -26,7 +26,26 @@ Machine learning method is also used in the political area. It helped a lot for 
    The probability that one data is not selected is **(1-1/m)m** and usually this is about 36.8% of the whole dataset. <br/>
    In this case we can use D/D' as train set and the other as test set (1/3 of m) then we would use all number of m data set.
 
-3. Parameter tuning <br/>
+3. Performance measure <br/>
+   1) Mean squared Error
+      1/m∑(f(xi)-yi)2
+      f(xi): Prediction result
+      yi: Answer data
+
+4. Recall and Precision
+
+   **Confusion Matrix**
+                                      Prediction
+   |----------------------------------------------------|
+   |                          Positive   |  Negative
+   |                     -------------------------------|
+   |            Positive|        TP      |     FN
+   |Reference|          |-------------------------------|
+   |            Negative|        FP      |     TN       |
+   ------------------------------------------------------
+   
+   
+
    
    
 
