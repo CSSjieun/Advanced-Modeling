@@ -40,7 +40,7 @@ Machine learning method is also used in the political area. It helped a lot for 
 |          | Positive |        TP       |     FN     |
 |Reference |          |-----------------|------------|
 |          | Negative |        FP       |     TN     |
-
+--------------------------------------------------------
    
 
    
