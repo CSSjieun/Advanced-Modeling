@@ -34,13 +34,11 @@ Machine learning method is also used in the political area. It helped a lot for 
 
 4. Recall and Precision
 
-   **Confusion Matrix**
-| | | Positive | Negative |
-|----------|----------|-----------------|------------|
-| | Positive | TP | FN |
-| Reference | |-----------------|------------|
-| | Negative | FP | TN |
------------------------------------------------------
+TP/TP+FP (Number of true positive divided by number of things classified as positive)
+TP/TP+FN (Number of true positive divided by number of real posive)
+
+
+
    
 
    
