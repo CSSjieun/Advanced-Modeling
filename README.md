@@ -35,7 +35,7 @@ Machine learning method is also used in the political area. It helped a lot for 
 4. Recall and Precision
 
    **Confusion Matrix**
- |          |          |      Positive   |  Negative  |
+|          |          |      Positive   |  Negative  |
 |----------|----------|-----------------|------------|
 |          | Positive |        TP       |     FN     |
 |Reference |          |-----------------|------------|
