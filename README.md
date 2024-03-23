@@ -36,13 +36,13 @@ Machine learning method is also used in the political area. It helped a lot for 
 
    **Confusion Matrix**
                                       Prediction
-   |----------------------------------------------------|
-   |                          Positive   |  Negative
-   |                     -------------------------------|
-   |            Positive|        TP      |     FN
-   |Reference|          |-------------------------------|
-   |            Negative|        FP      |     TN       |
    ------------------------------------------------------
+   |          |          |      Positive   |  Negative
+   |-----------------------------------------------------|
+   |          | Positive|        TP      |     FN
+   |Reference|           |-------------------------------|
+   |          |  Negative|        FP      |     TN       |
+   -------------------------------------------------------
    
    
 
