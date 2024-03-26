@@ -37,6 +37,22 @@ Machine learning method is also used in the political area. It helped a lot for 
 TP/TP+FP (Number of true positive divided by number of things classified as positive)
 TP/TP+FN (Number of true positive divided by number of real posive)
 
+5. ROC (Receiver Operating Characteristic) and AUC (Area Under the ROC Curve)
+
+X-axis: TPR (True Positive Rate) = TP/TP+FN - positive reference row <br/>
+Y-axis: FPR (False Positive Rate) = FP/TN+FP - negative reference row
+
+6. Unequal Error: there are two representative types of errors in the reality. For example, doctor can misdiagnose healthy patient as unhealthy one and the other way around. The former error just need one more diagnosis but latter would be a fatal error for the patient. This is the unequal error. 
+
+7-1. Hypothesis Testing <br/>
+We can use the test error rate to assume a distribution of normal error rates. This equation represents the probability of obtaining a test error rate ê when testing a learner with a general error rate e on a test set with m samples. 
+
+<img width="385" alt="Screenshot 2024-03-26 at 21 45 07" src="https://github.com/CSSjieun/Advanced-Modeling/assets/152406885/d7de84b6-2a5f-4aff-ab95-ecfba7d799d3"> <br/>
+Resource: 단단한 머신러닝, 조우쯔화, 48 page
+
+7-2. Cross validation t-test
+
+
 
 
    
